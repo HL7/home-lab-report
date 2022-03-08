@@ -2,8 +2,8 @@
 	"list": [
 		{
 			"version": "current",
-			"path": "https://build.fhir.org/ig/home-lab-report",
-			"desc": "",
+			"path": "https://build.fhir.org/ig/HL7/home-lab-report",
+			"desc": "Continuous Integration Build (latest in version control)",
 			"fhirversion": "4.0.1",
 			"date": "",
 			"sequence": "",
