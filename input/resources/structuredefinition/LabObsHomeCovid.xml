@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="LabObsHomeCovid"/>
     <meta>
-        <versionId value="43"/>
-        <lastUpdated value="2021-03-24T20:03:20.684+00:00"/>
-        <source value="#eUDRx2x9dqaZITPV"/>
+        <versionId value="44"/>
+        <lastUpdated value="2022-03-08T01:23:55.663+00:00"/>
+        <source value="#c9M7vScR3m6Tsd85"/>
     </meta>
-    <url value="http://homeCovid.com/fhir/structuredefinition/LabObsHomeCovid"/>
+    <url value="https://fhir.org/fhir/us/home-lab-report/StructureDefinition/LabObsHomeCovid"/>
     <version value="1.0.0"/>
     <name value="CovidAtHomeTest"/>
     <title value="Covid 19 At-Home Laboratory Test Result"/>

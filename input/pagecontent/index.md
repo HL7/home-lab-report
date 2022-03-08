@@ -50,10 +50,6 @@ Data standards can support two workflows. In the first, an App negotiates indivi
 
 
 
-
-
-
-
 ### Authors
 
 <table>
@@ -79,6 +75,10 @@ Data standards can support two workflows. In the first, an App negotiates indivi
 <tr>
 <td>Association of Public Health Laboratories</td>
 <td><a href="https://www.aphl.org/Pages/default.aspx" target="_new">https://www.aphl.org/Pages/default.aspx</a></td>
+</tr>
+<tr>
+<td>HL7 International - Orders and Observations</td>
+<td><a href="http://www.hl7.org/Special/committees/orders" target="_new">http://www.hl7.org/Special/committees/orders</a></td>
 </tr>
 </tbody>
 </table>

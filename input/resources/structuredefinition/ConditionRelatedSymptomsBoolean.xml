@@ -3,17 +3,17 @@
     xmlns="http://hl7.org/fhir">
     <id value="ConditionRelatedSymptomsBoolean"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-03-24T23:35:29.426+00:00"/>
-        <source value="#vg5s4Xbq9rwnngSE"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-03-08T01:19:40.836+00:00"/>
+        <source value="#GAmGKJsM8A1iDHdH"/>
     </meta>
-    <url value="http://homeCovid.com/fhir/structuredefinition/ConditionRelatedSymptomsBoolean"/>
+    <url value="https://fhir.org/fhir/us/home-lab-report/StructureDefinition/Observation-condition-related-symptoms-boolean"/>
     <version value="1.0.0"/>
-    <name value="ConditionRelatedSymptomsBoolean"/>
-    <title value="Covid 19 Related Symptoms Present Boolean"/>
+    <name value="ObservationConditionRelatedSymptomsPresentBoolean"/>
+    <title value="Observation - Covid 19 Related Symptoms Present Boolean"/>
     <status value="active"/>
     <publisher value="Namaste Informatics"/>
-    <description value="This profile contrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to presence of symptoms."/>
+    <description value="This profile constrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to presence of symptoms."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
