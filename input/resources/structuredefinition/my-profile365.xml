@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="my-profile365"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-01-03T19:42:02.807+00:00"/>
+        <source value="#mphrHFrxbYhBKmxh"/>
+    </meta>
+    <url value="http://test.com/fhir/structuredefinition/my-profile"/>
+    <name value="Jmansilla"/>
+    <title value="jmansilla"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Patient"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Patient">
+            <path value="Patient"/>
+        </element>
+        <element id="Patient.identifier">
+            <path value="Patient.identifier"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Patient.gender">
+            <path value="Patient.gender"/>
+            <min value="1"/>
+        </element>
+    </differential>
+</StructureDefinition>

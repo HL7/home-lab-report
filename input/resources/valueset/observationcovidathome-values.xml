@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="observationcovidathome-values"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-03-11T00:45:45.558+00:00"/>
+        <source value="#LgMU79AAbx4JwkIf"/>
+    </meta>
+    <url value="http://hl7.org/fhir/ValueSet/observationcovidathome-values"/>
+    <version value="1"/>
+    <name value="covidathomevalues"/>
+    <title value="Covid At Home Result Values"/>
+    <status value="draft"/>
+    <description value="This set of values contains SNOMED-CT concepts representing typical Covid at home lab test results"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <version value=" 2020-09"/>
+            <concept>
+                <code value="260373001"/>
+                <display value="Detected"/>
+            </concept>
+            <concept>
+                <code value="260415000"/>
+                <display value="Not Detected"/>
+            </concept>
+            <concept>
+                <code value="455371000124106"/>
+                <display value="Invalid"/>
+            </concept>
+            <concept>
+                <code value="125154007"/>
+                <display value="Specimen unsatisfactory for evaluation"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

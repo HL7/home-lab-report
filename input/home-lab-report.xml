@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="home-lab-report"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-08T00:07:03.241+00:00"/>
+        <source value="#yJIuFIn2wWw5C9s5"/>
+    </meta>
+    <url value="http://homeCovid.com/fhir/implementationguide/homeCovid"/>
+    <version value="0.1.0"/>
+    <name value="Covid19atHomeTest"/>
+    <title value="Covid 19 At-Home Test Report"/>
+    <status value="draft"/>
+    <publisher value="Namaste Informatics"/>
+    <contact>
+        <name value="NIBIB-Interagency Project Team"/>
+        <telecom>
+            <system value="email"/>
+            <value value="krishna.Juluru@pif.gov"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Gay Dolin MSN RN (Namaste Informatics)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="gdolin@NamasteInformatics.com"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="CareEvolution"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://careevolution.com/"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Association of Public Health Laboratories"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.aphl.org/Pages/default.aspx"/>
+        </telecom>
+    </contact>
+    <description value="|IG Characteristic  | 	Value |&#xA;|------------------------------------------------------|--------------------------------------------|&#xA;|**FHIR Version:** |	FHIR R4 |&#xA;|**IG Realm:** |	US |&#xA;|**IG Type:** |	Draft test non balloted |&#xA;|**Exchange Methods:** |	RESTfulAPI, Messages, Transactions,  Tasks |&#xA;|**IG Note:** |	This Non-Ballotted non-HL7, HL7 FHIR Guide utilizes and adopts guidance or profiles developed in the US Core FHIR&amp;reg; Implementation Guide. This FHIR IG has narrative pages describing the HL7 V2 Message for At-Home testing and provides some example messages. Presently public health departments usually only can handle and store HL7 V2|&#xA;{:.table-striped}&#xA;&#xA;|IG Dependencies         |  IG Code     	| Version                  	|&#xA;|----------------------------------|-------------------------|---------------|&#xA;| HL7 FHIR US Core           	|  [US Core](https://www.hl7.org/fhir/us/core/)            	| Version 3.1.1|&#xA;{:.table-striped}&#xA;&#xA;&#xA;### Background&#xA;&#xA;Point-of-care (POC) and at-home tests offer increased accessibility to needed diagnostic solutions during a pandemic. Test results have value to the individual taking the tests and also to public health authorities responsible for coordinating a regional and national response. Digital platforms are being developed that allow individual test results, with permission of the individual, to be captured, organized, and transmitted to public health systems. Test manufacturers, working in partnership with these digital platforms, are seeking guidance on where to send test results. With multiple tests already entering the market, there is a need for a unified strategy on data flow of test results from the apps to downstream systems. A national data exchange standard should be supported that guides data exchange from test results residing on individual users’ digital test applications to public health authorities, at both the federal and regional levels.  &#xA;&#xA;### Introduction&#xA;&#xA;This draft guide constrains the [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use for transmitting home-covid test results to local, state, territorial and federal health agencies. It is an experimental basic guide to be used in real world testing. It was developed in a collaberative project with the NIH/NIBIB, ONC, a vendor manufacturer of diagnostic healthcare products that makes one of the FDA approved home test kits and an App developer - who is a leading provider of secure interoperability solutions. The intention of this guide is to assist developers in producing and sending standardized FHIR covid test result data perfomed at home. FHIRs eases app development and US Core's is in a rapid adoption curve. This guide was created with constrained timelines and as such will point to already existing US Core Guidance and other guidance with respect to FHIR Parameters, FHIR operations and RESTful and SMART on FHIR information.&#xA;It is also understood that, in general, public health agencies are at present primarily prepared to only receive V2 messages. The App developer is poised to transform this to V2 messages. In addition, as a parallel effort, a V2 data table has been developed for [COVID At Home Test Data Fields](https://nih.sharepoint.com/sites/NIBIB-InteragencyCOVIDTestResultDataFlow/SitePages/COVID-At-Home-Test-Data-Fields.aspx). &lt;-- This link is to be updated to a public link.&#xA;&#xA;**Please note** : This initial guide is a strawman and framework for future work. As such, most referenced resources are not constrained into profiles specific for the Covid-at-Home use case. Comments will be included in the [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) element text fields in some cases highlighting important items that should be included in the referenced resource.&#xA;&#xA;#### US Core Laboratory Report vs. US Core Diagnostic Report&#xA;&#xA;The [US Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) is intended to record or update single laboratory results (though it can also contain component results). An At-Home Covid Test and Result is a &quot;one at a time&quot; test that is performed and resulted.  The [US Core Diagnostic Report Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) is used to group and summarize labs by reference. Public health agencies in most case today can only receive and record Hl7 V2 messages. The V2 Lab Report message, by consensus, has been mapped to Diagnostic Report. Therefore, this draft guide will leverage [US Core Diagnostic Report Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) to send this single result. In addition, it will be necessary to leverage the SupportingInfo extension to hold answers to the questions patients are asked by the app when recording or uploading their test results.&#xA;&#xA;### Workflow&#xA;&#xA;The process starts out when a patient purchases an over the counter (OTC) test or receives and ordered at home test. The patient interacts with a Covid at Home app. The test result is then either:&#xA;* Manually entered&#xA;* A mobile device app scans an analyzes the strip and captures demographic patient data.&#xA;&#xA;A single patient may run more than one test. Each test result is a new interaction with the App.&#xA;The patient is asked questions by the app, such as presence or absence of Covid-19 like symptoms. The answers are recorded in the App. The questions and answers are considered to be supporting information and similar to, but not the same as &quot;Ask at Order Entry&quot; (AOE) questions by lab standards experts even because:&#xA;* There may not be an order&#xA;* The answers to the questions do not affect the interpretation of the postive or negative result&#xA;It was determined that for public health department's receiving and storing data, it is best to be consistent and represent this information with the supportingInformation FHIR Extension.&#xA;In this initial test implementation - whether the test is an ordered test or an OTC test - the app is not going to have access to the order details. Therefore, the ServiceEvent for the order will be available for use, but will not be constrained in this IG until later on in the project.&#xA;&#xA;Data standards can support two workflows. In the first, an App negotiates individual relationships with the federal and state public health agencies. Establishing these individual relationships can be burdensome. In a second workflow, an App negotiates relationships with a few data hubs, which then relay the test results to federal and state public health agencies with whom they have previously established relationships. This reduces the burden on the App manufacturer. App manufacturers may choose to partner with a hub maintained by a third-party to simplify internal operations. &#xA;&#xA;#### Covid-At-Home Workflow&#xA;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;img src=&quot;CovidAtHomeworkflow.png&quot; /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&#xA;&#xA;&#xA;"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166:-2"/>
+            <code value="US"/>
+            <display value="United States"/>
+        </coding>
+        <text value="United States"/>
+    </jurisdiction>
+    <packageId value="fhir.us.NIBIBHC1"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn>
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="3.1.1"/>
+    </dependsOn>
+    <definition>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/LabObsHomeCovid"/>
+                <display value="Covid 19 At-Home Laboratory Test Result"/>
+            </reference>
+            <name value="Covid 19 At-Home Laboratory Test Result"/>
+            <description value="This profile constrains US Core Laboratory Result Observation to Covid At Home Tests"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/observationcovidathome-codes"/>
+                <display value="Covid At Home Tests"/>
+            </reference>
+            <name value="Covid At Home Tests"/>
+            <description value="This set of values contains Covid 19 LOINC concepts that are appropriate for at-home tests"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/observationcovidathome-values"/>
+                <display value="Covid At Home Result Values"/>
+            </reference>
+            <name value="Covid At Home Result Values"/>
+            <description value="This set of values contains SNOMED-CT concepts representing typical Covid at home lab test results"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/at-home-covid-example-123"/></reference>
+            <name value="Covid At Home Lab Test Result Positive Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://homeCovid.com/fhir/structuredefinition/LabObsHomeCovid"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DiagRepHomeCovid"/>
+                <display value="DiagRepHomeCovid"/>
+            </reference>
+            <name value="Covid At Home FHIR Diagnostic Report for a Covid Laboratory Result"/>
+            <description value="This profile constrains US Core Diagnostic Report for Laboratory Results to Covid At Home Tests"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/at-home-covid-diagnosticReport-122"/></reference>
+            <name value="Covid 19 at Home Diagnostic Report Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://homeCovid.com/fhir/structuredefinition/DiagRepHomeCovid"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/YesNoUnkSNOMED"/>
+                <display value="Yes No Unknown SCT"/>
+            </reference>
+            <name value="Yes No Unknown SCT"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ConditionRelatedSymptomsBoolean"/>
+                <display value="ConditionRelatedSymptomsBoolean"/>
+            </reference>
+            <name value="ConditionRelatedSymptomsBoolean"/>
+            <description value="This profile contrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to presence of symptoms."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DateTimeSymptomOnset"/>
+                <display value="DateTimeSymptomOnset"/>
+            </reference>
+            <name value="DateTimeSymptomOnset"/>
+            <description value="This Profile constrains FHIR Observation to a simple observation asking for date and time of symptom onset."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/SupInfoSymptoms"/>
+                <display value="SupInfoSymptoms"/>
+            </reference>
+            <name value="SupInfoSymptoms"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/date-symponset"/></reference>
+            <name value="Supporting Information symptom Onset Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://homeCovid.com/fhir/structuredefinition/DateTimeSymptomOnset"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/symp-presAbsent"/></reference>
+            <name value="Supporting Information Symptom Presence  Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://homeCovid.com/fhir/structuredefinition/ConditionRelatedSymptomsBoolean"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/my-profile365"/>
+                <display value="Jmansilla"/>
+            </reference>
+            <name value="jmansilla"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <page>
+            <nameUrl value="index.html"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
+            <page>
+                <nameUrl value="guidance.html"/>
+                <title value="Guidance"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="hl7_v2_fields_and_otc_example_message.html"/>
+                <title value="HL7 V2 Fields and OTC Example Message"/>
+                <generation value="markdown"/>
+                <page>
+                    <nameUrl value="at_home_testing_over_the_counter_purchase_v2_example.html"/>
+                    <title value="At Home Testing Over the Counter Purchase V2 Example"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="at_home_testing_with_prescription_v2_example.html"/>
+                    <title value="At Home Testing with Prescription V2 Example"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>
+        </page>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
+        </parameter>
+    </definition>
+</ImplementationGuide>

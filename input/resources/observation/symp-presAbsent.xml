@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="symp-presAbsent"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-25T02:11:59.823+00:00"/>
+        <source value="#tCVr3NMEiPmP94EA"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+                <b> Generated Narrative with Details</b>
+            </p>
+            <p>
+                <b> id</b> : symp-presAbsent
+            </p>
+            <p>
+                <b> status</b> : final
+            </p>
+            <p>
+                <b> code</b> : Whether the patient has symptoms related to condition of interest 
+                <span> (Details : {LOINC code '95419-8' = 'Whether the patient has symptoms related to condition of interest' (Covid 19)</span>
+            </p>
+            <p>
+                <b> subject</b> : 
+                <a> Patricia Noelle</a>
+            </p>
+            <p>
+                <b> effective</b> : March 24, 2021
+            </p>
+            <p>
+                <b> value</b> :Yes
+            </p>
+        </div>
+    </text>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="95419-8"/>
+            <display value="Whether the patient has symptoms related to condition of interest"/>
+        </coding>
+        <text value="Whether the patient has symptoms related to Covid 19"/>
+    </code>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+    </subject>
+    <effectiveDateTime value="2021-03-24"/>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="373066001"/>
+            <display value="Yes (Qualifer Value)"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

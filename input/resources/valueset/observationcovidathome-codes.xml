@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="observationcovidathome-codes"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-03-22T23:53:32.530+00:00"/>
+        <source value="#zrXm3w6EGhvBHt8a"/>
+    </meta>
+    <url value="http://hl7.org/fhir/ValueSet/observationcovidathome-codes"/>
+    <identifier>
+        <use value="official"/>
+        <system value="LOINC"/>
+    </identifier>
+    <version value="1"/>
+    <name value="CovidAtHomeTests"/>
+    <title value="Covid At Home Tests"/>
+    <status value="draft"/>
+    <description value="This set of values contains Covid 19 LOINC concepts that are appropriate for at-home tests"/>
+    <purpose value="The intent of this value set is to provide a subset of LOINC lab covid 19 for the types of tests used in the home"/>
+    <compose>
+        <inactive value="false"/>
+        <include>
+            <system value="http://loinc.org"/>
+            <version value="2.69"/>
+            <concept>
+                <code value="96119-3"/>
+                <display value="SARS-CoV-2 (COVID-19) Ag [Presence] in Upper respiratory specimen by Immunoassay"/>
+            </concept>
+            <concept>
+                <code value="94558-4"/>
+                <display value="SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"/>
+            </concept>
+            <concept>
+                <code value="95209-3"/>
+                <display value="SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"/>
+            </concept>
+            <concept>
+                <code value="95409-9"/>
+                <display value="SARS-CoV-2 (COVID-19) N gene [Presence] in Nose by NAA with probe detection"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="date-symponset"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-03-25T01:53:46.481+00:00"/>
+        <source value="#trhUEHZ499CUu3vU"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+                <b> Generated Narrative with Details</b>
+            </p>
+            <p>
+                <b> id</b> : date-symponset
+            </p>
+            <p>
+                <b> status</b> : final
+            </p>
+            <p>
+                <b> code</b> : Date of Symptoms onset 
+                <span> (Details : {LOINC code '65222-2' = 'Date and time of Covid 19 symptom onset</span>
+            </p>
+            <p>
+                <b> subject</b> : 
+                <a> Patient/pat2</a>
+            </p>
+            <p>
+                <b> effective</b> : March 24, 2021
+            </p>
+            <p>
+                <b> value</b> : March 22, 2021
+            </p>
+        </div>
+    </text>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="65222-2"/>
+            <display value="Date and time of symptom onset"/>
+        </coding>
+        <text value="Date and time of Covid 19 symptom onset"/>
+    </code>
+    <subject>
+        <reference value="Patient/cc-pat-pnoelle"/>
+    </subject>
+    <effectiveDateTime value="2021-03-24"/>
+    <valueDateTime value="2021-03-22"/>
+</Observation>

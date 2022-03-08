@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="DiagRepHomeCovid"/>
+    <meta>
+        <versionId value="26"/>
+        <lastUpdated value="2021-03-25T00:18:45.380+00:00"/>
+        <source value="#R6ViT36XOOL9RJqx"/>
+    </meta>
+    <url value="http://homeCovid.com/fhir/structuredefinition/DiagRepHomeCovid"/>
+    <version value="1.0.0"/>
+    <name value="DiagRepHomeCovid"/>
+    <title value="Covid At Home FHIR Diagnostic Report for a Covid Laboratory Result"/>
+    <status value="active"/>
+    <publisher value="Namaste Informatics"/>
+    <description value="This profile constrains US Core Diagnostic Report for Laboratory Results to Covid At Home Tests"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="DiagnosticReport"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="DiagnosticReport">
+            <path value="DiagnosticReport"/>
+        </element>
+        <element id="DiagnosticReport.id">
+            <path value="DiagnosticReport.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.meta">
+            <path value="DiagnosticReport.meta"/>
+            <short value="The Meta.source SHALL replicate and hold the App ID. It is known that App IDs are typically managed and housed in the App Launch. Care will need to be taken so that these IDs match"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.meta.id">
+            <path value="DiagnosticReport.meta.id"/>
+            <short value="App ID will likely be combination of ID + versionID"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.meta.versionId">
+            <path value="DiagnosticReport.meta.versionId"/>
+            <short value="App ID will likely be combination of ID + versionID"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension">
+            <path value="DiagnosticReport.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="DiagnosticReport.extension:supportingInformationSymptomPresence">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="supportingInformationSymptomPresence"/>
+            <short value="The supportingInformation Extension will house answers the patient supplied to questions asked by the Covid at home App"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://homeCovid.com/fhir/structuredefinition/ConditionRelatedSymptomsBoolean"/>
+            </type>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:supportingInformationSymptomOnset">
+            <path value="DiagnosticReport.extension"/>
+            <sliceName value="supportingInformationSymptomOnset"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://homeCovid.com/fhir/structuredefinition/DateTimeSymptomOnset"/>
+            </type>
+            <fixedUri value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.identifier">
+            <path value="DiagnosticReport.identifier"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.status">
+            <path value="DiagnosticReport.status"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="final"/>
+        </element>
+        <element id="DiagnosticReport.code">
+            <path value="DiagnosticReport.code"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="This set of value contains LOINC codes appropriate for and currently used for at home covid testa"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/observationcovidathome-codes"/>
+            </binding>
+        </element>
+        <element id="DiagnosticReport.effective[x]">
+            <path value="DiagnosticReport.effective[x]"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <constraint>
+                <key value="eJXl1xkh"/>
+                <severity value="warning"/>
+                <human value="The effectiveTime SHALL be precise to at least the minute and SHALL include a time zone offset. For example YYYY-MM-DDTHH:mm+/-HH:NN"/>
+            </constraint>
+        </element>
+        <element id="DiagnosticReport.result">
+            <path value="DiagnosticReport.result"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://homeCovid.com/fhir/structuredefinition/LabObsHomeCovid"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition>

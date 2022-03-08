@@ -1,0 +1,18 @@
+{
+	"list": [
+		{
+			"version": "current",
+			"path": "https://build.fhir.org/ig/home-lab-report",
+			"desc": "",
+			"fhirversion": "4.0.1",
+			"date": "",
+			"sequence": "",
+			"status": "ci-build",
+			"current": true
+		}
+	],
+	"package-id": "hl7.fhir.us.home-lab-report",
+	"title": "At-Home Point of Care Test Report",
+	"canonical": "https://fhir.org/fhir/us/home-lab-report",
+	"category": "Orders and Observations"
+}
