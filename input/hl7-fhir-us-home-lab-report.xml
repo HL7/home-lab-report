@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-08T01:37:37.292+00:00"/>
-        <source value="#rQ7DoTpTHSjTVQDD"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-03-08T01:58:15.681+00:00"/>
+        <source value="#7SA1ElYRAdQELEjz"/>
     </meta>
     <url value="https://fhir.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -162,14 +162,6 @@
             <name value="Supporting Information Symptom Presence  Example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://homeCovid.com/fhir/structuredefinition/ConditionRelatedSymptomsBoolean"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/my-profile365"/>
-                <display value="Jmansilla"/>
-            </reference>
-            <name value="jmansilla"/>
-            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
