@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="DateTimeSymptomOnset"/>
+    <id value="Observation-date-time-symptom-onset"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-08T01:22:32.417+00:00"/>
-        <source value="#pudHvSHBlgvTboXr"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-23T06:21:32.263+00:00"/>
+        <source value="#KfKA1AoGhJKvFgdL"/>
     </meta>
-    <url value="https://fhir.org/fhir/us/home-lab-report/StructureDefinition/DateTimeSymptomOnset"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-date-time-symptom-onset"/>
     <version value="1.0.0"/>
-    <name value="DateTimeSymptomOnset"/>
-    <title value="Date Time Covid Symptom Onset"/>
+    <name value="ObservationDateTimeSymptomOnset"/>
+    <title value="Observation - Date Time Symptom Onset"/>
     <status value="active"/>
-    <publisher value="Namaste Informatics"/>
+    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This Profile constrains FHIR Observation to a simple observation asking for date and time of symptom onset."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

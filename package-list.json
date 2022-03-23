@@ -13,6 +13,6 @@
 	],
 	"package-id": "hl7.fhir.us.home-lab-report",
 	"title": "At-Home Point of Care Test Report",
-	"canonical": "https://fhir.org/fhir/us/home-lab-report",
+	"canonical": "http://hl7.org/fhir/us/home-lab-report",
 	"category": "Orders and Observations"
 }

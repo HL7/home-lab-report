@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="DiagRepHomeCovid"/>
+    <id value="DiagnosticReport-covid-home-lab-results"/>
     <meta>
-        <versionId value="27"/>
-        <lastUpdated value="2022-03-08T01:22:30.191+00:00"/>
-        <source value="#WsynrFusN1q54Nmr"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-23T06:21:10.059+00:00"/>
+        <source value="#soeeRWefTA0P7Moc"/>
     </meta>
-    <url value="https://fhir.org/fhir/us/home-lab-report/StructureDefinition/DiagRepHomeCovid"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
     <version value="1.0.0"/>
-    <name value="DiagRepHomeCovid"/>
-    <title value="Covid At Home FHIR Diagnostic Report for a Covid Laboratory Result"/>
+    <name value="DiagnosticReportCovidHomeLabResults"/>
+    <title value="DiagnosticReport - Covid At Home Lab Results"/>
     <status value="active"/>
-    <publisher value="Namaste Informatics"/>
+    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This profile constrains US Core Diagnostic Report for Laboratory Results to Covid At Home Tests"/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

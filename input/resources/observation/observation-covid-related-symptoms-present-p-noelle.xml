@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="symp-presAbsent"/>
+    <id value="observation-covid-related-symptoms-present-p-noelle"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2021-03-25T02:11:59.823+00:00"/>
-        <source value="#tCVr3NMEiPmP94EA"/>
+        <lastUpdated value="2022-03-23T06:29:24.690+00:00"/>
+        <source value="#LxMLv7nY8kvuyAem"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-related-symptoms-present"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -16,23 +17,29 @@
             </p>
             <p>
                 <b> id</b> : symp-presAbsent
+            
             </p>
             <p>
                 <b> status</b> : final
+            
             </p>
             <p>
                 <b> code</b> : Whether the patient has symptoms related to condition of interest 
+                
                 <span> (Details : {LOINC code '95419-8' = 'Whether the patient has symptoms related to condition of interest' (Covid 19)</span>
             </p>
             <p>
                 <b> subject</b> : 
+                
                 <a> Patricia Noelle</a>
             </p>
             <p>
                 <b> effective</b> : March 24, 2021
+            
             </p>
             <p>
                 <b> value</b> :Yes
+            
             </p>
         </div>
     </text>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport
     xmlns="http://hl7.org/fhir">
-    <id value="at-home-covid-diagnosticReport-122"/>
+    <id value="diagnosticreport-covid-home-lab-results-p-noelle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-03-25T19:54:19.703+00:00"/>
-        <source value="#SQUty46woQcKrBjI"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-23T06:24:42.309+00:00"/>
+        <source value="#7TCwsVbzVgIftj7Z"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -15,7 +15,9 @@
             <h2>
                 <span title="Codes: {http://loinc.org 95209-3}">SARS-CoV+SARS-CoV-2 (COVID-19) Ag
           [Presence] in Respiratory specimen by Rapid immunoassay</span> (
+                
                 <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) 
+            
             </h2>
             <table class="grid">
                 <tr>
@@ -23,6 +25,7 @@
                     <td>
                         <b>Patricia Noelle </b> BirthDate: 1987-02-20 ( Medical Record Number: 1032702
             (USUAL))
+                    
                     </td>
                 </tr>
                 <tr>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="at-home-covid-example-123"/>
+    <id value="observation-covid-home-lab-test-result-p-noelle"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-12T04:18:00.469+00:00"/>
-        <source value="#Fmnr8ErYO3k5PzTB"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-23T06:27:57.509+00:00"/>
+        <source value="#NqpfarBDX4C7A6Ie"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -18,30 +18,37 @@
             <p/>
             <p>
                 <b>category</b>: 
+                
                 <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span>
             </p>
             <p>
                 <b>code</b>: 
+                
                 <span title="Codes: {http://loinc.org 95209-3}">SARS-CoV+SARS-CoV-2 (COVID-19)
           Ag [Presence] in Respiratory specimen by Rapid immunoassay</span>
             </p>
             <p>
                 <b>subject</b>: 
+                
                 <a href="Patient-example.html">Patricia Noelle. Generated Summary: Medical Record
           Number: 1032702 (USUAL); active; Patricia Noelle , Amy V. Baxter ; Phone: 555-555-5555,
           pnoelle@example.com; gender: female; birthDate: 1987-02-20</a>
             </p>
             <p>
                 <b>Date:</b>: 2021-03-10
+            
             </p>
             <p>
                 <b>value</b>: Detected
+            
             </p>
             <p>
                 <b>Speciem ID</b>: MLD45-Z4-1234
+            
             </p>
             <p>
                 <b>UDI Device ID</b>: 30014613339373
+            
             </p>
         </div>
     </text>

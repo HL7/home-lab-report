@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="ConditionRelatedSymptomsBoolean"/>
+    <id value="Observation-covid-related-symptoms-present"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-08T01:19:40.836+00:00"/>
-        <source value="#GAmGKJsM8A1iDHdH"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-23T06:21:21.057+00:00"/>
+        <source value="#Fw5LDhQtLfBhZtQL"/>
     </meta>
-    <url value="https://fhir.org/fhir/us/home-lab-report/StructureDefinition/Observation-condition-related-symptoms-boolean"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-related-symptoms-present"/>
     <version value="1.0.0"/>
-    <name value="ObservationConditionRelatedSymptomsPresentBoolean"/>
-    <title value="Observation - Covid 19 Related Symptoms Present Boolean"/>
+    <name value="ObservationCovidRelatedSymptomsPresent"/>
+    <title value="Observation - Covid 19 Related Symptoms Present"/>
     <status value="active"/>
-    <publisher value="Namaste Informatics"/>
+    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This profile constrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to presence of symptoms."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
