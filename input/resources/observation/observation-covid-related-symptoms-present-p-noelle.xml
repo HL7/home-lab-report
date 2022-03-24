@@ -3,46 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-covid-related-symptoms-present-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-23T06:29:24.690+00:00"/>
-        <source value="#LxMLv7nY8kvuyAem"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-03-24T04:54:15.836+00:00"/>
+        <source value="#1krawyqvSZTfNEjp"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-related-symptoms-present"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b> Generated Narrative with Details</b>
-            </p>
-            <p>
-                <b> id</b> : symp-presAbsent
-            
-            </p>
-            <p>
-                <b> status</b> : final
-            
-            </p>
-            <p>
-                <b> code</b> : Whether the patient has symptoms related to condition of interest 
-                
-                <span> (Details : {LOINC code '95419-8' = 'Whether the patient has symptoms related to condition of interest' (Covid 19)</span>
-            </p>
-            <p>
-                <b> subject</b> : 
-                
-                <a> Patricia Noelle</a>
-            </p>
-            <p>
-                <b> effective</b> : March 24, 2021
-            
-            </p>
-            <p>
-                <b> value</b> :Yes
-            
-            </p>
-        </div>
-    </text>
     <status value="final"/>
     <code>
         <coding>
@@ -53,14 +18,15 @@
         <text value="Whether the patient has symptoms related to Covid 19"/>
     </code>
     <subject>
-        <reference value="Patient/cc-pat-pnoelle"/>
+        <reference value="Patient/us-core-patient-patricia-noelle"/>
+        <display value="Patricia Noelle"/>
     </subject>
     <effectiveDateTime value="2021-03-24"/>
     <valueCodeableConcept>
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="373066001"/>
-            <display value="Yes (Qualifer Value)"/>
+            <display value="Yes"/>
         </coding>
     </valueCodeableConcept>
 </Observation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-organization-quidel-corporation"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-24T05:33:56.426+00:00"/>
+        <source value="#fmPHXoko59FiYwfG"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+    </meta>
+    <active value="true"/>
+    <name value="Quidel Corporation"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="+1(858)552-1100"/>
+    </telecom>
+</Organization>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-covid-home-lab-results"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-23T06:21:10.059+00:00"/>
-        <source value="#soeeRWefTA0P7Moc"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-03-24T06:18:26.500+00:00"/>
+        <source value="#0X5PPl1VEFithamR"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
     <version value="1.0.0"/>
@@ -56,6 +56,7 @@
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.extension:supportingInformationSymptomPresence">
             <path value="DiagnosticReport.extension"/>
@@ -65,10 +66,16 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <targetProfile value="http://homeCovid.com/fhir/structuredefinition/ConditionRelatedSymptomsBoolean"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:supportingInformationSymptomPresence.value[x]">
+            <path value="DiagnosticReport.extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-related-symptoms-present"/>
+            </type>
         </element>
         <element id="DiagnosticReport.extension:supportingInformationSymptomOnset">
             <path value="DiagnosticReport.extension"/>
@@ -77,10 +84,16 @@
             <max value="1"/>
             <type>
                 <code value="Extension"/>
-                <targetProfile value="http://homeCovid.com/fhir/structuredefinition/DateTimeSymptomOnset"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"/>
             </type>
-            <fixedUri value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="DiagnosticReport.extension:supportingInformationSymptomOnset.value[x]">
+            <path value="DiagnosticReport.extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-date-time-symptom-onset"/>
+            </type>
         </element>
         <element id="DiagnosticReport.identifier">
             <path value="DiagnosticReport.identifier"/>
@@ -99,7 +112,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="This set of value contains LOINC codes appropriate for and currently used for at home covid testa"/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/observationcovidathome-codes"/>
+                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-types"/>
             </binding>
         </element>
         <element id="DiagnosticReport.effective[x]">
@@ -119,7 +132,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://homeCovid.com/fhir/structuredefinition/LabObsHomeCovid"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
             </type>
             <mustSupport value="true"/>
             <binding>

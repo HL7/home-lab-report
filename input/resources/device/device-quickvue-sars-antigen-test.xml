@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Device
+    xmlns="http://hl7.org/fhir">
+    <id value="device-quickvue-sars-antigen-test"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-24T05:26:45.931+00:00"/>
+        <source value="#YeL9eOnEOUmca0bs"/>
+    </meta>
+    <udiCarrier>
+        <deviceIdentifier value="30014613339373"/>
+        <issuer value="GS1"/>
+    </udiCarrier>
+    <status value="active"/>
+    <manufacturer value="QUIDEL CORPORATION"/>
+    <expirationDate value="2022-11-20"/>
+    <lotNumber value="7654321D"/>
+    <serialNumber value="10987654d321"/>
+    <deviceName>
+        <name value="QuickVue® SARS Antigen Test"/>
+        <type value="user-friendly-name"/>
+    </deviceName>
+    <modelNumber value="20387"/>
+    <partNumber value="20387"/>
+    <type>
+        <text value="QuickVue® SARS Antigen Test"/>
+    </type>
+    <owner>
+        <reference value="Organization/us-core-organization-quidel-corporation"/>
+    </owner>
+</Device>

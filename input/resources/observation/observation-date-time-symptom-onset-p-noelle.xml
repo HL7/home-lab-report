@@ -3,46 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-date-time-symptom-onset-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-23T06:30:39.262+00:00"/>
-        <source value="#rnEy7k8GDrZcR2br"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-03-24T04:54:15.836+00:00"/>
+        <source value="#THM9F7RcEvapGVkc"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-date-time-symptom-onset"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b> Generated Narrative with Details</b>
-            </p>
-            <p>
-                <b> id</b> : date-symponset
-            
-            </p>
-            <p>
-                <b> status</b> : final
-            
-            </p>
-            <p>
-                <b> code</b> : Date of Symptoms onset 
-                
-                <span> (Details : {LOINC code '65222-2' = 'Date and time of Covid 19 symptom onset</span>
-            </p>
-            <p>
-                <b> subject</b> : 
-                
-                <a> Patient/pat2</a>
-            </p>
-            <p>
-                <b> effective</b> : March 24, 2021
-            
-            </p>
-            <p>
-                <b> value</b> : March 22, 2021
-            
-            </p>
-        </div>
-    </text>
     <status value="final"/>
     <code>
         <coding>
@@ -53,7 +18,8 @@
         <text value="Date and time of Covid 19 symptom onset"/>
     </code>
     <subject>
-        <reference value="Patient/cc-pat-pnoelle"/>
+        <reference value="Patient/us-core-patient-patricia-noelle"/>
+        <display value="Patricia Noelle"/>
     </subject>
     <effectiveDateTime value="2021-03-24"/>
     <valueDateTime value="2021-03-22"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-covid-related-symptoms-present"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-23T06:21:21.057+00:00"/>
-        <source value="#Fw5LDhQtLfBhZtQL"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-03-24T04:37:58.757+00:00"/>
+        <source value="#2a7K0r3OSoSpTS69"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-related-symptoms-present"/>
     <version value="1.0.0"/>
@@ -13,7 +13,7 @@
     <title value="Observation - Covid 19 Related Symptoms Present"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to presence of symptoms."/>
+    <description value="This profile constrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to indicate whether the patient currently has symptoms consistent with the condition or disease of interest."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -26,34 +26,14 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.code.coding">
-            <path value="Observation.code.coding"/>
-            <min value="1"/>
-            <max value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.code.coding.system">
-            <path value="Observation.code.coding.system"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedUri value="http://loinc.org"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.code.coding.code">
-            <path value="Observation.code.coding.code"/>
             <short value="Whether the patient has symptoms related to condition of interest"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedCode value="95419-8"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="95419-8"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
-        </element>
-        <element id="Observation.code.coding.display">
-            <path value="Observation.code.coding.display"/>
-            <fixedString value="Whether the patient has symptoms related to condition of interest"/>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -69,10 +49,13 @@
             <path value="Observation.value[x]"/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/YesNoUnkSNOMED"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/ValueSet-yes-no-unknown-snomed"/>
             </binding>
         </element>
     </differential>

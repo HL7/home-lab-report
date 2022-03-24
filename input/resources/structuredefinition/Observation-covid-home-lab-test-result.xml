@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-covid-home-lab-test-result"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-23T06:21:25.920+00:00"/>
-        <source value="#ZeUu2yOA0i49Top0"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-03-24T06:20:26.686+00:00"/>
+        <source value="#50WxFoaQnGqTvX0j"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
     <version value="1.0.0"/>
@@ -32,15 +32,15 @@
         <element id="Observation.meta">
             <path value="Observation.meta"/>
         </element>
-        <element id="Observation.status">
-            <path value="Observation.status"/>
-            <fixedCode value="final"/>
-        </element>
         <element id="Observation.meta.id">
             <path value="Observation.meta.id"/>
         </element>
         <element id="Observation.meta.versionId">
             <path value="Observation.meta.versionId"/>
+        </element>
+        <element id="Observation.status">
+            <path value="Observation.status"/>
+            <fixedCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -49,7 +49,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="This set of values contains Covid 19 LOINC concepts that are appropriate for at-home tests"/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/observationcovidathome-codes"/>
+                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-types"/>
             </binding>
         </element>
         <element id="Observation.effective[x]">
@@ -73,12 +73,12 @@
             <binding>
                 <strength value="required"/>
                 <description value="This set of values contains SNOMED CT concepts suitable for at home Covid test results"/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/observationcovidathome-values"/>
+                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-results"/>
             </binding>
         </element>
         <element id="Observation.specimen">
             <path value="Observation.specimen"/>
-            <short value="The Specimen SHALL be from at-home sample. "/>
+            <short value="The Specimen SHALL be from at-home sample."/>
             <definition value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <comment value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <min value="1"/>
@@ -86,7 +86,7 @@
         </element>
         <element id="Observation.specimen.id">
             <path value="Observation.specimen.id"/>
-            <short value="The referenced specimen SHALL contain a Specimen.identifier and a Specimen.identifier.assigner "/>
+            <short value="The referenced specimen SHALL contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <min value="1"/>
         </element>
         <element id="Observation.device">
@@ -99,7 +99,7 @@
         </element>
         <element id="Observation.device.id">
             <path value="Observation.device.id"/>
-            <short value=" The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search "/>
+            <short value=" The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
             <min value="1"/>
         </element>
         <element id="Observation.component">

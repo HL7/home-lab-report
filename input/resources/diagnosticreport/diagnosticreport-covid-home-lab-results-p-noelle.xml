@@ -3,85 +3,39 @@
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-covid-home-lab-results-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-23T06:24:42.309+00:00"/>
-        <source value="#7TCwsVbzVgIftj7Z"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-03-24T05:32:28.411+00:00"/>
+        <source value="#kWYeVfdHWGjYd1qA"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <h2>
-                <span title="Codes: {http://loinc.org 95209-3}">SARS-CoV+SARS-CoV-2 (COVID-19) Ag
-          [Presence] in Respiratory specimen by Rapid immunoassay</span> (
-                
-                <span title="Codes: {http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) 
-            
-            </h2>
-            <table class="grid">
-                <tr>
-                    <td>Subject</td>
-                    <td>
-                        <b>Patricia Noelle </b> BirthDate: 1987-02-20 ( Medical Record Number: 1032702
-            (USUAL))
-                    
-                    </td>
-                </tr>
-                <tr>
-                    <td>Date</td>
-                    <td>2021-03-10</td>
-                </tr>
-                <tr>
-                    <td>Reported</td>
-                    <td>2021-03-10 10:45:33 AM</td>
-                </tr>
-                <tr>
-                    <td>Supporting Information asked on patient interaction with App</td>
-                    <td>Do you have symptom related to Covid-19: Yes</td>
-                </tr>
-                <tr>
-                    <td>Supporting Information - asked on patient interaction with App</td>
-                    <td>When did your symptoms related to Covid-19 start?: 2021-MAR-22 </td>
-                </tr>
-            </table>
-            <p>
-                <b>Report Details</b>
-            </p>
-            <table class="grid">
-                <tr>
-                    <td>
-                        <b>Code</b>
-                    </td>
-                    <td>
-                        <b>Value</b>
-                    </td>
-                    <td>
-                        <b>Date</b>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="Observation-covid.html">
-                            <span title="Codes: {http://loinc.org 95209-3}">SARS-CoV+SARS-CoV-2 (COVID-19) Ag
-                [Presence] in Respiratory specimen by Rapid immunoassay</span>
-                        </a>
-                    </td>
-                    <td>Detected</td>
-                    <td>2021-03-10 10:45:33 AM</td>
-                </tr>
+            <div class="hapiHeaderText"> SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Status</td>
+                        <td>FINAL</td>
+                    </tr>
+                    <tr>
+                        <td>Issued</td>
+                        <td> 10 March 2021 00:45:33 </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </text>
     <extension url="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo">
         <valueReference>
-            <reference value="Observation/symp-presAbsent"/>
+            <reference value="Observation/observation-covid-related-symptoms-present-p-noelle"/>
             <display value="Whether the patient has symptoms related to condition of interest: Yes"/>
         </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo">
         <valueReference>
-            <reference value="Observation/date-symponset"/>
+            <reference value="Observation/observation-date-time-symptom-onset-p-noelle"/>
             <display value="Date and time of symptom onset: March 22, 2021"/>
         </valueReference>
     </extension>
@@ -101,17 +55,17 @@
         </coding>
     </code>
     <subject>
-        <reference value="Patient/cc-pat-pnoelle"/>
+        <reference value="Patient/us-core-patient-patricia-noelle"/>
         <display value="Patricia Noelle"/>
     </subject>
     <effectiveDateTime value="2021-03-10T11:45:33+11:00"/>
     <issued value="2021-03-10T11:45:33+11:00"/>
     <performer>
-        <reference value="Organization/acme-atHomeTest"/>
-        <display value="Acme Laboratory, Inc"/>
+        <reference value="Organization/us-core-organization-quidel-corporation"/>
+        <display value="Quidel Corporation"/>
     </performer>
     <result>
-        <reference value="Observation/at-home-covid-example-123"/>
+        <reference value="Observation/observation-covid-home-lab-test-result-p-noelle"/>
         <display value="SARS-CoV+SARS-CoV-2"/>
     </result>
 </DiagnosticReport>

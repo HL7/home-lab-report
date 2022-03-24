@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet
     xmlns="http://hl7.org/fhir">
-    <id value="observationcovidathome-values"/>
+    <id value="ValueSet-covid-home-lab-test-results"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-03-11T00:45:45.558+00:00"/>
-        <source value="#LgMU79AAbx4JwkIf"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-03-24T04:32:14.923+00:00"/>
+        <source value="#MTMmpYHWWiqAerA2"/>
     </meta>
-    <url value="http://hl7.org/fhir/ValueSet/observationcovidathome-values"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-results"/>
     <version value="1"/>
-    <name value="covidathomevalues"/>
-    <title value="Covid At Home Result Values"/>
+    <name value="ValueSetCovidHomeLabTestResults"/>
+    <title value="ValueSet - Covid Home Lab Test Results"/>
     <status value="draft"/>
-    <description value="This set of values contains SNOMED-CT concepts representing typical Covid at home lab test results"/>
+    <description value="This set of values contains SNOMED CT concepts representing typical Covid at home lab test results."/>
+    <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
-            <version value=" 2020-09"/>
             <concept>
                 <code value="260373001"/>
                 <display value="Detected"/>

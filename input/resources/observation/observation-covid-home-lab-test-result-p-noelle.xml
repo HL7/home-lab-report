@@ -3,55 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-covid-home-lab-test-result-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-23T06:27:57.509+00:00"/>
-        <source value="#NqpfarBDX4C7A6Ie"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-03-24T05:26:45.870+00:00"/>
+        <source value="#37XQGbyTE9y1niiB"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b>Generated Narrative</b>
-            </p>
-            <p/>
-            <p>
-                <b>category</b>: 
-                
-                <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span>
-            </p>
-            <p>
-                <b>code</b>: 
-                
-                <span title="Codes: {http://loinc.org 95209-3}">SARS-CoV+SARS-CoV-2 (COVID-19)
-          Ag [Presence] in Respiratory specimen by Rapid immunoassay</span>
-            </p>
-            <p>
-                <b>subject</b>: 
-                
-                <a href="Patient-example.html">Patricia Noelle. Generated Summary: Medical Record
-          Number: 1032702 (USUAL); active; Patricia Noelle , Amy V. Baxter ; Phone: 555-555-5555,
-          pnoelle@example.com; gender: female; birthDate: 1987-02-20</a>
-            </p>
-            <p>
-                <b>Date:</b>: 2021-03-10
-            
-            </p>
-            <p>
-                <b>value</b>: Detected
-            
-            </p>
-            <p>
-                <b>Speciem ID</b>: MLD45-Z4-1234
-            
-            </p>
-            <p>
-                <b>UDI Device ID</b>: 30014613339373
-            
-            </p>
-        </div>
-    </text>
     <status value="final"/>
     <category>
         <coding>
@@ -70,7 +26,7 @@
         <text value="SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"/>
     </code>
     <subject>
-        <reference value="Patient/cc-pat-pnoelle"/>
+        <reference value="Patient/us-core-patient-patricia-noelle"/>
         <display value="Patricia Noelle"/>
     </subject>
     <effectiveDateTime value="2020-03-10"/>
@@ -82,11 +38,11 @@
         </coding>
     </valueCodeableConcept>
     <specimen>
-        <reference value="Specimen/covid-example1-UR"/>
+        <reference value="Specimen/specimen-urine-p-noelle"/>
         <display value="UR Specimen ID: MLD45-Z4-1234"/>
     </specimen>
     <device>
-        <reference value="Device/QuickVueQuidelTest"/>
+        <reference value="Device/device-quickvue-sars-antigen-test"/>
         <display value="UDI Device ID: 30014613339373"/>
     </device>
 </Observation>
