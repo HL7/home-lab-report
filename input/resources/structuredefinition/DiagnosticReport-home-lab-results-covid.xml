@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="DiagnosticReport-covid-home-lab-results"/>
+    <id value="DiagnosticReport-home-lab-results-covid"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-24T06:18:26.500+00:00"/>
-        <source value="#0X5PPl1VEFithamR"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-03-24T07:05:19.209+00:00"/>
+        <source value="#Yq0EjNfKUQQdWsxZ"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results-covid"/>
     <version value="1.0.0"/>
-    <name value="DiagnosticReportCovidHomeLabResults"/>
-    <title value="DiagnosticReport - Covid At Home Lab Results"/>
+    <name value="DiagnosticReportHomeLabResultsCovid"/>
+    <title value="DiagnosticReport - Home Lab Results - Covid"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This profile constrains US Core Diagnostic Report for Laboratory Results to Covid At Home Tests"/>
@@ -132,7 +132,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
             </type>
             <mustSupport value="true"/>
             <binding>

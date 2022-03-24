@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DiagnosticReport
     xmlns="http://hl7.org/fhir">
-    <id value="diagnosticreport-covid-home-lab-results-p-noelle"/>
+    <id value="diagnosticreport-home-lab-results-covid-p-noelle"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-24T05:32:28.411+00:00"/>
-        <source value="#kWYeVfdHWGjYd1qA"/>
-        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-24T06:39:46.210+00:00"/>
+        <source value="#e8f3ne8MMm6hU7eF"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results-covid"/>
     </meta>
     <text>
         <status value="generated"/>

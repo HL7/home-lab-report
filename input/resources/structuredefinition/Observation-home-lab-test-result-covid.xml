@@ -1,46 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-covid-home-lab-test-result"/>
+    <id value="Observation-home-lab-test-result-covid"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-03-24T06:20:26.686+00:00"/>
-        <source value="#50WxFoaQnGqTvX0j"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-03-24T06:37:42.381+00:00"/>
+        <source value="#glOg8h0ylTaAh6uC"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
     <version value="1.0.0"/>
-    <name value="ObservationCovvidHomeLabTestResult"/>
-    <title value="Observation - Covid 19 At-Home Laboratory Test Result"/>
+    <name value="ObservationHomeLabTestResultCovid"/>
+    <title value="Observation - Home Lab Test Result - Covid"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains US Core Laboratory Result Observation to Covid At Home Tests"/>
+    <description value="This profile constrains the Observation - Home Lab Test Result profile to Covid At-Home Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab"/>
+    <baseDefinition value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
             <path value="Observation"/>
-        </element>
-        <element id="Observation.id">
-            <path value="Observation.id"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Observation.meta">
-            <path value="Observation.meta"/>
-        </element>
-        <element id="Observation.meta.id">
-            <path value="Observation.meta.id"/>
-        </element>
-        <element id="Observation.meta.versionId">
-            <path value="Observation.meta.versionId"/>
-        </element>
-        <element id="Observation.status">
-            <path value="Observation.status"/>
-            <fixedCode value="final"/>
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
@@ -51,15 +33,6 @@
                 <description value="This set of values contains Covid 19 LOINC concepts that are appropriate for at-home tests"/>
                 <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-types"/>
             </binding>
-        </element>
-        <element id="Observation.effective[x]">
-            <path value="Observation.effective[x]"/>
-            <short value="The effectiveTime SHALL be precise to at least the minute and SHALL include a time zone offset"/>
-            <min value="1"/>
-            <type>
-                <code value="dateTime"/>
-            </type>
-            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -78,7 +51,7 @@
         </element>
         <element id="Observation.specimen">
             <path value="Observation.specimen"/>
-            <short value="The Specimen SHALL be from at-home sample."/>
+            <short value="The Specimen SHALL be from at-home Covid sample."/>
             <definition value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <comment value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <min value="1"/>
@@ -91,20 +64,16 @@
         </element>
         <element id="Observation.device">
             <path value="Observation.device"/>
-            <label value="At home Covid test device -2"/>
-            <short value="The referenced device SHALL be an home covid test device."/>
+            <label value="At home Covid test device"/>
+            <short value="The referenced device SHALL be an home Covid test device."/>
             <definition value="The referenced device is an at home covid test device, The referenced device **SHALL** contain a Device.udiCarrier.deviceIdentifier. Please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search to find the device's UDI"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.device.id">
             <path value="Observation.device.id"/>
-            <short value=" The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
+            <short value="The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
             <min value="1"/>
-        </element>
-        <element id="Observation.component">
-            <path value="Observation.component"/>
-            <max value="0"/>
         </element>
     </differential>
 </StructureDefinition>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="46"/>
-        <lastUpdated value="2022-03-24T05:44:20.151+00:00"/>
-        <source value="#O7F0nGOQrCPE7jtP"/>
+        <versionId value="63"/>
+        <lastUpdated value="2022-03-24T07:04:01.466+00:00"/>
+        <source value="#5VUZdwlEv952P3EW"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -65,29 +65,49 @@
         <version value="4.1.0"/>
     </dependsOn>
     <definition>
+        <grouping id="framework-at-home-test-profiles">
+            <name value="Framework At-Home Test Profiles"/>
+            <description value="&quot;Framework&quot; profiles that describe the minimun requirements for At-Home test profiles. These profiles can be further constrained (e.g. Covid Specific At-Home Test Profiles) to describe further condition-specific requirements."/>
+        </grouping>
+        <grouping id="framework-at-home-test-examples">
+            <name value="Framework At-Home Test Examples"/>
+        </grouping>
+        <grouping id="covid-specifc-at-home-test-profiles">
+            <name value="Covid Specific At-Home Test Profiles"/>
+            <description value="Profiles that further constrain the &quot;framework&quot; profiles to be specific to Covid At-Home tests."/>
+        </grouping>
+        <grouping id="covid-specific-at-home-test-examples">
+            <name value="Covid Specific At-Home Test Examples"/>
+        </grouping>
+        <grouping id="participant-examples">
+            <name value="Participant Examples"/>
+        </grouping>
         <resource>
             <reference>
                 <reference value="Device/device-quickvue-sars-antigen-test"/></reference>
             <name value="Device - QuickVue SARS Antigen Test"/>
             <description value="Device - QuickVue SARS Antigen Test example"/>
             <exampleBoolean value="true"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
+                <reference value="StructureDefinition/DiagnosticReport-home-lab-results-covid"/>
                 <display value="DiagnosticReport - Covid At Home Lab Results"/>
             </reference>
-            <name value="DiagnosticReport - Covid At Home Lab Results"/>
+            <name value="DiagnosticReport - Home Lab Results - Covid"/>
             <description value="This profile constrains US Core Diagnostic Report for Laboratory Results to Covid At Home Tests"/>
             <exampleBoolean value="false"/>
+            <groupingId value="covid-specifc-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
-                <reference value="DiagnosticReport/diagnosticreport-covid-home-lab-results-p-noelle"/></reference>
-            <name value="DiagnosticReport - Covid At Home Lab Results - P Noelle"/>
-            <description value="DiagnosticReport - Covid At Home Lab Results: P Noelle example"/>
+                <reference value="DiagnosticReport/diagnosticreport-home-lab-results-covid-p-noelle"/></reference>
+            <name value="DiagnosticReport - Home Lab Results - Covid - P Noelle"/>
+            <description value="DiagnosticReport - Home Lab Results - Covid: P Noelle example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-covid-home-lab-results"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results-covid"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
@@ -99,12 +119,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-covid-home-lab-test-result"/>
-                <display value="Observation - Covid 19 At-Home Laboratory Test Result"/>
+                <reference value="StructureDefinition/Observation-home-lab-test-result"/>
+                <display value="Observation - At-Home Laboratory Test Result"/>
             </reference>
-            <name value="Observation - Covid 19 At-Home Laboratory Test Result"/>
-            <description value="This profile constrains US Core Laboratory Result Observation to Covid At Home Tests"/>
+            <name value="Observation - Home Lab Test Result"/>
+            <description value="This profile constrains the US Core Laboratory Result Observation to to At-Home Tests."/>
             <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -114,14 +135,16 @@
             <name value="Observation - Covid 19 Related Symptoms Present"/>
             <description value="This profile constrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to indicate whether the patient currently has symptoms consistent with the condition or disease of interest."/>
             <exampleBoolean value="false"/>
+            <groupingId value="covid-specifc-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-covid-home-lab-test-result-p-noelle"/></reference>
-            <name value="Observation - Covid Home Lab Test Result - P Noelle"/>
-            <description value="Observation - Covid Home Lab Test Result: P Noelle example"/>
+                <reference value="Observation/observation-home-lab-test-result-covid-p-noelle"/></reference>
+            <name value="Observation - Home Lab Test Result Covid - P Noelle"/>
+            <description value="Observation - Home Lab Test Result - Covid: P Noelle example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
@@ -130,6 +153,7 @@
             <description value="Observation - Covid Related Symptoms Present: P Noelle example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-related-symptoms-present"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
@@ -139,6 +163,7 @@
             <name value="Observation - Date Time Symptom Onset"/>
             <description value="This Profile constrains FHIR Observation to a simple observation asking for date and time of symptom onset."/>
             <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -147,15 +172,17 @@
             <description value="Observation - Date Time Symptom Onset: P Noelle example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-date-time-symptom-onset"/>
+            <groupingId value="framework-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Organization/us-core-organization-quidel-corporation"/>
-                <display value="Quidel Corporation"/>
+                <reference value="StructureDefinition/Observation-home-lab-test-result-covid"/>
+                <display value="Observation - Covid 19 At-Home Laboratory Test Result"/>
             </reference>
-            <name value="Quidel Corporation"/>
+            <name value="Observation - Home Lab Test Result"/>
+            <description value="This profile constrains the Observation - Home Lab Test Result profile to Covid At-Home Tests."/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            <groupingId value="framework-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -163,6 +190,17 @@
             <name value="Specimen - Urine - P Noelle"/>
             <description value="Specimen - Urine: P Noelle example"/>
             <exampleBoolean value="true"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/us-core-organization-quidel-corporation"/>
+                <display value="Quidel Corporation"/>
+            </reference>
+            <name value="US Core Organization - Quidel Corporation"/>
+            <description value="US Core Organization: Quidel Corporation example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>
@@ -170,6 +208,7 @@
             <name value="US Core Patient - Patricia Noelle"/>
             <description value="US Core Patient: Patricia Noelle example"/>
             <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <resource>
             <reference>

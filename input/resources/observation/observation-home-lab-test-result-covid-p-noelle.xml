@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-covid-home-lab-test-result-p-noelle"/>
+    <id value="observation-home-lab-test-result-covid-p-noelle"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-03-24T05:26:45.870+00:00"/>
-        <source value="#37XQGbyTE9y1niiB"/>
-        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-home-lab-test-result"/>
+        <versionId value="1"/>
+        <lastUpdated value="2022-03-24T06:40:12.531+00:00"/>
+        <source value="#wy4P1eqDQU2pweRe"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
     </meta>
     <status value="final"/>
     <category>
