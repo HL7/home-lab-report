@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="63"/>
-        <lastUpdated value="2022-03-24T07:04:01.466+00:00"/>
-        <source value="#5VUZdwlEv952P3EW"/>
+        <versionId value="64"/>
+        <lastUpdated value="2022-03-30T22:36:14.805+00:00"/>
+        <source value="#s19z9PQ2uzrHO0st"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -179,10 +179,10 @@
                 <reference value="StructureDefinition/Observation-home-lab-test-result-covid"/>
                 <display value="Observation - Covid 19 At-Home Laboratory Test Result"/>
             </reference>
-            <name value="Observation - Home Lab Test Result"/>
+            <name value="Observation - Home Lab Test Result - Covid"/>
             <description value="This profile constrains the Observation - Home Lab Test Result profile to Covid At-Home Tests."/>
             <exampleBoolean value="false"/>
-            <groupingId value="framework-at-home-test-profiles"/>
+            <groupingId value="covid-specifc-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
