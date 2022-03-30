@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="64"/>
-        <lastUpdated value="2022-03-30T22:36:14.805+00:00"/>
-        <source value="#s19z9PQ2uzrHO0st"/>
+        <versionId value="66"/>
+        <lastUpdated value="2022-03-30T22:45:54.831+00:00"/>
+        <source value="#FnkK6Qr4ht5uMxCT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -66,21 +66,21 @@
     </dependsOn>
     <definition>
         <grouping id="framework-at-home-test-profiles">
-            <name value="Framework At-Home Test Profiles"/>
+            <name value="Profiles: At-Home Test Framework"/>
             <description value="&quot;Framework&quot; profiles that describe the minimun requirements for At-Home test profiles. These profiles can be further constrained (e.g. Covid Specific At-Home Test Profiles) to describe further condition-specific requirements."/>
         </grouping>
         <grouping id="framework-at-home-test-examples">
-            <name value="Framework At-Home Test Examples"/>
+            <name value="Examples: At-Home Test Framework"/>
         </grouping>
         <grouping id="covid-specifc-at-home-test-profiles">
-            <name value="Covid Specific At-Home Test Profiles"/>
+            <name value="Profiles: At-Home Test Covid Specific"/>
             <description value="Profiles that further constrain the &quot;framework&quot; profiles to be specific to Covid At-Home tests."/>
         </grouping>
         <grouping id="covid-specific-at-home-test-examples">
-            <name value="Covid Specific At-Home Test Examples"/>
+            <name value="Examples: At-Home Test Covid Specific"/>
         </grouping>
         <grouping id="participant-examples">
-            <name value="Participant Examples"/>
+            <name value="Examples: Participant"/>
         </grouping>
         <resource>
             <reference>
@@ -172,7 +172,7 @@
             <description value="Observation - Date Time Symptom Onset: P Noelle example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-date-time-symptom-onset"/>
-            <groupingId value="framework-at-home-test-profiles"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
