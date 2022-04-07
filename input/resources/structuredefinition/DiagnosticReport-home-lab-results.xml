@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-home-lab-results"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-04-07T07:15:36.434+00:00"/>
-        <source value="#hwCJy8oQu2HCVQIc"/>
+        <versionId value="17"/>
+        <lastUpdated value="2022-04-07T23:52:52.338+00:00"/>
+        <source value="#cSvN200iDG5k889Y"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results"/>
     <version value="1.0.0"/>
@@ -13,7 +13,7 @@
     <title value="DiagnosticReport - Home Lab Results"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home Tests."/>
+    <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to COVID-19 At-Home Sample Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -82,6 +82,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-condition-related-symptoms-present"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.extension:supportingInformationSymptomOnset">
             <path value="DiagnosticReport.extension"/>
@@ -101,6 +102,7 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-date-time-symptom-onset"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.identifier">
             <path value="DiagnosticReport.identifier"/>

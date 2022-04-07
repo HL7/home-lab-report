@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-home-lab-test-result"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-04-07T06:15:36.481+00:00"/>
-        <source value="#9ZItE8wgVr3bwiU0"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-04-07T23:50:39.677+00:00"/>
+        <source value="#MvlbtyB63GauSLP4"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result"/>
     <version value="1.0.0"/>
@@ -13,7 +13,7 @@
     <title value="Observation - Home Lab Test Result"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the US Core Laboratory Result Observation to to At-Home Tests."/>
+    <description value="This profile constrains the US Core Laboratory Result Observation to At-Home Sample Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -73,11 +73,6 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Observation.specimen.id">
-            <path value="Observation.specimen.id"/>
-            <short value="The referenced specimen SHALL contain a Specimen.identifier and a Specimen.identifier.assigner"/>
-            <min value="1"/>
-        </element>
         <element id="Observation.device">
             <path value="Observation.device"/>
             <label value="At home test device"/>
@@ -89,11 +84,6 @@
                 <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test"/>
             </type>
             <mustSupport value="true"/>
-        </element>
-        <element id="Observation.device.id">
-            <path value="Observation.device.id"/>
-            <short value="The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
-            <min value="1"/>
         </element>
         <element id="Observation.component">
             <path value="Observation.component"/>

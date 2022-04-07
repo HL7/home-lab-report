@@ -1,14 +1,14 @@
-### At-Home-Covid Test and V2
+### COVID-19 At-Home Sample Test and V2
 This test implementation project will start out with sending the At-Home-Covid as V2 lab messages due to Public Health Departments familiarity with V2. Longer term the intent is to leverage FHIR for app creativity, growth and interoperability. For as long as needed to comply with Public Health Department dependecies on V2, the Apps will be designed to transform from FHIR to V2.
 
-Within the intial V2 message, many of the segments contain "hard coded" information. Some examples of this are ordering information and app IDs. Even if the At-Home-Covid test is an ordered test (as opposed to the OTC test) neither the App nor the assay test at the start of the test implementation will have knowledge of ordering information. This draft FHIR IG aligns, where appropriate, with known and documented FHIR to V2 mappings. In some cases, where the V2 message is hardcoded or constrained to a specific value, the FHIR spec (at this time) is not further constrained beyond what is present in US Core, but the elements and attibutes are available for use and may be noted in comments.
+Within the intial V2 message, many of the segments contain "hard coded" information. Some examples of this are ordering information and app IDs. Even if the COVID-19 At-Home Sample Test is an ordered test (as opposed to an OTC test) neither the App nor the assay test at the start of the test implementation will have knowledge of ordering information. This draft FHIR IG aligns, where appropriate, with known and documented FHIR to V2 mappings. In some cases, where the V2 message is hardcoded or constrained to a specific value, the FHIR spec (at this time) is not further constrained beyond what is present in US Core, but the elements and attibutes are available for use and may be noted in comments.
 
-#### At-Home Covid Test to V2 and FHIR Profile Elements Mapping Table
-[NIH National Institute of Biomedical Imaging and Bioengineering Hosted At-Home-Covid Test to V2 and FHIR Mapping Table](https://nibibdrupal8stg.prod.acquia-sites.com/node/123961)
+#### COVID-19 At-Home Sample Test to V2 and FHIR Profile Elements Mapping Table
+[NIH National Institute of Biomedical Imaging and Bioengineering Hosted COVID-19 At-Home Sample Test to V2 and FHIR Mapping Table](https://nibibdrupal8stg.prod.acquia-sites.com/node/123961)
 
 ### V2 Example Messages
 The following child pages represent the 2 types of home tests in the intial project. The two scenarios are described below.
-#### At Home Testing Over the Counter Purchase
+#### At-Home Sample Test Over the Counter Purchase
 Patient buys and performs testing, result is obtained via an App that then does the reporting; this may result in limited data fidelity (no verification): a) that the person tested = patient, b) of how the specimen was collected, c) if the test procedure was followed, d) if the interpretation of the result and subsequent reporting is accurate, unless the app preforms the interpretation, e) data about the patient is accurate)
 **The following segments are constrained:**
 * Ordering Provider First Name (ORC-12.3/OBR-16.3) = “SA.OverTheCounter”
@@ -23,7 +23,7 @@ Patient buys and performs testing, result is obtained via an App that then does 
 * Cue Health Inc’s Cue COVID-19 Test for Home and Over The Counter (OTC) Use – OBX-17.1 = 
 * Example message is for Ellume’s  COVID-19 Home Test sent by OneAbbott: InterPartner~CentralizedELR~OneAbbott~AIMSPlatform~Test~Test~2021012816241013~STOP~TestMessageSA.OTC_AL_FINAL
 
-#### At Home Testing with Prescription
+#### At-Home Sample Test with Prescription
 Patient is prescribed the test, obtains the kit, sample collection and test performance is unsupervised, result is obtained via app that then does the reporting; this may result in limited data fidelity (no verification): a) that the person tested = patient, b) of how the specimen was collected, c) if the test procedure was followed, d) if the interpretation of the result and subsequent reporting is accurate; however, data about the patient should be accurate – since it is coming from the provider’s health record.
 **The following segments are constrained:**
 * Ordering Facility Name (ORC-21.1) = <Copy Ordering Provider Name (ORC-12/OBR-16), if no separate facility>

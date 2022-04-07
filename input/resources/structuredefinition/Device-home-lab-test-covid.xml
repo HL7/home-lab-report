@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Device-home-lab-test-covid"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-04-07T07:13:34.940+00:00"/>
-        <source value="#KE6mJDcErkZnrZgg"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-07T23:46:28.583+00:00"/>
+        <source value="#85h9WGvIKCeTr2vN"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test-covid"/>
     <version value="4.0.0"/>
@@ -13,7 +13,7 @@
     <title value="Device - Home Lab Test - COVID-19"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the Device - Home Lab Test profile to COVID-19 At Home Tests"/>
+    <description value="This profile constrains the Device - Home Lab Test profile to COVID-19 At-Home Sample Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

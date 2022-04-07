@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Device-home-lab-test"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-04-07T09:43:22.952+00:00"/>
-        <source value="#jr1LCpNKCnTKADw6"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-04-07T23:46:16.052+00:00"/>
+        <source value="#gpceF161hrflV7ae"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test"/>
     <version value="4.0.0"/>
@@ -13,7 +13,7 @@
     <title value="Device - Home Lab Test"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the Device resource to At-Home Tests."/>
+    <description value="This profile constrains the Device resource to At-Home Sample Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
