@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Specimen-home-lab-test"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-04-07T06:38:34.617+00:00"/>
+        <source value="#ZiNFNu2u6lwpG0RO"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test"/>
+    <name value="SpecimenHomeLabTest"/>
+    <title value="Specimen - Home Lab Test"/>
+    <status value="active"/>
+    <description value="This Specimen profile identifies and describes the specimen used in an at-home lab test."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Specimen"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Specimen">
+            <path value="Specimen"/>
+            <short value="The specimen used in an at-home lab test."/>
+            <definition value="The specimen used in an at-home lab test."/>
+        </element>
+        <element id="Specimen.identifier">
+            <path value="Specimen.identifier"/>
+            <short value="System-generated identifier for this Specimen."/>
+            <definition value="System-generated identifier for this Specimen."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type">
+            <path value="Specimen.type"/>
+            <short value="Type of tissue or material"/>
+            <definition value="Type of tissue or material (blood, etc.)."/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type.coding">
+            <path value="Specimen.type.coding"/>
+            <short value="The coded specimen type."/>
+            <definition value="The coded specimen type."/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type.coding.system">
+            <path value="Specimen.type.coding.system"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type.coding.code">
+            <path value="Specimen.type.coding.code"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.type.text">
+            <path value="Specimen.type.text"/>
+            <short value="The specimen text description."/>
+            <definition value="The specimen text description."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.subject">
+            <path value="Specimen.subject"/>
+            <short value="The subject is the person who took the at-home test."/>
+            <definition value="The subject is the person who took the at-home test."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection">
+            <path value="Specimen.collection"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Specimen.collection.collected[x]">
+            <path value="Specimen.collection.collected[x]"/>
+            <min value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

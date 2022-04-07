@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-home-lab-test-result"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-03-24T06:38:11.347+00:00"/>
-        <source value="#ZLC0UGHT25wZkJZU"/>
+        <versionId value="9"/>
+        <lastUpdated value="2022-04-07T06:15:36.481+00:00"/>
+        <source value="#9ZItE8wgVr3bwiU0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result"/>
     <version value="1.0.0"/>
@@ -35,7 +35,6 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <label value="Label"/>
             <short value="At Home Tests"/>
         </element>
         <element id="Observation.effective[x]">
@@ -45,6 +44,11 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.issued">
+            <path value="Observation.issued"/>
+            <short value="Test result date released"/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
@@ -63,6 +67,10 @@
             <definition value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <comment value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.specimen.id">
@@ -76,11 +84,15 @@
             <short value="The referenced device SHALL be at-home test device."/>
             <definition value="The referenced device is an at-home test device, The referenced device **SHALL** contain a Device.udiCarrier.deviceIdentifier. Please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search to find the device's UDI"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.device.id">
             <path value="Observation.device.id"/>
-            <short value=" The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
+            <short value="The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
             <min value="1"/>
         </element>
         <element id="Observation.component">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-home-lab-test-result-covid-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-24T06:40:12.531+00:00"/>
-        <source value="#wy4P1eqDQU2pweRe"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-07T03:58:12.821+00:00"/>
+        <source value="#uJInwObl4AiOr163"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
     </meta>
     <status value="final"/>
@@ -38,7 +38,7 @@
         </coding>
     </valueCodeableConcept>
     <specimen>
-        <reference value="Specimen/specimen-urine-p-noelle"/>
+        <reference value="Specimen/specimen-anterior-nares-swab-p-noelle"/>
         <display value="UR Specimen ID: MLD45-Z4-1234"/>
     </specimen>
     <device>

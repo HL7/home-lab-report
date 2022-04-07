@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-covid-related-symptoms-present"/>
+    <id value="Observation-condition-related-symptoms-present"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-03-24T04:37:58.757+00:00"/>
-        <source value="#2a7K0r3OSoSpTS69"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-01T00:15:03.413+00:00"/>
+        <source value="#hYBR0v1PNL4LzD9K"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-covid-related-symptoms-present"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-condition-related-symptoms-present"/>
     <version value="1.0.0"/>
-    <name value="ObservationCovidRelatedSymptomsPresent"/>
-    <title value="Observation - Covid 19 Related Symptoms Present"/>
+    <name value="ObservationConditionRelatedSymptomsPresent"/>
+    <title value="Observation - Condition Related Symptoms Present"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the FHIR Observation Resource to represent a simple boolean Yes/No answer to indicate whether the patient currently has symptoms consistent with the condition or disease of interest."/>
+    <description value="This profile constrains the FHIR Observation Resource to represent whether or not the patient currently has symptoms consistent with the condition or disease of interest."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

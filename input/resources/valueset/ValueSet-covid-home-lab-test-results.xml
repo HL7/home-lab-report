@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-covid-home-lab-test-results"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-03-24T04:32:14.923+00:00"/>
-        <source value="#MTMmpYHWWiqAerA2"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-03-30T23:20:39.344+00:00"/>
+        <source value="#6sSW7UX8seAbaJe3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-results"/>
     <version value="1"/>
     <name value="ValueSetCovidHomeLabTestResults"/>
-    <title value="ValueSet - Covid Home Lab Test Results"/>
+    <title value="ValueSet - COVID-19 Home Lab Test Results"/>
     <status value="draft"/>
-    <description value="This set of values contains SNOMED CT concepts representing typical Covid at home lab test results."/>
+    <description value="This set of values contains SNOMED CT concepts representing typical COVID-19 at home lab test results."/>
     <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
         <include>

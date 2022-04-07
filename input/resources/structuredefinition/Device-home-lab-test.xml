@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Device-home-lab-test"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-07T04:37:27.105+00:00"/>
+        <source value="#4jxOYzUiYu7uUafl"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test"/>
+    <version value="4.0.0"/>
+    <name value="DeviceHomeLabTest"/>
+    <title value="Device - Home Lab Test"/>
+    <status value="active"/>
+    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
+    <description value="This profile constrains the Device resource to At-Home Tests."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Device"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Device">
+            <path value="Device"/>
+        </element>
+        <element id="Device.udiCarrier">
+            <path value="Device.udiCarrier"/>
+            <short value="Some At-Home tests may not have UDI information, in these cases, deviceName must be present."/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.udiCarrier.deviceIdentifier">
+            <path value="Device.udiCarrier.deviceIdentifier"/>
+            <min value="1"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.udiCarrier.issuer">
+            <path value="Device.udiCarrier.issuer"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.manufacturer">
+            <path value="Device.manufacturer"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.expirationDate">
+            <path value="Device.expirationDate"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.lotNumber">
+            <path value="Device.lotNumber"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.serialNumber">
+            <path value="Device.serialNumber"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.deviceName">
+            <path value="Device.deviceName"/>
+            <short value="Some At-Home tests may not have UDI information, in these cases, deviceName must be present."/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Device.owner">
+            <path value="Device.owner"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

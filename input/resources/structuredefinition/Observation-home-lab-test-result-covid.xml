@@ -3,17 +3,17 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-home-lab-test-result-covid"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-03-24T06:37:42.381+00:00"/>
-        <source value="#glOg8h0ylTaAh6uC"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-03-30T23:21:47.968+00:00"/>
+        <source value="#MlWTkC2ENMHUELQ7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
     <version value="1.0.0"/>
     <name value="ObservationHomeLabTestResultCovid"/>
-    <title value="Observation - Home Lab Test Result - Covid"/>
+    <title value="Observation - Home Lab Test Result - COVID-19"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the Observation - Home Lab Test Result profile to Covid At-Home Tests."/>
+    <description value="This profile constrains the Observation - Home Lab Test Result profile to COVID-19 At-Home Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

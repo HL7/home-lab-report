@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-home-lab-test-specimen-types-covid"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2022-04-07T07:09:18.282+00:00"/>
+        <source value="#5mCveYWdv3y7Q9y4"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-home-lab-test-specimen-types-covid"/>
+    <version value="1"/>
+    <name value="ValueSetHomeLabTestSpecimenTypesCovid"/>
+    <title value="ValueSet - Home Lab Test Specimen Types - COVID-19"/>
+    <status value="draft"/>
+    <description value="This set of values contains SNOMED CT concepts representing specimens used in COVID-19 home lab tests."/>
+    <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="119334006"/>
+                <display value="Sputum specimen"/>
+            </concept>
+            <concept>
+                <code value="119361006"/>
+                <display value="Plasma specimen"/>
+            </concept>
+            <concept>
+                <code value="119364003"/>
+                <display value="Serum specimen"/>
+            </concept>
+            <concept>
+                <code value="122554006"/>
+                <display value="Capillary blood specimen"/>
+            </concept>
+            <concept>
+                <code value="122555007"/>
+                <display value="Venous blood specimen"/>
+            </concept>
+            <concept>
+                <code value="258411007"/>
+                <display value="Nasopharyngeal aspirate"/>
+            </concept>
+            <concept>
+                <code value="258467004"/>
+                <display value="Nasopharyngeal washings"/>
+            </concept>
+            <concept>
+                <code value="258500001"/>
+                <display value="Nasopharyngeal swab"/>
+            </concept>
+            <concept>
+                <code value="258529004"/>
+                <display value="Throat swab"/>
+            </concept>
+            <concept>
+                <code value="258560004"/>
+                <display value="Oral saliva sample"/>
+            </concept>
+            <concept>
+                <code value="258580003"/>
+                <display value="Whole blood sample"/>
+            </concept>
+            <concept>
+                <code value="258607008"/>
+                <display value="Bronchoalveolar lavage fluid sample"/>
+            </concept>
+            <concept>
+                <code value="309171007"/>
+                <display value="Lower respiratory fluid sample"/>
+            </concept>
+            <concept>
+                <code value="429931000124105"/>
+                <display value="Nasal aspirate specimen"/>
+            </concept>
+            <concept>
+                <code value="433801000124107"/>
+                <display value="Nasopharyngeal and oropharyngeal swab"/>
+            </concept>
+            <concept>
+                <code value="433871000124101"/>
+                <display value="Nasal washings"/>
+            </concept>
+            <concept>
+                <code value="440500007"/>
+                <display value="Dried blood spot specimen"/>
+            </concept>
+            <concept>
+                <code value="445297001"/>
+                <display value="Swab of internal nose"/>
+            </concept>
+            <concept>
+                <code value="445447003"/>
+                <display value="Specimen from trachea obtained by aspiration"/>
+            </concept>
+            <concept>
+                <code value="697989009"/>
+                <display value="Anterior nares swab"/>
+            </concept>
+            <concept>
+                <code value="871810001"/>
+                <display value="Mid-turbinate nasal swab"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

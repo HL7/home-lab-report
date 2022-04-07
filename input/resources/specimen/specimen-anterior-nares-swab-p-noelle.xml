@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Specimen
     xmlns="http://hl7.org/fhir">
-    <id value="specimen-urine-p-noelle"/>
+    <id value="specimen-anterior-nares-swab-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-24T05:33:10.191+00:00"/>
-        <source value="#64RFWmbRWX9a16jm"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-07T04:34:01.910+00:00"/>
+        <source value="#jPCVtMYWoGN4M5XK"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test"/>
     </meta>
-    <accessionIdentifier>
+    <identifier>
         <system value="http://lab.acme.org/specimens/2021"/>
         <value value="MLD45-Z4-1234"/>
-    </accessionIdentifier>
+    </identifier>
     <status value="available"/>
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="122575003"/>
-            <display value="Urine specimen (specimen)"/>
+            <code value="697989009"/>
+            <display value="Anterior nares swab (specimen)"/>
         </coding>
-        <text value="Urine specimen (specimen)"/>
+        <text value="Anterior nares swab (specimen)"/>
     </type>
     <subject>
         <reference value="Patient/us-core-patient-patricia-noelle"/>
@@ -28,11 +29,4 @@
     <collection>
         <collectedDateTime value="2021-12-03T11:00:00Z"/>
     </collection>
-    <container>
-        <description value="10mL RT tube"/>
-        <specimenQuantity>
-            <value value="5"/>
-            <unit value="ml"/>
-        </specimenQuantity>
-    </container>
 </Specimen>

@@ -2,7 +2,7 @@
 Please see [US Core Quick start](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html#quick-start) for an overview of search and read operations for this profile.
 
 ### SMART App Launch
-Please see [SMART App Launche](http://build.fhir.org/ig/HL7/smart-app-launch/) for guidance around SMART apps including IDs.
+Please see [SMART App Launch](http://build.fhir.org/ig/HL7/smart-app-launch/) for guidance around SMART apps including IDs.
 This flow is not the same as an App that integrates with an EHR - so the sequence diagram is likely simpler.
 #### App ID
 The ClientID is typically the App ID when using SMART in FHIR App Launch. It is often a guid. 
@@ -16,5 +16,3 @@ Please see [Extended Operations on the RESTful API ofr](http://hl7.org/fhir/R4/o
 Given that with the home Covid Test use case exists of a single test, or series of independantly run tests by a patient, and resulted from a "Lateral Flow Assay" device and collected and/or sent by an App, there is no data base such as an EHR has where referenced resources can be queried for and returned.  As such any resource representing the lab result itself, "ask at "order" (AOE) answers, etc. will need to be packaged together into a bundle resource. The primary "bundling" function for this use case is for "Sending a set of resources as part of a message exchange (see [Messaging](https://www.hl7.org/fhir/messaging.html))"
 
 Please see [Resource Bundle](https://www.hl7.org/fhir/bundle.html) for detailed Instructions.
-
-

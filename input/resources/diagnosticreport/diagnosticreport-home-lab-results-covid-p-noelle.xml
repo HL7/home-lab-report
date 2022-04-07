@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-home-lab-results-covid-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-03-24T06:39:46.210+00:00"/>
-        <source value="#e8f3ne8MMm6hU7eF"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-07T06:17:05.474+00:00"/>
+        <source value="#QcRX1AGO6gCBfyWo"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results-covid"/>
     </meta>
     <text>
@@ -29,7 +29,7 @@
     </text>
     <extension url="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo">
         <valueReference>
-            <reference value="Observation/observation-covid-related-symptoms-present-p-noelle"/>
+            <reference value="Observation/observation-condition-related-symptoms-present-covid-p-noelle"/>
             <display value="Whether the patient has symptoms related to condition of interest: Yes"/>
         </valueReference>
     </extension>
@@ -65,7 +65,7 @@
         <display value="Quidel Corporation"/>
     </performer>
     <result>
-        <reference value="Observation/observation-covid-home-lab-test-result-p-noelle"/>
+        <reference value="Observation/observation-home-lab-test-result-covid-p-noelle"/>
         <display value="SARS-CoV+SARS-CoV-2"/>
     </result>
 </DiagnosticReport>
