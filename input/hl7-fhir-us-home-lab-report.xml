@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="112"/>
-        <lastUpdated value="2022-04-12T04:48:24.026+00:00"/>
-        <source value="#35bQ5T2N6e5r6tV7"/>
+        <versionId value="113"/>
+        <lastUpdated value="2022-04-12T05:01:05.184+00:00"/>
+        <source value="#aR7xT6AeDD9cVrjI"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -67,7 +67,7 @@
     <definition>
         <grouping id="framework-at-home-test-profiles">
             <name value="Profiles: At-Home In-Vitro Test Report Framework"/>
-            <description value="&quot;Framework&quot; profiles that describe the minimum requirements for At-Home In-Vitro Test Report profiles. These profiles can be further constrained (e.g. [Profiles: COVID-19 At-Home In-Vitro Test Report](artifacts.html#profiles-at-home-test-covid-19-specific)) to describe further condition-specific requirements."/>
+            <description value="&quot;Framework&quot; profiles that describe the minimum requirements for At-Home In-Vitro Test Report profiles. These profiles can be further constrained (e.g. [Profiles: COVID-19 At-Home In-Vitro Test Report](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report)) to describe further condition-specific requirements."/>
         </grouping>
         <grouping id="framework-at-home-test-examples">
             <name value="Examples: At-Home In-Vitro Test Report Framework"/>
