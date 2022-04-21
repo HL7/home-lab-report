@@ -6,6 +6,7 @@
       </b>
     </a>
     <ul class="dropdown-menu">
+      <li><a href="implementation_guide.html">Implementation Guide</a></li>
       <li><a href="technical_guidance.html">Technical Guidance</a></li>
       <li><a href="workflow.html">Workflow</a></li>    </ul>
   </li>
