@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-home-lab-results-covid"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-04-07T23:46:52.226+00:00"/>
-        <source value="#mFfybBb6XVq4KSGt"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-04-21T05:50:23.816+00:00"/>
+        <source value="#SZ3015Ybu1iCdoN6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results-covid"/>
     <version value="1.0.0"/>
@@ -29,7 +29,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <description value="This set of value contains LOINC codes appropriate for and currently used for at home covid testa"/>
+                <description value="This set of value contains LOINC codes appropriate for and currently used for at home covid tests"/>
                 <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-types"/>
             </binding>
         </element>
@@ -42,9 +42,6 @@
                 <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
             </type>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-            </binding>
         </element>
     </differential>
 </StructureDefinition>

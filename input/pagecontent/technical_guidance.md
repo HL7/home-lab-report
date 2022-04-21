@@ -1,9 +1,14 @@
+#### US Core Laboratory Report vs. US Core Diagnostic Report
+
+The [US Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) is intended to record or update single laboratory results (though it can also contain component results). A COVID-19 At-Home In-Vitro Test and Result is a "one at a time" test that is performed and resulted.  The [US Core Diagnostic Report Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) is used to group and summarize test results by reference. Public health agencies in most case today can only receive and record Hl7 V2 messages. The V2 Lab Report message, by consensus, has been mapped to Diagnostic Report. Therefore, this draft guide will leverage [US Core Diagnostic Report Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) to send this single result. In addition, it will be necessary to leverage the SupportingInfo extension to hold answers to the questions patients are asked by the app when recording or uploading their test results.
+
 ### RESTful FHIR Interactions Quick Start Guidance
 Please see [US Core Quick start](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html#quick-start) for an overview of search and read operations for this profile.
 
 ### SMART App Launch
 Please see [SMART App Launch](http://build.fhir.org/ig/HL7/smart-app-launch/) for guidance around SMART apps including IDs.
 This flow is not the same as an App that integrates with an EHR - so the sequence diagram is likely simpler.
+
 #### App ID
 The ClientID is typically the App ID when using SMART in FHIR App Launch. It is often a guid. 
 This project needs to determine if a guid will be used/assigned for the App(s) involved in the interaction or a format based on ID construction heuristics.

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-home-lab-test-covid"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-07T23:47:51.080+00:00"/>
-        <source value="#tECM5fWzusAMp3Va"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-04-21T06:00:26.224+00:00"/>
+        <source value="#5Ub2bbQfLBlr6DOh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test-covid"/>
     <name value="SpecimenHomeLabTestCovid"/>

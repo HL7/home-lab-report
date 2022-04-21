@@ -1,0 +1,1 @@
+This is a framework profile that can be used in any use case without futher constraint.

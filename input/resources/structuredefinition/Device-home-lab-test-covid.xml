@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Device-home-lab-test-covid"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-04-07T23:46:28.583+00:00"/>
-        <source value="#85h9WGvIKCeTr2vN"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-04-21T05:29:28.172+00:00"/>
+        <source value="#buU4i3mHvAevx7Ci"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test-covid"/>
     <version value="4.0.0"/>

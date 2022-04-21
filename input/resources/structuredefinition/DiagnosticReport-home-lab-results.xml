@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-home-lab-results"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2022-04-07T23:52:52.338+00:00"/>
-        <source value="#cSvN200iDG5k889Y"/>
+        <versionId value="18"/>
+        <lastUpdated value="2022-04-21T05:56:05.423+00:00"/>
+        <source value="#TtD6q8maVIrtSh8U"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results"/>
     <version value="1.0.0"/>
@@ -13,7 +13,7 @@
     <title value="DiagnosticReport - Home Lab Results"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to COVID-19 At-Home Sample Tests."/>
+    <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home Sample Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
