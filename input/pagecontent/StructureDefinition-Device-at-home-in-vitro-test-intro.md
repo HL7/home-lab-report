@@ -1,0 +1,1 @@
+This is a framework profile and can be the base of another profile that is further constrained to meet the requirements of a specific use case. See [Device - At-Home In-Vitro Test - COVID-19](StructureDefinition-Device-at-home-in-vitro-test-covid.html) for an example of such a profile.

@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-anterior-nares-swab-p-noelle"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-04-07T04:34:01.910+00:00"/>
-        <source value="#jPCVtMYWoGN4M5XK"/>
-        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-26T05:52:06.045+00:00"/>
+        <source value="#zMz4tFlVYtNHiKsm"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
     </meta>
     <identifier>
         <system value="http://lab.acme.org/specimens/2021"/>

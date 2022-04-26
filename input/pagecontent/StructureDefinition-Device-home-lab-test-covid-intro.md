@@ -1,1 +1,0 @@
-This is an example of a profile that is based on a framework profile and futher constrained to meet the requirements of the COVID-19 use case. It is based on the [Device - Home Lab Test](StructureDefinition-Device-home-lab-test.html) profile.

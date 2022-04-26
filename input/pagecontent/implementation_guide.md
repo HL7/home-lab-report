@@ -12,7 +12,100 @@ Rather than creating multiple condition-specific profiles for each type of At-Ho
 
 There is also a set of [example profiles that represent the COVID-19 use case](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report) which can act as guidance for implementation of different use cases. These example profiles have been instantiated in the [example instacnces](artifacts.html#examples-covid-19-at-home-in-vitro-test-report) included in the guide.
 
-**TODO** - can we have a place in VSAC, link or something, that can be updated with new value sets whenever we get them??
+ <table border="1">
+  <thead>
+    <tr>
+      <th>Framework Profile</th>
+      <th>Description</th>
+      <th>Element to Constrain for Specific Use Case</th>
+      <th>Constraint Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-Bundle-at-home-in-vitro-test.html" title="StructureDefinition/Bundle-at-home-in-vitro-test">Bundle - At-Home In-Vitro Test</a>
+      </td>
+      <td>
+        <p>This profile constrains the Bundle resource for At-Home Sample Tests.</p>
+      </td>
+      <td>Bundle.entry</td>
+      <td>Reference to an <a href="StructureDefinition-DiagnosticReport-home-lab-results.html" title="StructureDefinition/Observation-home-lab-test-result"> DiagnosticReport - Home
+          Lab Results</a> constrained to the specific use case</td>
+    </tr>
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-Device-home-lab-test.html" title="StructureDefinition/Device-home-lab-test">Device - Home Lab Test</a>
+      </td>
+      <td>
+        <p>This profile constrains the Device resource to At-Home Sample Tests.</p>
+      </td>
+      <td>todo</td>
+      <td>todo</td>
+    </tr>
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-DiagnosticReport-home-lab-results.html" title="StructureDefinition/DiagnosticReport-home-lab-results">DiagnosticReport - Home Lab Results</a>
+      </td>
+      <td>
+        <p>This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home Sample Tests.</p>
+      </td>
+      <td>DiagnosticReport.result</td>
+      <td>Reference to an <a href="StructureDefinition-Observation-home-lab-test-result.html" title="StructureDefinition/Observation-home-lab-test-result">Observation - Home Lab
+          Test Result</a> constrained to the specific use case (e.g. <a href="StructureDefinition-Observation-home-lab-test-result.html"
+          title="StructureDefinition/Observation-home-lab-test-result-covid">Observation - Home Lab Test Result - COVID-19</a>)</td>
+    </tr>
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-Observation-condition-related-symptoms-present.html" title="StructureDefinition/Observation-condition-related-symptoms-present">Observation -
+          Condition Related Symptoms Present</a>
+      </td>
+      <td>
+        <p>This profile constrains the FHIR Observation Resource to represent whether or not the patient currently has symptoms consistent with the condition or disease of
+          interest.</p>
+      </td>
+      <td colspan="2">Use as is for all use cases</td>
+    </tr>
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-Observation-date-time-symptom-onset.html" title="StructureDefinition/Observation-date-time-symptom-onset">Observation - Date Time Symptom
+          Onset</a>
+      </td>
+      <td>
+        <p>This Profile constrains FHIR Observation to a simple observation asking for date and time of symptom onset.</p>
+      </td>
+      <td colspan="2">Use as is for all use cases</td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="column-width:30%">
+        <a href="StructureDefinition-Observation-home-lab-test-result.html" title="StructureDefinition/Observation-home-lab-test-result">Observation - Home Lab Test Result</a>
+      </td>
+      <td rowspan="2">
+        <p>This profile constrains the US Core Laboratory Result Observation to At-Home Sample Tests.</p>
+      </td>
+      <td>Observation.code</td>
+      <td>Bind to a value set containing the condition-specific test types</td>
+    </tr>
+    <tr>
+      <td>Observation.value</td>
+      <td>Bind to a value set containing the condition-specific test results</td>
+    </tr>
+    <tr>
+      <td style="column-width:30%">
+        <a href="StructureDefinition-Specimen-home-lab-test.html" title="StructureDefinition/Specimen-home-lab-test">Specimen - Home Lab Test</a>
+      </td>
+      <td>
+        <p>This Specimen profile identifies and describes the specimen used in an At-Home Sample Test.</p>
+      </td>
+      <td>Specimen.type</td>
+      <td>Bind to a value set containing the use case specific specimen types</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  
+**TODO** - Potential for adding link to VSAC, or other external link, that can be updated with new value sets
 
 ### Underlying Specifications
 
@@ -90,4 +183,4 @@ The table below identifies the specific FHIR Resources and their purposes that a
     <td><a href="{{site.data.fhir.path}}endpoint.html">Endpoint</a></td>
 	<td>Used to represent routing information.</td>
   </tr>
-  /table>
+  </table>

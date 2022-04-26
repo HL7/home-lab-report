@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Specimen-home-lab-test"/>
+    <id value="Specimen-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-04-21T05:58:42.593+00:00"/>
-        <source value="#aJCHzbgZ5Fop2MpO"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-04-26T05:16:55.126+00:00"/>
+        <source value="#tjUEYmeymNNq1s5y"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test"/>
-    <name value="SpecimenHomeLabTest"/>
-    <title value="Specimen - Home Lab Test"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
+    <name value="SpecimenAtHomeInVitroTest"/>
+    <title value="Specimen - At-Home In-Vitro Test"/>
     <status value="active"/>
-    <description value="This Specimen profile identifies and describes the specimen used in an At-Home Sample Test."/>
+    <description value="This Specimen profile identifies and describes the specimen used in an At-Home In-Vitro Test."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

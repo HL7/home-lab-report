@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-home-lab-test-result-covid"/>
+    <id value="Observation-at-home-in-vitro-test-result-covid"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-04-21T05:54:23.299+00:00"/>
-        <source value="#2hGosw9EVw51llsG"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-04-26T06:00:28.886+00:00"/>
+        <source value="#QPDg4T43o1XQbXZW"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result-covid"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
     <version value="1.0.0"/>
-    <name value="ObservationHomeLabTestResultCovid"/>
-    <title value="Observation - Home Lab Test Result - COVID-19"/>
+    <name value="ObservationAtHomeInVitroTestResultCovid"/>
+    <title value="Observation - At-Home In-Vitro Test Result - COVID-19"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the Observation - Home Lab Test Result profile to COVID-19 At-Home Sample Tests."/>
+    <description value="This profile constrains the Observation - At-Home In-Vitro Test Result profile to COVID-19 At-Home In-Vitro Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Observation"/>
-    <baseDefinition value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result"/>
+    <baseDefinition value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Observation">
@@ -30,8 +30,8 @@
             <short value="Covid At Home Tests"/>
             <binding>
                 <strength value="extensible"/>
-                <description value="This set of values contains Covid 19 LOINC concepts that are appropriate for at-home tests"/>
-                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-types"/>
+                <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home in-vitro tests"/>
+                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
             </binding>
         </element>
         <element id="Observation.value[x]">
@@ -45,8 +45,8 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="required"/>
-                <description value="This set of values contains SNOMED CT concepts suitable for at home Covid test results"/>
-                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-results"/>
+                <description value="This set of values contains SNOMED CT concepts suitable for at-home in-vitro COVID-19 test results"/>
+                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-results-covid"/>
             </binding>
         </element>
         <element id="Observation.specimen">
@@ -55,6 +55,10 @@
             <definition value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <comment value="The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.specimen.id">
@@ -69,6 +73,10 @@
             <short value="The referenced device SHALL be an home Covid test device."/>
             <definition value="The referenced device is an at home covid test device, The referenced device **SHALL** contain a Device.udiCarrier.deviceIdentifier. Please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search to find the device's UDI"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test-covid"/>
+            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.device.id">

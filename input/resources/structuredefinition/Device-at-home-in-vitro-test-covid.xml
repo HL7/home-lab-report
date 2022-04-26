@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Device-home-lab-test"/>
+    <id value="Device-at-home-in-vitro-test-covid"/>
     <meta>
         <versionId value="5"/>
-        <lastUpdated value="2022-04-07T23:46:16.052+00:00"/>
-        <source value="#gpceF161hrflV7ae"/>
+        <lastUpdated value="2022-04-26T05:38:16.909+00:00"/>
+        <source value="#bGpgUOHwHQ6V6CuQ"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test-covid"/>
     <version value="4.0.0"/>
-    <name value="DeviceHomeLabTest"/>
-    <title value="Device - Home Lab Test"/>
+    <name value="DeviceAtHomeInVitroTestCovid"/>
+    <title value="Device - At-Home In-Vitro Test - COVID-19"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the Device resource to At-Home Sample Tests."/>
+    <description value="This profile constrains the Device - At-Home In-Vitro Test profile to COVID-19 At-Home In-Vitro Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Device"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device"/>
+    <baseDefinition value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Device">

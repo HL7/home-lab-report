@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Specimen-home-lab-test-covid"/>
+    <id value="Specimen-at-home-in-vitro-test-covid"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-04-21T06:00:26.224+00:00"/>
-        <source value="#5Ub2bbQfLBlr6DOh"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-04-26T06:04:00.550+00:00"/>
+        <source value="#fzJwAAZXlGE6dI6X"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test-covid"/>
-    <name value="SpecimenHomeLabTestCovid"/>
-    <title value="Specimen - Home Lab Test - COVID-19"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid"/>
+    <name value="SpecimenAtHomeInVitroTestCovid"/>
+    <title value="Specimen - At-Home In-Vitro Test - COVID-19"/>
     <status value="active"/>
-    <description value="This Specimen profile identifies and describes the specimen used in a COVID-19 At-Home Sample Test."/>
+    <description value="This Specimen profile identifies and describes the specimen used in a COVID-19 At-Home In-Vitro Test."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Specimen"/>
-    <baseDefinition value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-home-lab-test"/>
+    <baseDefinition value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Specimen">
@@ -32,7 +32,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-home-lab-test-specimen-types-covid"/>
+                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
             </binding>
         </element>
         <element id="Specimen.type.coding">

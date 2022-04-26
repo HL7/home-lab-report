@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet
     xmlns="http://hl7.org/fhir">
-    <id value="ValueSet-covid-home-lab-test-results"/>
+    <id value="ValueSet-at-home-in-vitro-test-results-covid"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-03-30T23:20:39.344+00:00"/>
-        <source value="#6sSW7UX8seAbaJe3"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-26T05:20:14.700+00:00"/>
+        <source value="#b6yfGL17NFLb8Bqx"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-results"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-results-covid"/>
     <version value="1"/>
-    <name value="ValueSetCovidHomeLabTestResults"/>
-    <title value="ValueSet - COVID-19 Home Lab Test Results"/>
+    <name value="ValueSetAtHomeInVitroLabTestResultsCvoid"/>
+    <title value="ValueSet - At-Home In-Vitro Test Results - COVID-19"/>
     <status value="draft"/>
     <description value="This set of values contains SNOMED CT concepts representing typical COVID-19 at home lab test results."/>
     <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>

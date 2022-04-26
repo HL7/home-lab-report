@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet
     xmlns="http://hl7.org/fhir">
-    <id value="ValueSet-covid-home-lab-test-types"/>
+    <id value="ValueSet-at-home-in-vitro-test-types-covid"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-03-30T23:20:53.772+00:00"/>
-        <source value="#jS7Fdced2kGZ1Udc"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-26T05:21:54.503+00:00"/>
+        <source value="#VCB27pX7msd2Q8vK"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-covid-home-lab-test-types"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
     <version value="1"/>
-    <name value="ValueSetCovidHomeLabTestTypes"/>
-    <title value="ValueSet - COVID-19 Home Lab Test Types"/>
+    <name value="ValueSetAtHomeInVitroTestTypesCovid"/>
+    <title value="ValueSet - At-Home In-Vitro Test Types - COVID-19"/>
     <status value="draft"/>
     <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home tests"/>
     <purpose value="The intent of this value set is to provide a subset of LOINC lab covid 19 for the types of tests used in the home"/>

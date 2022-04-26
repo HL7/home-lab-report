@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="device-quickvue-sars-antigen-test"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-04-01T00:36:45.435+00:00"/>
-        <source value="#PnYGvQZVYgnAC3ea"/>
-        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-home-lab-test"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-26T05:51:44.289+00:00"/>
+        <source value="#s31mdfHg3R2qDJas"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
     </meta>
     <udiCarrier>
         <deviceIdentifier value="30014613339373"/>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="DiagnosticReport-home-lab-results"/>
+    <id value="DiagnosticReport-at-home-in-vitro-results"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-04-21T05:56:05.423+00:00"/>
-        <source value="#TtD6q8maVIrtSh8U"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-04-26T05:23:11.463+00:00"/>
+        <source value="#YqLdCSDQ26x5CDIX"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-home-lab-results"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
     <version value="1.0.0"/>
-    <name value="DiagnosticReportHomeLabResult"/>
-    <title value="DiagnosticReport - Home Lab Results"/>
+    <name value="DiagnosticReportAtHomeInVitroResult"/>
+    <title value="DiagnosticReport - At-Home In-Vitro Results"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home Sample Tests."/>
+    <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home In-Vitro Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -137,7 +137,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-home-lab-test-result"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
             </type>
             <mustSupport value="true"/>
             <binding>

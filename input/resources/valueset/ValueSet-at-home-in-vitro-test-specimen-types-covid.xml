@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet
     xmlns="http://hl7.org/fhir">
-    <id value="ValueSet-home-lab-test-specimen-types-covid"/>
+    <id value="ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-04-07T07:09:18.282+00:00"/>
-        <source value="#5mCveYWdv3y7Q9y4"/>
+        <versionId value="2"/>
+        <lastUpdated value="2022-04-26T06:03:21.139+00:00"/>
+        <source value="#pGKGua46fQ9FxuWd"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-home-lab-test-specimen-types-covid"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
     <version value="1"/>
-    <name value="ValueSetHomeLabTestSpecimenTypesCovid"/>
-    <title value="ValueSet - Home Lab Test Specimen Types - COVID-19"/>
+    <name value="ValueSetAtHomeInVitroTestSpecimenTypesCovid"/>
+    <title value="ValueSet - At-Home In-Vitro Test Specimen Types - COVID-19"/>
     <status value="draft"/>
     <description value="This set of values contains SNOMED CT concepts representing specimens used in COVID-19 home lab tests."/>
     <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
