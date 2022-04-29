@@ -30,12 +30,12 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
         <p>This profile constrains the Bundle resource for At-Home Sample Tests.</p>
       </td>
       <td>Bundle.entry</td>
-      <td>Reference to an <a href="StructureDefinition-DiagnosticReport-home-lab-results.html" title="StructureDefinition/Observation-home-lab-test-result"> DiagnosticReport - Home
+      <td>Reference to an <a href="StructureDefinition-DiagnosticReport-at-home-in-vitro-results.html" title="StructureDefinition/Observation-at-home-in-vitro-test-result"> DiagnosticReport - Home
           Lab Results</a> constrained to the specific use case</td>
     </tr>
     <tr>
       <td style="column-width:30%">
-        <a href="StructureDefinition-Device-home-lab-test.html" title="StructureDefinition/Device-home-lab-test">Device - Home Lab Test</a>
+        <a href="StructureDefinition-Device-at-home-in-vitro-test.html" title="StructureDefinition/Device-at-home-in-vitro-test">Device - At-Home In-Vitro Test</a>
       </td>
       <td>
         <p>This profile constrains the Device resource to At-Home Sample Tests.</p>
@@ -45,15 +45,15 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
     </tr>
     <tr>
       <td style="column-width:30%">
-        <a href="StructureDefinition-DiagnosticReport-home-lab-results.html" title="StructureDefinition/DiagnosticReport-home-lab-results">DiagnosticReport - Home Lab Results</a>
+        <a href="StructureDefinition-DiagnosticReport-at-home-in-vitro-results.html" title="StructureDefinition/DiagnosticReport-at-home-in-vitro-results">DiagnosticReport - At-Home In-Vitro Results</a>
       </td>
       <td>
         <p>This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home Sample Tests.</p>
       </td>
       <td>DiagnosticReport.result</td>
-      <td>Reference to an <a href="StructureDefinition-Observation-home-lab-test-result.html" title="StructureDefinition/Observation-home-lab-test-result">Observation - Home Lab
-          Test Result</a> constrained to the specific use case (e.g. <a href="StructureDefinition-Observation-home-lab-test-result.html"
-          title="StructureDefinition/Observation-home-lab-test-result-covid">Observation - Home Lab Test Result - COVID-19</a>)</td>
+      <td>Reference to an <a href="StructureDefinition-Observation-at-home-in-vitro-test-result.html" title="StructureDefinition/Observation-at-home-in-vitro-test-result">Observation - At-Home In-Vitro
+          Test Result</a> constrained to the specific use case (e.g. <a href="StructureDefinition-Observation-at-home-in-vitro-test-result.html"
+          title="StructureDefinition/Observation-at-home-in-vitro-test-result-covid">Observation - At-Home In-Vitro Test Result - COVID-19</a>)</td>
     </tr>
     <tr>
       <td style="column-width:30%">
@@ -78,7 +78,7 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
     </tr>
     <tr>
       <td rowspan="2" style="column-width:30%">
-        <a href="StructureDefinition-Observation-home-lab-test-result.html" title="StructureDefinition/Observation-home-lab-test-result">Observation - Home Lab Test Result</a>
+        <a href="StructureDefinition-Observation-at-home-in-vitro-test-result.html" title="StructureDefinition/Observation-at-home-in-vitro-test-result">Observation - At-Home In-Vitro Test Result</a>
       </td>
       <td rowspan="2">
         <p>This profile constrains the US Core Laboratory Result Observation to At-Home Sample Tests.</p>
@@ -92,7 +92,7 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
     </tr>
     <tr>
       <td style="column-width:30%">
-        <a href="StructureDefinition-Specimen-home-lab-test.html" title="StructureDefinition/Specimen-home-lab-test">Specimen - Home Lab Test</a>
+        <a href="StructureDefinition-Specimen-at-home-in-vitro-test.html" title="StructureDefinition/Specimen-at-home-in-vitro-test">Specimen - At-Home In-Vitro Test</a>
       </td>
       <td>
         <p>This Specimen profile identifies and describes the specimen used in an At-Home Sample Test.</p>
