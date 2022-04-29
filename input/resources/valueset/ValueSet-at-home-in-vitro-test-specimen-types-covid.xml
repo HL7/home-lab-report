@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-04-26T06:03:21.139+00:00"/>
-        <source value="#pGKGua46fQ9FxuWd"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-29T03:16:57.443+00:00"/>
+        <source value="#lsCz8BZJueTKX6Ow"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
     <version value="1"/>
@@ -17,82 +17,6 @@
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
-            <concept>
-                <code value="119334006"/>
-                <display value="Sputum specimen"/>
-            </concept>
-            <concept>
-                <code value="119361006"/>
-                <display value="Plasma specimen"/>
-            </concept>
-            <concept>
-                <code value="119364003"/>
-                <display value="Serum specimen"/>
-            </concept>
-            <concept>
-                <code value="122554006"/>
-                <display value="Capillary blood specimen"/>
-            </concept>
-            <concept>
-                <code value="122555007"/>
-                <display value="Venous blood specimen"/>
-            </concept>
-            <concept>
-                <code value="258411007"/>
-                <display value="Nasopharyngeal aspirate"/>
-            </concept>
-            <concept>
-                <code value="258467004"/>
-                <display value="Nasopharyngeal washings"/>
-            </concept>
-            <concept>
-                <code value="258500001"/>
-                <display value="Nasopharyngeal swab"/>
-            </concept>
-            <concept>
-                <code value="258529004"/>
-                <display value="Throat swab"/>
-            </concept>
-            <concept>
-                <code value="258560004"/>
-                <display value="Oral saliva sample"/>
-            </concept>
-            <concept>
-                <code value="258580003"/>
-                <display value="Whole blood sample"/>
-            </concept>
-            <concept>
-                <code value="258607008"/>
-                <display value="Bronchoalveolar lavage fluid sample"/>
-            </concept>
-            <concept>
-                <code value="309171007"/>
-                <display value="Lower respiratory fluid sample"/>
-            </concept>
-            <concept>
-                <code value="429931000124105"/>
-                <display value="Nasal aspirate specimen"/>
-            </concept>
-            <concept>
-                <code value="433801000124107"/>
-                <display value="Nasopharyngeal and oropharyngeal swab"/>
-            </concept>
-            <concept>
-                <code value="433871000124101"/>
-                <display value="Nasal washings"/>
-            </concept>
-            <concept>
-                <code value="440500007"/>
-                <display value="Dried blood spot specimen"/>
-            </concept>
-            <concept>
-                <code value="445297001"/>
-                <display value="Swab of internal nose"/>
-            </concept>
-            <concept>
-                <code value="445447003"/>
-                <display value="Specimen from trachea obtained by aspiration"/>
-            </concept>
             <concept>
                 <code value="697989009"/>
                 <display value="Anterior nares swab"/>

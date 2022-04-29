@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-at-home-in-vitro-test-results-covid"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-04-26T05:20:14.700+00:00"/>
-        <source value="#b6yfGL17NFLb8Bqx"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-29T03:43:37.465+00:00"/>
+        <source value="#35x5CmjbwVvxskxJ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-results-covid"/>
     <version value="1"/>
-    <name value="ValueSetAtHomeInVitroLabTestResultsCvoid"/>
+    <name value="ValueSetAtHomeInVitroLabTestResultsCovid"/>
     <title value="ValueSet - At-Home In-Vitro Test Results - COVID-19"/>
     <status value="draft"/>
     <description value="This set of values contains SNOMED CT concepts representing typical COVID-19 at home lab test results."/>

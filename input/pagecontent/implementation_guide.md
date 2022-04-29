@@ -31,7 +31,7 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
       </td>
       <td>Bundle.entry</td>
       <td>Reference to an <a href="StructureDefinition-DiagnosticReport-at-home-in-vitro-results.html" title="StructureDefinition/Observation-at-home-in-vitro-test-result"> DiagnosticReport - Home
-          Lab Results</a> constrained to the specific use case</td>
+        Lab Results</a> constrained to the specific use case</td>
     </tr>
     <tr>
       <td style="column-width:30%">
@@ -52,27 +52,15 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
       </td>
       <td>DiagnosticReport.result</td>
       <td>Reference to an <a href="StructureDefinition-Observation-at-home-in-vitro-test-result.html" title="StructureDefinition/Observation-at-home-in-vitro-test-result">Observation - At-Home In-Vitro
-          Test Result</a> constrained to the specific use case (e.g. <a href="StructureDefinition-Observation-at-home-in-vitro-test-result.html"
+        Test Result</a> constrained to the specific use case (e.g. <a href="StructureDefinition-Observation-at-home-in-vitro-test-result.html"
           title="StructureDefinition/Observation-at-home-in-vitro-test-result-covid">Observation - At-Home In-Vitro Test Result - COVID-19</a>)</td>
     </tr>
     <tr>
       <td style="column-width:30%">
-        <a href="StructureDefinition-Observation-condition-related-symptoms-present.html" title="StructureDefinition/Observation-condition-related-symptoms-present">Observation -
-          Condition Related Symptoms Present</a>
+        <a href="StructureDefinition-Observation-patient-question-answer.html" title="StructureDefinition/Observation-patient-question-answer">Observation - Patient Question Answer</a>
       </td>
       <td>
-        <p>This profile constrains the FHIR Observation Resource to represent whether or not the patient currently has symptoms consistent with the condition or disease of
-          interest.</p>
-      </td>
-      <td colspan="2">Use as is for all use cases</td>
-    </tr>
-    <tr>
-      <td style="column-width:30%">
-        <a href="StructureDefinition-Observation-date-time-symptom-onset.html" title="StructureDefinition/Observation-date-time-symptom-onset">Observation - Date Time Symptom
-          Onset</a>
-      </td>
-      <td>
-        <p>This Profile constrains FHIR Observation to a simple observation asking for date and time of symptom onset.</p>
+        <p>This profile constrains the FHIR Observation Resource to represent an answer given to a question asked of the patient by the app when recording or uploading their test results.</p>
       </td>
       <td colspan="2">Use as is for all use cases</td>
     </tr>
@@ -102,7 +90,6 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
     </tr>
   </tbody>
 </table>
-
 
   
 **TODO** - Potential for adding link to VSAC, or other external link, that can be updated with new value sets

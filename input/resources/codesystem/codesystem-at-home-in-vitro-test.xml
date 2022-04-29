@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="codesystem-at-home-in-vitro-test"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-29T05:22:32.630+00:00"/>
+        <source value="#4yR29eN81iU4tlM4"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-at-home-in-vitro-test"/>
+    <version value="1.0.0"/>
+    <name value="CodeSystemAtHomeInVitroTest"/>
+    <title value="CodeSystem - At-Home In-Vitro Test"/>
+    <status value="active"/>
+    <date value="2021-12-01"/>
+    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
+    <description value="This code system contains codes for use in At-Home In-Vitro Test Result Reports."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="at-home-in-vitro-test-result-report"/>
+        <display value="At-Home In-Vitro Test Result Report"/>
+        <definition value="Sending of At-Home In-Vitro Test Result Report"/>
+    </concept>
+</CodeSystem>

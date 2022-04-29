@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="MessageHeader-at-home-in-vitro-test-results"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-04-29T05:30:29.357+00:00"/>
+        <source value="#2KxQCOiZYwaJJGY8"/>
+    </meta>
+    <url value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+    <name value="MessageHeaderAtHomeInVitroTestResults"/>
+    <title value="MessageHeader - At-Home In-Vitro Test Results"/>
+    <status value="active"/>
+    <description value="This MessageHeader represents the At-Home In-Vitro Test Results being sent from an application server to a health authority."/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MessageHeader"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MessageHeader"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MessageHeader">
+            <path value="MessageHeader"/>
+            <short value="Represents the At-Home In-Vitro Test Results being sent from an application server to a health authority."/>
+        </element>
+        <element id="MessageHeader.event[x]">
+            <path value="MessageHeader.event[x]"/>
+            <short value="At-Home In-Vitro Test Results"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <patternCoding>
+                <system value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-at-home-in-vitro-test"/>
+                <code value="at-home-in-vitro-test-result-report"/>
+            </patternCoding>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.focus">
+            <path value="MessageHeader.focus"/>
+            <short value="The focus of this message header is a DiagnosticReport."/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

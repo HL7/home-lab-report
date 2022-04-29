@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-04-26T05:17:34.841+00:00"/>
-        <source value="#bN4omWSnNhKvjk64"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-04-29T05:04:31.586+00:00"/>
+        <source value="#FcUoyrF0Sd6JT2OG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
     <version value="1.0.0"/>
@@ -32,15 +32,14 @@
         <element id="Bundle">
             <path value="Bundle"/>
         </element>
+        <element id="Bundle.identifier">
+            <path value="Bundle.identifier"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
         <element id="Bundle.type">
             <path value="Bundle.type"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="code"/>
-            </type>
-            <fixedCode value="collection"/>
-            <mustSupport value="true"/>
+            <fixedCode value="message"/>
         </element>
         <element id="Bundle.timestamp">
             <path value="Bundle.timestamp"/>
@@ -53,11 +52,11 @@
             <slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="resource"/>
+                    <path value="$this.resource"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
-            <mustSupport value="true"/>
+            <min value="1"/>
         </element>
         <element id="Bundle.entry:sliceDiagnosticReport">
             <path value="Bundle.entry"/>
@@ -68,7 +67,7 @@
         </element>
         <element id="Bundle.entry:sliceDiagnosticReport.resource">
             <path value="Bundle.entry.resource"/>
-            <short value="DiagnosticReport - Home Lab Results"/>
+            <short value="DiagnosticReport - At-Home In-Vitro Results"/>
             <min value="1"/>
             <type>
                 <code value="Resource"/>

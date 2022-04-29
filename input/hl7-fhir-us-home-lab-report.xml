@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="166"/>
-        <lastUpdated value="2022-04-29T02:56:55.110+00:00"/>
-        <source value="#MkXal2duWR0YjOFs"/>
+        <versionId value="191"/>
+        <lastUpdated value="2022-04-29T05:54:54.081+00:00"/>
+        <source value="#VRpO3hS6dBD5d76V"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -94,6 +94,24 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Bundle/bundle-at-home-in-vitro-test-results-p-noelle"/></reference>
+            <name value="Bundle - At-Home In-Vitro Test Results - P Noelle"/>
+            <description value="Bundle - At-Home In-Vitro Test Results - P Noelle - example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/codesystem-at-home-in-vitro-test"/>
+                <display value="CodeSystem - At-Home In-Vitro"/>
+            </reference>
+            <name value="CodeSystem - At-Home In-Vitro Test"/>
+            <description value="This code system contains codes for use in At-Home In-Vitro Test Result Reports."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/Device-at-home-in-vitro-test"/>
                 <display value="Device - Home Lab Test"/>
             </reference>
@@ -154,41 +172,21 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-condition-related-symptoms-present"/>
-                <display value="Observation - Condition Related Symptoms Present"/>
-            </reference>
-            <name value="Observation - Condition Related Symptoms Present"/>
-            <description value="This profile constrains the FHIR Observation Resource to represent whether or not the patient currently has symptoms consistent with the condition or disease of interest."/>
+                <reference value="MessageHeader/messageheader-at-home-in-vitro-test-p-noelle"/></reference>
+            <name value="MessageHeader - At-Home In-Vitro Results - COVID-19 - P Noelle"/>
+            <description value="MessageHeader - At-Home In-Vitro Results - COVID-19 - P Noelle Example"/>
             <exampleBoolean value="false"/>
-            <groupingId value="framework-at-home-test-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-condition-related-symptoms-present-covid-p-noelle"/></reference>
-            <name value="Observation - Condition Related Symptoms Present - COVID-19 - P Noelle"/>
-            <description value="Observation - Condition Related Symptoms Present: COVID-19 - P Noelle example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-condition-related-symptoms-present"/>
+            <exampleCanonical value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
             <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Observation-date-time-symptom-onset"/>
-                <display value="Observation - Date Time Symptom Onset"/>
+                <reference value="StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+                <display value="MessageHeader - At-Home In-Vitro Test Results"/>
             </reference>
-            <name value="Observation - Date Time Symptom Onset"/>
-            <description value="This Profile constrains FHIR Observation to a simple observation asking for date and time of symptom onset."/>
+            <name value="MessageHeader - At-Home In-Vitro Test Results"/>
+            <description value="This MessageHeader represents the At-Home In-Vitro Test Results being sent from an application server to a health authority."/>
             <exampleBoolean value="false"/>
-            <groupingId value="framework-at-home-test-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/observation-date-time-symptom-onset-p-noelle"/></reference>
-            <name value="Observation - Date Time Symptom Onset - P Noelle"/>
-            <description value="Observation - Date Time Symptom Onset: P Noelle example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-date-time-symptom-onset"/>
-            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
@@ -218,6 +216,34 @@
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
             <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-patient-answer-symptom-onset-covid-p-noelle"/></reference>
+            <name value="Observation - Patient Answer - Symptoms Onset COVID-19 P Noelle"/>
+            <description value="Observation - Patient Answer - Symptom Onset COVID-19 P Noelle Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-patient-answer-symptoms-present-covid-p-noelle"/></reference>
+            <name value="Observation - Patient Answer - Symptoms Present COVID-19 P Noelle"/>
+            <description value="Observation - Patient Answer - Symptoms Present COVID-19 P Noelle Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-patient-question-answer"/>
+                <display value="Observation - Patient Question Answers"/>
+            </reference>
+            <name value="Observation - Patient Question Answer"/>
+            <description value="This profile constrains the FHIR Observation Resource to represent an answer given to a question asked of the patient by the app when recording or uploading their test results."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -268,6 +294,15 @@
         </resource>
         <resource>
             <reference>
+                <reference value="ValueSet/ValueSet-at-home-in-vitro-patient-questions"/>
+                <display value="ValueSet - At-Home In-Vitro Patient Questions"/>
+            </reference>
+            <name value="ValueSet - At-Home In-Vitro Patient Questions"/>
+            <description value="This set of values contains concepts representing questions asked of the patient by the app when recording or uploading their at-home in-vitro test results."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="ValueSet/ValueSet-at-home-in-vitro-test-results-covid"/>
                 <display value="ValueSet - COVID-19 Home Lab Test Results"/>
             </reference>
@@ -277,20 +312,20 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
-                <display value="ValueSet - COVID-19 Home Lab Test Types"/>
-            </reference>
-            <name value="ValueSet - At-Home In-Vitro Test Types - COVID-19"/>
-            <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home tests"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
                 <display value="ValueSet - Home Lab Test Specimen Types - COVID-19"/>
             </reference>
             <name value="ValueSet - At-Home In-Vitro Test Specimen Types - COVID-19"/>
             <description value="This set of values contains SNOMED CT concepts representing specimens used in COVID-19 home lab tests."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
+                <display value="ValueSet - COVID-19 Home Lab Test Types"/>
+            </reference>
+            <name value="ValueSet - At-Home In-Vitro Test Types - COVID-19"/>
+            <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home tests"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>

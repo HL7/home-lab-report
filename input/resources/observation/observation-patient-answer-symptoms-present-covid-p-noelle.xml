@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-condition-related-symptoms-present-covid-p-noelle"/>
+    <id value="observation-patient-answer-symptoms-present-covid-p-noelle"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2022-04-07T05:02:07.787+00:00"/>
-        <source value="#gQmCFByYsdc4W44g"/>
-        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-condition-related-symptoms-present"/>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-29T04:39:50.548+00:00"/>
+        <source value="#etQI0csBFCamb750"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
     </meta>
     <status value="final"/>
     <code>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageHeader
+    xmlns="http://hl7.org/fhir">
+    <id value="messageheader-at-home-in-vitro-test-p-noelle"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-04-29T05:38:44.863+00:00"/>
+        <source value="#FTAQtfFon8QbArxA"/>
+        <profile value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+    </meta>
+    <eventCoding>
+        <system value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-at-home-in-vitro-test"/>
+        <code value="at-home-in-vitro-test-result-report"/>
+    </eventCoding>
+    <source>
+        <name value="ACME Application Server"/>
+        <software value="ACME Application Software"/>
+        <version value="1.2.3.4.5"/>
+        <contact>
+            <system value="phone"/>
+            <value value="+1 (555) 987 6543"/>
+        </contact>
+        <endpoint value="http://at-home-in-vitro-test.org/fhir/endpoint/1"/>
+    </source>
+    <response>
+        <identifier value="5015fe84-8e76-4526-89d8-44b322e8d4fc"/>
+        <code value="ok"/>
+    </response>
+    <focus>
+        <reference value="DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle"/>
+    </focus>
+</MessageHeader>

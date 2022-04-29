@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Observation-condition-related-symptoms-present"/>
+    <id value="Observation-patient-question-answer"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-21T05:43:29.630+00:00"/>
-        <source value="#6sSup7jQpSaTZGxV"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-04-29T04:28:37.134+00:00"/>
+        <source value="#MrsMY9EZXTvXXweI"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-condition-related-symptoms-present"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
     <version value="1.0.0"/>
-    <name value="ObservationConditionRelatedSymptomsPresent"/>
-    <title value="Observation - Condition Related Symptoms Present"/>
+    <name value="ObservationPatientQuestionAnswer"/>
+    <title value="Observation - Patient Question Answer"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the FHIR Observation Resource to represent whether or not the patient currently has symptoms consistent with the condition or disease of interest."/>
+    <description value="This profile constrains the FHIR Observation Resource to represent an answer given to a question asked of the patient by the app when recording or uploading their test results."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
@@ -26,14 +26,12 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <short value="Whether the patient has symptoms related to condition of interest"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="95419-8"/>
-                </coding>
-            </patternCodeableConcept>
+            <short value="Questions asked of the patient by the app when recording or uploading their at-home in-vitro test results."/>
             <mustSupport value="true"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-patient-questions"/>
+            </binding>
         </element>
         <element id="Observation.subject">
             <path value="Observation.subject"/>
@@ -47,16 +45,18 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
+            <short value="Answer given to a question asked of the patient by the app when recording or uploading their test results."/>
             <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Quantity"/>
+            </type>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/ValueSet-yes-no-unknown-snomed"/>
-            </binding>
         </element>
     </differential>
 </StructureDefinition>
