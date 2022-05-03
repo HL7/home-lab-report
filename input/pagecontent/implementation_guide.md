@@ -57,6 +57,15 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
     </tr>
     <tr>
       <td style="column-width:30%">
+        <a href="StructureDefinition-MessageHeader-at-home-in-vitro-test-results.html" title="StructureDefinition/MessageHeader-at-home-in-vitro-test-results">MessageHeader - At-Home In-Vitro Test Results</a>
+      </td>
+      <td>
+        <p>This MessageHeader represents the At-Home In-Vitro Test Results being sent from an application server to a health authority.</p>
+      </td>
+      <td colspan="2">Use as is for all use cases</td>
+    </tr>
+    <tr>
+      <td style="column-width:30%">
         <a href="StructureDefinition-Observation-patient-question-answer.html" title="StructureDefinition/Observation-patient-question-answer">Observation - Patient Question Answer</a>
       </td>
       <td>

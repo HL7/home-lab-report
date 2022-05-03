@@ -4,7 +4,8 @@ This test implementation project will start out with sending the COVID-19 At-Hom
 Within the intial V2 message, many of the segments contain "hard coded" information. Some examples of this are ordering information and app IDs. Even if the COVID-19 At-Home In-Vitro Test is an ordered test (as opposed to an OTC test) neither the App nor the assay test at the start of the test implementation will have knowledge of ordering information. This draft FHIR IG aligns, where appropriate, with known and documented FHIR to V2 mappings. In some cases, where the V2 message is hardcoded or constrained to a specific value, the FHIR spec (at this time) is not further constrained beyond what is present in US Core, but the elements and attibutes are available for use and may be noted in comments.
 
 #### COVID-19 At-Home In-Vitro Test Report to V2 and FHIR Profile Elements Mapping Table
-[NIH National Institute of Biomedical Imaging and Bioengineering Hosted COVID-19 At-Home In-Vitro Test Report to V2 and FHIR Mapping Table](https://nibibdrupal8stg.prod.acquia-sites.com/node/123961)
+~~[NIH National Institute of Biomedical Imaging and Bioengineering Hosted COVID-19 At-Home In-Vitro Test Report to V2 and FHIR Mapping Table](https://nibibdrupal8stg.prod.acquia-sites.com/node/123961)~~
+[Temporary Google Docs Connectathon working mapping file](https://docs.google.com/spreadsheets/d/1d8kBi4tAFFR-lzyGtLIFQl9rjMv4bRTN/edit#gid=762662633)
 
 ### V2 Example Messages
 The following child pages represent the 2 types of home tests in the intial project. The two scenarios are described below.

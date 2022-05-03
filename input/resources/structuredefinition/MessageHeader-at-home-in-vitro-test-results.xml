@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-at-home-in-vitro-test-results"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-04-29T05:30:29.357+00:00"/>
-        <source value="#2KxQCOiZYwaJJGY8"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-05-03T05:50:53.082+00:00"/>
+        <source value="#0aF2nYrQwQ8fUq0h"/>
     </meta>
     <url value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
     <name value="MessageHeaderAtHomeInVitroTestResults"/>
@@ -33,6 +33,18 @@
                 <system value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-at-home-in-vitro-test"/>
                 <code value="at-home-in-vitro-test-result-report"/>
             </patternCoding>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.destination">
+            <path value="MessageHeader.destination"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.sender">
+            <path value="MessageHeader.sender"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.source">
+            <path value="MessageHeader.source"/>
             <mustSupport value="true"/>
         </element>
         <element id="MessageHeader.focus">
