@@ -26,7 +26,7 @@
         </element>
         <element id="Device.udiCarrier">
             <path value="Device.udiCarrier"/>
-            <short value="Some At-Home tests may not have UDI information, in these cases, deviceName must be present."/>
+          <short value="If no UDI available, use value from column 'Testkit Name ID' from the LOINC Mapping tab in the LIVD file. Some At-Home tests may not have UDI information or Testkit Name ID, in these cases, deviceName must be present."/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
@@ -69,7 +69,7 @@
         </element>
         <element id="Device.deviceName">
             <path value="Device.deviceName"/>
-            <short value="Some At-Home tests may not have UDI information, in these cases, deviceName must be present."/>
+          <short value="Use value from column 'Model' from the LOINC Mapping tab in the LIVD file. Some At-Home tests may not have UDI information or Testkit Name ID, in these cases, deviceName must be present."/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
