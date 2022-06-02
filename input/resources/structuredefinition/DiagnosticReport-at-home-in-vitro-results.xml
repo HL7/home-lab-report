@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-at-home-in-vitro-results"/>
     <meta>
-        <versionId value="13"/>
-        <lastUpdated value="2022-04-29T04:25:37.486+00:00"/>
-        <source value="#9k7EpD768uuy2QVo"/>
+        <versionId value="14"/>
+        <lastUpdated value="2022-06-02T20:11:18.603+00:00"/>
+        <source value="#qt2KqN9ao6irONBv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
     <version value="1.0.0"/>
@@ -99,6 +99,11 @@
             <binding>
                 <strength value="required"/>
             </binding>
+        </element>
+        <element id="DiagnosticReport.media">
+            <path value="DiagnosticReport.media"/>
+            <short value="Images related to the test, such as a photo of the test result, images to support proctor interpretation of test results, etc."/>
+            <definition value="Images related to the test, such as a photo of the test result, images to support proctor interpretation of test results, etc."/>
         </element>
     </differential>
 </StructureDefinition>

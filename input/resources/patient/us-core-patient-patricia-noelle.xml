@@ -1,70 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Patient xmlns="http://hl7.org/fhir">
-  <id value="us-core-patient-patricia-noelle" />
-  <meta>
-    <versionId value="2" />
-    <lastUpdated value="2022-03-24T05:35:07.153+00:00" />
-    <source value="#7LsphrcHrZS6tSed" />
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-  </meta>
-  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
-    <extension url="ombCategory">
-      <valueCoding>
-        <system value="urn:oid:2.16.840.1.113883.6.238" />
-        <code value="2106-3" />
-        <display value="White" />
-      </valueCoding>
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-patient-patricia-noelle"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2022-05-04T18:50:10.889+00:00"/>
+        <source value="#6edes19WgO7zJvGV"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Patricia 
+                <b>NOELLE </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <span>7247 Main St </span>
+                            <br/>
+                            <span>Springfield </span>
+                            <span>OK </span>
+                            <span>US </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>17 October 1954</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2106-3"/>
+                <display value="White"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="White"/>
+        </extension>
     </extension>
-    <extension url="text">
-      <valueString value="White" />
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2186-5"/>
+                <display value="Not Hispanic or Latino"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Not Hispanic or Latino"/>
+        </extension>
     </extension>
-  </extension>
-  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
-    <extension url="ombCategory">
-      <valueCoding>
-        <system value="urn:oid:2.16.840.1.113883.6.238" />
-        <code value="2186-5" />
-        <display value="Not Hispanic or Latino" />
-      </valueCoding>
-    </extension>
-    <extension url="text">
-      <valueString value="Not Hispanic or Latino" />
-    </extension>
-  </extension>
-  <identifier>
-    <use value="usual" />
-    <type>
-      <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
-        <code value="MR" />
-        <display value="Medical Record Number" />
-      </coding>
-      <text value="Medical Record Number" />
-    </type>
-    <system value="http://hospital.smarthealthit.org" />
-    <value value="900" />
-  </identifier>
-  <active value="true" />
-  <name>
-    <family value="Noelle" />
-    <given value="Patricia" />
-  </name>
-  <telecom>
-    <system value="phone" />
-    <value value="555-555-2003" />
-    <use value="home" />
-  </telecom>
-  <telecom>
-    <system value="email" />
-    <value value="Patricia.Noelle@example.com" />
-  </telecom>
-  <gender value="female" />
-  <birthDate value="1954-10-17" />
-  <address>
-    <line value="7247 Main St" />
-    <city value="Springfield" />
-    <state value="OK" />
-    <postalCode value="62707" />
-    <country value="US" />
-  </address>
+    <identifier>
+        <use value="usual"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+                <display value="Medical Record Number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+        </type>
+        <system value="http://hospital.smarthealthit.org"/>
+        <value value="900"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <family value="Noelle"/>
+        <given value="Patricia"/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="555-555-2003"/>
+        <use value="home"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="Patricia.Noelle@example.com"/>
+    </telecom>
+    <gender value="female"/>
+    <birthDate value="1954-10-17"/>
+    <address>
+        <line value="7247 Main St"/>
+        <city value="Springfield"/>
+        <state value="OK"/>
+        <postalCode value="62707"/>
+        <country value="US"/>
+    </address>
 </Patient>

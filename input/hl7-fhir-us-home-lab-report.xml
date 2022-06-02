@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="198"/>
-        <lastUpdated value="2022-05-03T07:26:27.385+00:00"/>
-        <source value="#mzRxT1onCj49G6y4"/>
+        <versionId value="200"/>
+        <lastUpdated value="2022-06-02T20:12:29.584+00:00"/>
+        <source value="#425HGeMeQs2gaBg9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -343,6 +343,16 @@
             <title value="Home Page"/>
             <generation value="markdown"/>
             <page>
+                <nameUrl value="note_to_balloters.html"/>
+                <title value="Note to Balloters"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="technical_guidance.html"/>
+                <title value="Technical Guidance"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
                 <nameUrl value="connectathon_specific_information.html"/>
                 <title value="Connectathon Specific Information"/>
                 <generation value="markdown"/>
@@ -350,11 +360,6 @@
             <page>
                 <nameUrl value="implementation_guide.html"/>
                 <title value="Implementation Guide"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="technical_guidance.html"/>
-                <title value="Technical Guidance"/>
                 <generation value="markdown"/>
             </page>
             <page>

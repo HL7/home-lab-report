@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Device-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-04-26T05:15:33.272+00:00"/>
-        <source value="#8QszSmMWuPZ9XMDe"/>
+        <versionId value="6"/>
+        <lastUpdated value="2022-06-02T19:05:03.671+00:00"/>
+        <source value="#STyxmWGPT5YRTMBx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
     <version value="4.0.0"/>
@@ -26,8 +26,7 @@
         </element>
         <element id="Device.udiCarrier">
             <path value="Device.udiCarrier"/>
-          <short value="If no UDI available, use value from column 'Testkit Name ID' from the LOINC Mapping tab in the LIVD file. Some At-Home tests may not have UDI information or Testkit Name ID, in these cases, deviceName must be present."/>
-            <min value="0"/>
+            <short value="Use value from column &quot;Testkit Name ID&quot; from the LOINC Mapping tab in the LIVD file."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -69,7 +68,7 @@
         </element>
         <element id="Device.deviceName">
             <path value="Device.deviceName"/>
-          <short value="Use value from column 'Model' from the LOINC Mapping tab in the LIVD file. Some At-Home tests may not have UDI information or Testkit Name ID, in these cases, deviceName must be present."/>
+            <short value="Use value from column &quot;Model&quot; from the LOINC Mapping tab in the LIVD file."/>
             <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>

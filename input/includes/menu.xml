@@ -1,17 +1,19 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="connectathon_specific_information.html">Connectathon Specific Information</a></li>
+  <li><a href="note_to_balloters.html">Note to Balloters</a></li>
 
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="implementation_guide.html">Implementation Guide</a></li>
       <li><a href="technical_guidance.html">Technical Guidance</a></li>
+      <li><a href="implementation_guide.html">Implementation Guide</a></li>
       <li><a href="workflow.html">Workflow</a></li>    </ul>
   </li>
+  <li><a href="connectathon_specific_information.html">Connectathon Specific Information</a></li>
+
   <li><a href="hl7_v2_fields_and_otc_example_message.html">HL7 V2 Fields and OTC Example Message</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>
