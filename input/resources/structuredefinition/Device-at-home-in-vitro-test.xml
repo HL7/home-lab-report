@@ -92,7 +92,7 @@
             <mustSupport value="true"/>
             <mapping>
                 <identity value="livd"/>
-                <map value="LIVD Spreadsheet | LOINC Mapping.Model"/>
+                <map value="LOINC Mapping.Model"/>
             </mapping>
         </element>
         <element id="Device.deviceName.type">
