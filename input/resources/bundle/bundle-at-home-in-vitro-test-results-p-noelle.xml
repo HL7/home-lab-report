@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-at-home-in-vitro-test-results-p-noelle"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-05-04T18:51:38.801+00:00"/>
-        <source value="#jYtXI03M24IMSZsY"/>
+        <versionId value="5"/>
+        <lastUpdated value="2022-06-16T07:38:21.156+00:00"/>
+        <source value="#x93780CL5D0Bydc5"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
     </meta>
     <identifier>
@@ -747,7 +747,7 @@
                             <tr>
                                 <td>*</td>
                                 <td>QuickVue® SARS Antigen Test</td>
-                                <td>user-friendly-name</td>
+                                <td>manufacturer-name</td>
                             </tr>
                         </table>
                         <p>
@@ -777,7 +777,7 @@
                 <serialNumber value="10987654d321"/>
                 <deviceName>
                     <name value="QuickVue® SARS Antigen Test"/>
-                    <type value="user-friendly-name"/>
+                    <type value="manufacturer-name"/>
                 </deviceName>
                 <modelNumber value="20387"/>
                 <partNumber value="20387"/>

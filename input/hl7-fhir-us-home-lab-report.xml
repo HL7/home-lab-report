@@ -1,410 +1,395 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7-fhir-us-home-lab-report" />
-  <meta>
-    <versionId value="202" />
-    <lastUpdated value="2022-06-02T20:34:49.300+00:00" />
-    <source value="#R6LVpXM6bxv0k7Cy" />
-  </meta>
-  <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report" />
-  <version value="0.1.0" />
-  <name value="AtHomeInVitroTestReport" />
-  <title value="At-Home In-Vitro Test Report" />
-  <status value="draft" />
-  <publisher value="Orders and Observations" />
-  <contact>
-    <name value="HL7 International - Orders and Observations" />
-    <telecom>
-      <system value="url" />
-      <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="NIBIB-Interagency Project Team" />
-    <telecom>
-      <system value="email" />
-      <value value="krishna.Juluru@pif.gov" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Gay Dolin MSN RN (Namaste Informatics)" />
-    <telecom>
-      <system value="email" />
-      <value value="gdolin@NamasteInformatics.com" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="CareEvolution" />
-    <telecom>
-      <system value="url" />
-      <value value="https://careevolution.com/" />
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Association of Public Health Laboratories" />
-    <telecom>
-      <system value="url" />
-      <value value="https://www.aphl.org/Pages/default.aspx" />
-    </telecom>
-  </contact>
-  <description
-    value="|IG Characteristic  | 	Value |&#xA;|------------------------------------------------------|--------------------------------------------|&#xA;|**FHIR Version:** |	FHIR R4 |&#xA;|**IG Realm:** |	US |&#xA;|**IG Type:** |	STU Ballot |&#xA;|**Exchange Methods:** |	RESTfulAPI, Messages, Transactions,  Tasks |&#xA;|**IG Note:** |	This HL7 FHIR Guide utilizes and adopts guidance or profiles developed in the US Core FHIR&amp;reg; Implementation Guide. This FHIR IG has narrative pages describing the HL7 V2 Message for At-Home In-Vitro Test Reporting and provides some example messages. Presently public health departments usually only can handle and store HL7 V2|&#xA;{:.table-striped}&#xA;&#xA;|IG Dependencies         |  IG Code     	| Version                  	|&#xA;|----------------------------------|-------------------------|---------------|&#xA;| HL7 FHIR US Core           	|  [US Core](https://www.hl7.org/fhir/us/core/)            	| Version 3.1.1|&#xA;{:.table-striped}&#xA;&#xA;&#xA;### Background&#xA;&#xA;Point-of-care (POC) and At-Home In-Vitro Tests offer increased accessibility to needed diagnostic solutions during a pandemic. Test results provide value to both the individual taking the tests and also to public health authorities responsible for coordinating a regional and national response. Digital platforms are being developed that allow individual test results, with permission of the individual, to be captured, organized, and transmitted to public health systems. Test manufacturers, working in partnership with these digital platforms, are seeking guidance on how to send test results. With multiple tests already entering the market, there is a need for a unified strategy on data flow of test results from the apps to downstream systems. A national data exchange standard should be supported that guides data exchange from test results residing on individual users’ digital test applications to public health authorities, at both the federal and regional levels.  &#xA;&#xA;### Introduction&#xA;&#xA;This implementation guide constrains the [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use for transmitting At-Home In-Vitro Test results to local, state, territorial and federal health agencies. It is an STU IG to be used in real world testing. It was developed in a collaberative project with the NIH/NIBIB, ONC, a vendor manufacturer of diagnostic healthcare products that makes one of the FDA approved At-Home In-Vitro Test kits and an App developer - who is a leading provider of secure interoperability solutions. The intention of this guide is to assist developers in producing and sending standardized FHIR test result data perfomed at home. FHIRs eases app development and US Core is in a rapid adoption curve. This guide points to already existing US Core Guidance and other guidance with respect to FHIR Parameters, FHIR operations and RESTful and SMART on FHIR information.&#xA;&#xA;It is also understood that, in general, public health agencies are at present primarily prepared to only receive V2 messages. The App developer is poised to transform this to V2 messages. In addition, as a parallel effort, a V2 data table has been developed for [COVID-19 At-Home In-Vitro Test Report data fields](https://nih.sharepoint.com/sites/NIBIB-InteragencyCOVIDTestResultDataFlow/SitePages/COVID-At-Home-Test-Data-Fields.aspx). &lt;-- This link is to be updated to a public link.&#xA;&#xA;**Please note** : This initial guide is a framework for future work. It contains &quot;framework&quot; profiles that contain constraints common to all At-Home In-Vitro Test Reporting use cases. These framework profiles can be further constrained to a particular use case such as the COVID-19 At-Home In-Vitro Test Reporting use case. The COVID-19 use case profiles have been created and included in this guide.&#xA;&#xA;### Technical Overview&#xA;The main sections of this IG are:&#xA;* Section 1&#xA;* Section 2&#xA;* etc - add these and link to relevant pages" />
-  <jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166" />
-      <code value="US" />
-      <display value="United States of America" />
-    </coding>
-    <text value="United States of America" />
-  </jurisdiction>
-  <packageId value="hl7.fhir.us.home-lab-report" />
-  <fhirVersion value="4.0.1" />
-  <dependsOn id="hl7fhiruscore">
-    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.0" />
-    <packageId value="hl7.fhir.us.core" />
-    <version value="5.0.0" />
-  </dependsOn>
-  <dependsOn id="usnlmvsac">
-    <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />
-    <packageId value="us.nlm.vsac" />
-    <version value="0.5.0" />
-  </dependsOn>
-  <definition>
-    <grouping id="framework-at-home-test-profiles">
-      <name value="Profiles: At-Home In-Vitro Test Report Framework" />
-      <description
-        value="&quot;Framework&quot; profiles that describe the minimum requirements for At-Home In-Vitro Test Report profiles. These profiles can be further constrained (e.g. [Profiles: COVID-19 At-Home In-Vitro Test Report](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report)) to describe further condition-specific requirements."
-       />
-    </grouping>
-    <grouping id="framework-at-home-test-examples">
-      <name value="Examples: At-Home In-Vitro Test Report Framework" />
-    </grouping>
-    <grouping id="covid-specifc-at-home-test-profiles">
-      <name value="Profiles: COVID-19 At-Home In-Vitro Test Report" />
-      <description value="Profiles that further constrain the &quot;framework&quot; profiles to be specific to COVID-19 At-Home In-Vitro Tests." />
-    </grouping>
-    <grouping id="covid-specific-at-home-test-examples">
-      <name value="Examples: COVID-19 At-Home In-Vitro Test Report" />
-    </grouping>
-    <grouping id="participant-examples">
-      <name value="Examples: Participant" />
-    </grouping>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Bundle-at-home-in-vitro-test" />
-        <display value="Bundle - Home Lab Test" />
-      </reference>
-      <name value="Bundle - At-Home In-Vitro Test" />
-      <description value="This profile constrains the Bundle resource for At-Home In-Vitro Tests." />
-      <exampleBoolean value="false" />
-      <groupingId value="framework-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Bundle/bundle-at-home-in-vitro-test-results-p-noelle" />
-      </reference>
-      <name value="Bundle - At-Home In-Vitro Test Results - P Noelle" />
-      <description value="Bundle - At-Home In-Vitro Test Results - P Noelle - example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/codesystem-at-home-in-vitro-test" />
-        <display value="CodeSystem - At-Home In-Vitro" />
-      </reference>
-      <name value="CodeSystem - At-Home In-Vitro Test" />
-      <description value="This code system contains codes for use in At-Home In-Vitro Test Result Reports." />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Device-at-home-in-vitro-test" />
-        <display value="Device - Home Lab Test" />
-      </reference>
-      <name value="Device - At-Home In-Vitro Test" />
-      <description value="This profile constrains the Device resource to At-Home In-Vitro Tests." />
-      <exampleBoolean value="false" />
-      <groupingId value="framework-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Device-at-home-in-vitro-test-covid" />
-        <display value="Device - Home Lab Test - COVID-19" />
-      </reference>
-      <name value="Device - At-Home In-Vitro Test - COVID-19" />
-      <description value="This profile constrains the Device - At-Home In-Vitro Test profile to COVID-19 At-Home In-Vitro Tests." />
-      <exampleBoolean value="false" />
-      <groupingId value="covid-specifc-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Device/device-quickvue-sars-antigen-test" />
-      </reference>
-      <name value="Device - QuickVue SARS Antigen Test" />
-      <description value="Device - QuickVue SARS Antigen Test example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test-covid" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/DiagnosticReport-at-home-in-vitro-results" />
-        <display value="DiagnosticReport - Home Lab Results" />
-      </reference>
-      <name value="DiagnosticReport - At-Home In-Vitro Results" />
-      <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home In-Vitro Tests." />
-      <exampleBoolean value="false" />
-      <groupingId value="framework-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid" />
-        <display value="DiagnosticReport - Home Lab Results - COVID-19" />
-      </reference>
-      <name value="DiagnosticReport - At-Home In-Vitro Results - COVID-19" />
-      <description value="This profile further constrains the DiagnosticReport - At-Home In-Vitro Results profile to COVID-19 At-Home In-Vitro Tests." />
-      <exampleBoolean value="false" />
-      <groupingId value="covid-specifc-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle" />
-        <display value="diagnosticreport-at-home-in-vitro-results-covid-p-noelle" />
-      </reference>
-      <name value="DiagnosticReport - At-Home In-Vitro Results - COVID-19 - P Noelle" />
-      <description value="DiagnosticReport - At-Home In-Vitro Results - Covid: P Noelle example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="MessageHeader/messageheader-at-home-in-vitro-test-p-noelle" />
-      </reference>
-      <name value="MessageHeader - At-Home In-Vitro Results - COVID-19 - P Noelle" />
-      <description value="MessageHeader - At-Home In-Vitro Results - COVID-19 - P Noelle Example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/MessageHeader-at-home-in-vitro-test-results" />
-        <display value="MessageHeader - At-Home In-Vitro Test Results" />
-      </reference>
-      <name value="MessageHeader - At-Home In-Vitro Test Results" />
-      <description value="This MessageHeader represents the At-Home In-Vitro Test Results being sent from an application server to a health authority." />
-      <exampleBoolean value="false" />
-      <groupingId value="framework-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Observation-at-home-in-vitro-test-result" />
-        <display value="Observation - Home Lab Test Result" />
-      </reference>
-      <name value="Observation - At-Home In-Vitro Test Result" />
-      <description value="This profile constrains the US Core Laboratory Result Observation to At-Home In-Vitro Sample Tests." />
-      <exampleBoolean value="false" />
-      <groupingId value="framework-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Observation-at-home-in-vitro-test-result-covid" />
-        <display value="Observation - Home Lab Test Result - COVID-19" />
-      </reference>
-      <name value="Observation - At-Home In-Vitro Test Result - COVID-19" />
-      <description value="This profile constrains the Observation - At-Home In-Vitro Test Result profile to COVID-19 At-Home In-Vitro Tests." />
-      <exampleBoolean value="false" />
-      <groupingId value="covid-specifc-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-at-home-in-vitro-test-result-covid-p-noelle" />
-      </reference>
-      <name value="Observation - At-Home In-Vitro Test Result COVID-19 - P Noelle" />
-      <description value="Observation - At-Home In-Vitro Test Result - Covid: P Noelle example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-patient-answer-symptom-onset-covid-p-noelle" />
-      </reference>
-      <name value="Observation - Patient Answer - Symptoms Onset COVID-19 P Noelle" />
-      <description value="Observation - Patient Answer - Symptom Onset COVID-19 P Noelle Example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Observation/observation-patient-answer-symptoms-present-covid-p-noelle" />
-      </reference>
-      <name value="Observation - Patient Answer - Symptoms Present COVID-19 P Noelle" />
-      <description value="Observation - Patient Answer - Symptoms Present COVID-19 P Noelle Example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Observation-patient-question-answer" />
-        <display value="Observation - Patient Question Answers" />
-      </reference>
-      <name value="Observation - Patient Question Answer" />
-      <description value="This profile constrains the FHIR Observation Resource to represent an answer given to a question asked of the patient by the app when recording or uploading their test results." />
-      <exampleBoolean value="false" />
-      <groupingId value="framework-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Specimen/specimen-anterior-nares-swab-p-noelle" />
-      </reference>
-      <name value="Specimen - Anterior Nares Swab - P Noelle" />
-      <description value="Specimen - Anterior Nares Swab: P Noelle example" />
-      <exampleBoolean value="false" />
-      <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid" />
-      <groupingId value="covid-specific-at-home-test-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Specimen-at-home-in-vitro-test" />
-        <display value="Specimen - Home Lab Test" />
-      </reference>
-      <name value="Specimen - At-Home In-Vitro Test" />
-      <description value="This Specimen profile identifies and describes the specimen used in an At-Home In-Vitro Test." />
-      <exampleBoolean value="false" />
-      <groupingId value="framework-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Specimen-at-home-in-vitro-test-covid" />
-        <display value="Specimen - Home Lab Test - COVID-19" />
-      </reference>
-      <name value="Specimen - At-Home In-Vitro Test - COVID-19" />
-      <description value="This Specimen profile identifies and describes the specimen used in a COVID-19 At-Home In-Vitro Test." />
-      <exampleBoolean value="false" />
-      <groupingId value="covid-specifc-at-home-test-profiles" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Organization/us-core-organization-quidel-corporation" />
-        <display value="Quidel Corporation" />
-      </reference>
-      <name value="US Core Organization - Quidel Corporation" />
-      <description value="US Core Organization: Quidel Corporation example" />
-      <exampleBoolean value="true" />
-      <groupingId value="participant-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/us-core-patient-patricia-noelle" />
-      </reference>
-      <name value="US Core Patient - Patricia Noelle" />
-      <description value="US Core Patient: Patricia Noelle example" />
-      <exampleBoolean value="true" />
-      <groupingId value="participant-examples" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ValueSet-at-home-in-vitro-patient-questions" />
-        <display value="ValueSet - At-Home In-Vitro Patient Questions" />
-      </reference>
-      <name value="ValueSet - At-Home In-Vitro Patient Questions" />
-      <description value="This set of values contains concepts representing questions asked of the patient by the app when recording or uploading their at-home in-vitro test results." />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ValueSet-at-home-in-vitro-test-results-covid" />
-        <display value="ValueSet - COVID-19 Home Lab Test Results" />
-      </reference>
-      <name value="ValueSet - At-Home In-Vitro Test Results - COVID-19" />
-      <description value="This set of values contains SNOMED CT concepts representing typical COVID-19 at home lab test results." />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid" />
-        <display value="ValueSet - Home Lab Test Specimen Types - COVID-19" />
-      </reference>
-      <name value="ValueSet - At-Home In-Vitro Test Specimen Types - COVID-19" />
-      <description value="This set of values contains SNOMED CT concepts representing specimens used in COVID-19 home lab tests." />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ValueSet-at-home-in-vitro-test-types-covid" />
-        <display value="ValueSet - COVID-19 Home Lab Test Types" />
-      </reference>
-      <name value="ValueSet - At-Home In-Vitro Test Types - COVID-19" />
-      <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home tests" />
-      <exampleBoolean value="false" />
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ValueSet-yes-no-unknown-snomed" />
-        <display value="ValueSet - Yes No Unknown SNOMED" />
-      </reference>
-      <name value="ValueSet - Yes No Unknown SNOMED" />
-      <description value="This set of values contains SNOMED-CT concepts representing &quot;Yes&quot;, &quot;No&quot;, and &quot;Unknown&quot;." />
-      <exampleBoolean value="false" />
-    </resource>
-    <page>
-      <nameUrl value="index.html" />
-      <title value="Home Page" />
-      <generation value="markdown" />
-      <page>
-        <nameUrl value="note_to_balloters.html" />
-        <title value="Note to Balloters" />
-        <generation value="markdown" />
-      </page>
-      <page>
-        <nameUrl value="technical_guidance.html" />
-        <title value="Technical Guidance" />
-        <generation value="markdown" />
-      </page>
-      <page>
-        <nameUrl value="connectathon_specific_information.html" />
-        <title value="Connectathon Specific Information" />
-        <generation value="markdown" />
-      </page>
-      <page>
-        <nameUrl value="implementation_guide.html" />
-        <title value="Implementation Guide" />
-        <generation value="markdown" />
-      </page>
-      <page>
-        <nameUrl value="workflow.html" />
-        <title value="Workflow" />
-        <generation value="markdown" />
-      </page>
-      <page>
-        <nameUrl value="hl7_v2_fields_and_otc_example_message.html" />
-        <title value="HL7 V2 Fields and OTC Example Message" />
-        <generation value="markdown" />
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="hl7-fhir-us-home-lab-report"/>
+    <meta>
+        <versionId value="209"/>
+        <lastUpdated value="2022-06-16T07:50:10.652+00:00"/>
+        <source value="#Sl0lPY9u394GsezI"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
+    <version value="0.1.0"/>
+    <name value="AtHomeInVitroTestReport"/>
+    <title value="At-Home In-Vitro Test Report"/>
+    <status value="draft"/>
+    <publisher value="Orders and Observations"/>
+    <contact>
+        <name value="HL7 International - Orders and Observations"/>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="NIBIB-Interagency Project Team"/>
+        <telecom>
+            <system value="email"/>
+            <value value="krishna.Juluru@pif.gov"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Gay Dolin MSN RN (Namaste Informatics)"/>
+        <telecom>
+            <system value="email"/>
+            <value value="gdolin@NamasteInformatics.com"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="CareEvolution"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://careevolution.com/"/>
+        </telecom>
+    </contact>
+    <contact>
+        <name value="Association of Public Health Laboratories"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.aphl.org/Pages/default.aspx"/>
+        </telecom>
+    </contact>
+    <description value="|IG Characteristic  | 	Value |&#xA;|------------------------------------------------------|--------------------------------------------|&#xA;|**FHIR Version:** |	FHIR R4 |&#xA;|**IG Realm:** |	US |&#xA;|**IG Type:** |	STU Ballot |&#xA;|**Exchange Methods:** |	RESTfulAPI, Messages, Transactions,  Tasks |&#xA;|**IG Note:** |	This HL7 FHIR Guide utilizes and adopts guidance or profiles developed in the US Core FHIR&amp;reg; Implementation Guide. This FHIR IG has narrative pages describing the HL7 V2 Message for At-Home In-Vitro Test Reporting and provides some example messages. Presently public health departments usually only can handle and store HL7 V2|&#xA;{:.table-striped}&#xA;&#xA;|IG Dependencies         |  IG Code     	| Version                  	|&#xA;|----------------------------------|-------------------------|---------------|&#xA;| HL7 FHIR US Core           	|  [US Core](https://www.hl7.org/fhir/us/core/)            	| Version 3.1.1|&#xA;{:.table-striped}&#xA;&#xA;&#xA;### Background&#xA;&#xA;Point-of-care (POC) and At-Home In-Vitro Tests offer increased accessibility to needed diagnostic solutions during a pandemic. Test results provide value to both the individual taking the tests and also to public health authorities responsible for coordinating a regional and national response. Digital platforms are being developed that allow individual test results, with permission of the individual, to be captured, organized, and transmitted to public health systems. Test manufacturers, working in partnership with these digital platforms, are seeking guidance on how to send test results. With multiple tests already entering the market, there is a need for a unified strategy on data flow of test results from the apps to downstream systems. A national data exchange standard should be supported that guides data exchange from test results residing on individual users’ digital test applications to public health authorities, at both the federal and regional levels.  &#xA;&#xA;### Introduction&#xA;&#xA;This implementation guide constrains the [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use for transmitting At-Home In-Vitro Test results to local, state, territorial and federal health agencies. It is an STU IG to be used in real world testing. It was developed in a collaborative project with the NIH/NIBIB, ONC, a vendor manufacturer of diagnostic healthcare products that makes one of the FDA approved At-Home In-Vitro Test kits and an App developer - who is a leading provider of secure interoperability solutions. The intention of this guide is to assist developers in producing and sending standardized FHIR test result data perfomed at home. FHIRs eases app development and US Core is in a rapid adoption curve. This guide points to already existing US Core Guidance and other guidance with respect to FHIR Parameters, FHIR operations and RESTful and SMART on FHIR information.&#xA;&#xA;It is also understood that, in general, public health agencies are at present primarily prepared to only receive V2 messages. The App developer is poised to transform this to V2 messages. In addition, as a parallel effort, a V2 data table has been developed for [COVID-19 At-Home In-Vitro Test Report data fields](https://nih.sharepoint.com/sites/NIBIB-InteragencyCOVIDTestResultDataFlow/SitePages/COVID-At-Home-Test-Data-Fields.aspx). &lt;-- This link is to be updated to a public link.&#xA;&#xA;**Please note** : This guide is a framework for future work. It contains &quot;framework&quot; profiles that contain constraints common to all At-Home In-Vitro Test Reporting use cases. These framework profiles can be further constrained to a particular use case such as the COVID-19 At-Home In-Vitro Test Reporting use case. The COVID-19 use case profiles have been created and included in this guide.&#xA;&#xA;### Further Information&#xA;[RADx® MARS - Mobile Application Reporting through Standards](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars)&#xA;&#xA;[LOINC In Vitro Diagnostic (LIVD) Test Code Mapping for SARS-CoV-2 Tests](https://www.cdc.gov/csels/dls/sars-cov-2-livd-codes.html)&#xA;&#xA;[Test-Specific HL7v2 Field Values Tool](https://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&amp;pageName=ReportSectionhttps://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&amp;pageName=ReportSection3147535a75468ee60d16)&#xA;&#xA;&#xA;### Technical Overview&#xA;The main sections of this IG are:&#xA;* Section 1&#xA;* Section 2&#xA;* etc - add these and link to relevant pages"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <packageId value="hl7.fhir.us.home-lab-report"/>
+    <fhirVersion value="4.0.1"/>
+    <dependsOn id="hl7fhiruscore">
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.0"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="5.0.0"/>
+    </dependsOn>
+    <dependsOn id="usnlmvsac">
+        <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
+        <packageId value="us.nlm.vsac"/>
+        <version value="0.7.0"/>
+    </dependsOn>
+    <definition>
+        <grouping id="framework-at-home-test-profiles">
+            <name value="Profiles: At-Home In-Vitro Test Report Framework"/>
+            <description value="&quot;Framework&quot; profiles that describe the minimum requirements for At-Home In-Vitro Test Report profiles. These profiles can be further constrained (e.g. [Profiles: COVID-19 At-Home In-Vitro Test Report](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report)) to describe further condition-specific requirements."/>
+        </grouping>
+        <grouping id="framework-at-home-test-examples">
+            <name value="Examples: At-Home In-Vitro Test Report Framework"/>
+        </grouping>
+        <grouping id="covid-specifc-at-home-test-profiles">
+            <name value="Profiles: COVID-19 At-Home In-Vitro Test Report"/>
+            <description value="Profiles that further constrain the &quot;framework&quot; profiles to be specific to COVID-19 At-Home In-Vitro Tests."/>
+        </grouping>
+        <grouping id="covid-specific-at-home-test-examples">
+            <name value="Examples: COVID-19 At-Home In-Vitro Test Report"/>
+        </grouping>
+        <grouping id="participant-examples">
+            <name value="Examples: Participant"/>
+        </grouping>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Bundle-at-home-in-vitro-test"/>
+                <display value="Bundle - Home Lab Test"/>
+            </reference>
+            <name value="Bundle - At-Home In-Vitro Test"/>
+            <description value="This profile constrains the Bundle resource for At-Home In-Vitro Tests."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-at-home-in-vitro-test-results-p-noelle"/></reference>
+            <name value="Bundle - At-Home In-Vitro Test Results - P Noelle"/>
+            <description value="Bundle - At-Home In-Vitro Test Results - P Noelle - example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="CodeSystem/codesystem-at-home-in-vitro-test"/>
+                <display value="CodeSystem - At-Home In-Vitro"/>
+            </reference>
+            <name value="CodeSystem - At-Home In-Vitro Test"/>
+            <description value="This code system contains codes for use in At-Home In-Vitro Test Result Reports."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Device-at-home-in-vitro-test"/>
+                <display value="Device - Home Lab Test"/>
+            </reference>
+            <name value="Device - At-Home In-Vitro Test"/>
+            <description value="This profile constrains the Device resource to At-Home In-Vitro Tests."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Device-at-home-in-vitro-test-covid"/>
+                <display value="Device - Home Lab Test - COVID-19"/>
+            </reference>
+            <name value="Device - At-Home In-Vitro Test - COVID-19"/>
+            <description value="This profile constrains the Device - At-Home In-Vitro Test profile to COVID-19 At-Home In-Vitro Tests."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="covid-specifc-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Device/device-quickvue-sars-antigen-test"/></reference>
+            <name value="Device - QuickVue SARS Antigen Test"/>
+            <description value="Device - QuickVue SARS Antigen Test example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test-covid"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
+                <display value="DiagnosticReport - Home Lab Results"/>
+            </reference>
+            <name value="DiagnosticReport - At-Home In-Vitro Results"/>
+            <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home In-Vitro Tests."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid"/>
+                <display value="DiagnosticReport - Home Lab Results - COVID-19"/>
+            </reference>
+            <name value="DiagnosticReport - At-Home In-Vitro Results - COVID-19"/>
+            <description value="This profile further constrains the DiagnosticReport - At-Home In-Vitro Results profile to COVID-19 At-Home In-Vitro Tests."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="covid-specifc-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle"/>
+                <display value="diagnosticreport-at-home-in-vitro-results-covid-p-noelle"/>
+            </reference>
+            <name value="DiagnosticReport - At-Home In-Vitro Results - COVID-19 - P Noelle"/>
+            <description value="DiagnosticReport - At-Home In-Vitro Results - Covid: P Noelle example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="MessageHeader/messageheader-at-home-in-vitro-test-p-noelle"/></reference>
+            <name value="MessageHeader - At-Home In-Vitro Results - COVID-19 - P Noelle"/>
+            <description value="MessageHeader - At-Home In-Vitro Results - COVID-19 - P Noelle Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+                <display value="MessageHeader - At-Home In-Vitro Test Results"/>
+            </reference>
+            <name value="MessageHeader - At-Home In-Vitro Test Results"/>
+            <description value="This MessageHeader represents the At-Home In-Vitro Test Results being sent from an application server to a health authority."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-at-home-in-vitro-test-result"/>
+                <display value="Observation - Home Lab Test Result"/>
+            </reference>
+            <name value="Observation - At-Home In-Vitro Test Result"/>
+            <description value="This profile constrains the US Core Laboratory Result Observation to At-Home In-Vitro Sample Tests."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
+                <display value="Observation - Home Lab Test Result - COVID-19"/>
+            </reference>
+            <name value="Observation - At-Home In-Vitro Test Result - COVID-19"/>
+            <description value="This profile constrains the Observation - At-Home In-Vitro Test Result profile to COVID-19 At-Home In-Vitro Tests."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="covid-specifc-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-at-home-in-vitro-test-result-covid-p-noelle"/></reference>
+            <name value="Observation - At-Home In-Vitro Test Result COVID-19 - P Noelle"/>
+            <description value="Observation - At-Home In-Vitro Test Result - Covid: P Noelle example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-patient-answer-symptom-onset-covid-p-noelle"/></reference>
+            <name value="Observation - Patient Answer - Symptoms Onset COVID-19 P Noelle"/>
+            <description value="Observation - Patient Answer - Symptom Onset COVID-19 P Noelle Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-patient-answer-symptoms-present-covid-p-noelle"/></reference>
+            <name value="Observation - Patient Answer - Symptoms Present COVID-19 P Noelle"/>
+            <description value="Observation - Patient Answer - Symptoms Present COVID-19 P Noelle Example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Observation-patient-question-answer"/>
+                <display value="Observation - Patient Question Answers"/>
+            </reference>
+            <name value="Observation - Patient Question Answer"/>
+            <description value="This profile constrains the FHIR Observation Resource to represent an answer given to a question asked of the patient by the app when recording or uploading their test results."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-anterior-nares-swab-p-noelle"/></reference>
+            <name value="Specimen - Anterior Nares Swab - P Noelle"/>
+            <description value="Specimen - Anterior Nares Swab: P Noelle example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-at-home-in-vitro-test"/>
+                <display value="Specimen - Home Lab Test"/>
+            </reference>
+            <name value="Specimen - At-Home In-Vitro Test"/>
+            <description value="This Specimen profile identifies and describes the specimen used in an At-Home In-Vitro Test."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Specimen-at-home-in-vitro-test-covid"/>
+                <display value="Specimen - Home Lab Test - COVID-19"/>
+            </reference>
+            <name value="Specimen - At-Home In-Vitro Test - COVID-19"/>
+            <description value="This Specimen profile identifies and describes the specimen used in a COVID-19 At-Home In-Vitro Test."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="covid-specifc-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/us-core-organization-quidel-corporation"/>
+                <display value="Quidel Corporation"/>
+            </reference>
+            <name value="US Core Organization - Quidel Corporation"/>
+            <description value="US Core Organization: Quidel Corporation example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/us-core-patient-patricia-noelle"/></reference>
+            <name value="US Core Patient - Patricia Noelle"/>
+            <description value="US Core Patient: Patricia Noelle example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-at-home-in-vitro-patient-questions"/>
+                <display value="ValueSet - At-Home In-Vitro Patient Questions"/>
+            </reference>
+            <name value="ValueSet - At-Home In-Vitro Patient Questions"/>
+            <description value="This set of values contains concepts representing questions asked of the patient by the app when recording or uploading their at-home in-vitro test results."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-at-home-in-vitro-test-results-covid"/>
+                <display value="ValueSet - COVID-19 Home Lab Test Results"/>
+            </reference>
+            <name value="ValueSet - At-Home In-Vitro Test Results - COVID-19"/>
+            <description value="This set of values contains SNOMED CT concepts representing typical COVID-19 at home lab test results."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
+                <display value="ValueSet - Home Lab Test Specimen Types - COVID-19"/>
+            </reference>
+            <name value="ValueSet - At-Home In-Vitro Test Specimen Types - COVID-19"/>
+            <description value="This set of values contains SNOMED CT concepts representing specimens used in COVID-19 home lab tests."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
+                <display value="ValueSet - COVID-19 Home Lab Test Types"/>
+            </reference>
+            <name value="ValueSet - At-Home In-Vitro Test Types - COVID-19"/>
+            <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home tests"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ValueSet-yes-no-unknown-snomed"/>
+                <display value="ValueSet - Yes No Unknown SNOMED"/>
+            </reference>
+            <name value="ValueSet - Yes No Unknown SNOMED"/>
+            <description value="This set of values contains SNOMED-CT concepts representing &quot;Yes&quot;, &quot;No&quot;, and &quot;Unknown&quot;."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
-          <nameUrl value="at-home_in-vitro_test_over_the_counter_purchase_v2_example.html" />
-          <title value="At-Home In-Vitro Test Over the Counter Purchase V2 Example" />
-          <generation value="markdown" />
+            <nameUrl value="index.html"/>
+            <title value="Home Page"/>
+            <generation value="markdown"/>
+            <page>
+                <nameUrl value="note_to_balloters.html"/>
+                <title value="Note to Balloters"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="technical_guidance.html"/>
+                <title value="Technical Guidance"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="implementation_guide.html"/>
+                <title value="Implementation Guide"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="workflow.html"/>
+                <title value="Workflow"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="hl7_v2_fields_and_otc_example_message.html"/>
+                <title value="HL7 V2 Fields and OTC Example Message"/>
+                <generation value="markdown"/>
+                <page>
+                    <nameUrl value="at-home_in-vitro_test_over_the_counter_purchase_v2_example.html"/>
+                    <title value="At-Home In-Vitro Test Over the Counter Purchase V2 Example"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="at-home_in-vitro_test_with_prescription_v2_example.html"/>
+                    <title value="At-Home In-Vitro Test with Prescription V2 Example"/>
+                    <generation value="markdown"/>
+                </page>
+            </page>
         </page>
-        <page>
-          <nameUrl value="at-home_in-vitro_test_with_prescription_v2_example.html" />
-          <title value="At-Home In-Vitro Test with Prescription V2 Example" />
-          <generation value="markdown" />
-        </page>
-      </page>
-    </page>
-    <parameter>
-      <code value="copyrightyear" />
-      <value value="2020+" />
-    </parameter>
-    <parameter>
-      <code value="releaselabel" />
-      <value value="CI Build" />
-    </parameter>
-  </definition>
+        <parameter>
+            <code value="copyrightyear"/>
+            <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="releaselabel"/>
+            <value value="CI Build"/>
+        </parameter>
+    </definition>
 </ImplementationGuide>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="device-quickvue-sars-antigen-test"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-26T05:51:44.289+00:00"/>
-        <source value="#s31mdfHg3R2qDJas"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-06-16T07:37:39.154+00:00"/>
+        <source value="#ylUgqxfEyq1mAhWn"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
     </meta>
     <udiCarrier>
@@ -19,7 +19,7 @@
     <serialNumber value="10987654d321"/>
     <deviceName>
         <name value="QuickVue® SARS Antigen Test"/>
-        <type value="user-friendly-name"/>
+        <type value="manufacturer-name"/>
     </deviceName>
     <modelNumber value="20387"/>
     <partNumber value="20387"/>
