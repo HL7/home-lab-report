@@ -11,7 +11,7 @@
 
 |IG Dependencies         |  IG Code     	| Version                  	|
 |----------------------------------|-------------------------|---------------|
-| HL7 FHIR US Core           	|  [US Core](https://www.hl7.org/fhir/us/core/)            	| Version 3.1.1|
+| HL7 FHIR US Core           	|  [US Core](https://www.hl7.org/fhir/us/core/)            	| Version 5.0.1|
 {:.table-striped}
 
 

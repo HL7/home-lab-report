@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-at-home-in-vitro-results"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-06-16T07:40:43.239+00:00"/>
-        <source value="#wVCTQpz4eyM8bqXV"/>
+        <versionId value="19"/>
+        <lastUpdated value="2022-07-13T00:59:28.398+00:00"/>
+        <source value="#8GZaUlgt2oY0XTEy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
     <version value="1.0.0"/>
@@ -86,7 +86,6 @@
                 <human value="The effectiveTime SHALL be precise to at least the minute and SHALL include a time zone offset. For example YYYY-MM-DDTHH:mm+/-HH:NN"/>
                 <expression value="Observation.effectiveDateTime.exists() implies Observation.effectiveDateTime.toString().length() &gt;= 25"/>
             </constraint>
-            <mustSupport value="false"/>
         </element>
         <element id="DiagnosticReport.result">
             <path value="DiagnosticReport.result"/>
@@ -102,7 +101,6 @@
             <path value="DiagnosticReport.media"/>
             <short value="Images related to the test, such as a photo of the test result, images to support proctor interpretation of test results, etc."/>
             <definition value="Images related to the test, such as a photo of the test result, images to support proctor interpretation of test results, etc."/>
-            <mustSupport value="false"/>
         </element>
     </differential>
 </StructureDefinition>

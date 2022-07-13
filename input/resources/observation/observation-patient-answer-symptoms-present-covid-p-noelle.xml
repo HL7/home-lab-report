@@ -3,12 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-patient-answer-symptoms-present-covid-p-noelle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-29T04:39:50.548+00:00"/>
-        <source value="#etQI0csBFCamb750"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-07-13T00:41:20.284+00:00"/>
+        <source value="#Ijwr6JLVRqUCiFZ7"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
     </meta>
     <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="survey"/>
+            <display value="Survey"/>
+        </coding>
+        <text value="Survey"/>
+    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>

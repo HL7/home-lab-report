@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Device-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2022-06-16T07:41:53.123+00:00"/>
-        <source value="#eSSEG50jQpqZPnx2"/>
+        <versionId value="14"/>
+        <lastUpdated value="2022-06-16T18:47:59.486+00:00"/>
+        <source value="#bSrtfwXUcyNqJrWg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
     <version value="4.0.0"/>
@@ -31,7 +31,6 @@
         </element>
         <element id="Device.udiCarrier">
             <path value="Device.udiCarrier"/>
-            <short value="Use value from column &quot;Testkit Name ID&quot; from the LOINC Mapping tab in the LIVD file."/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>

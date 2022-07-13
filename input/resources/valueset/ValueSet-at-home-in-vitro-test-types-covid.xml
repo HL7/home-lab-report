@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ValueSet-at-home-in-vitro-test-types-covid"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-26T05:21:54.503+00:00"/>
-        <source value="#VCB27pX7msd2Q8vK"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-07-13T01:01:58.374+00:00"/>
+        <source value="#s9Tw8m7q1IGKcccG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
     <version value="1"/>
@@ -18,7 +18,6 @@
         <inactive value="false"/>
         <include>
             <system value="http://loinc.org"/>
-            <version value="2.69"/>
             <concept>
                 <code value="96119-3"/>
                 <display value="SARS-CoV-2 (COVID-19) Ag [Presence] in Upper respiratory specimen by Immunoassay"/>

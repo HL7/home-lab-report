@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Extension-at-home-in-vitro-test-proctored-info"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2022-07-13T03:42:56.973+00:00"/>
+        <source value="#KFGbfWEm9nUnobZk"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
+    <version value="5.0.1"/>
+    <name value="ExtensionAtHomeInVitroTestProctoredInfo"/>
+    <title value="Extension - At-Home In-Vitro Test Proctored Information"/>
+    <status value="active"/>
+    <date value="2022-06-21"/>
+    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
+    <description value="Information about whether or not the test was proctored and who the proctor was."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Complies with 2015 Edition Common Clinical Data Set for patient race."/>
+    <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Observation"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Extension - At-Home In-Vitro Test Proctored Information"/>
+            <definition value="Information about whether or not the test was proctored and who the proctor was."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.extension:proctoredTest">
+            <path value="Extension.extension"/>
+            <sliceName value="proctoredTest"/>
+            <short value="Whether or not the at-home in-vitro test was proctored"/>
+            <definition value="Whether or not the at-home in-vitro test was proctored"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.extension:proctoredTest.url">
+            <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="proctoredTest"/>
+        </element>
+        <element id="Extension.extension:proctoredTest.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="boolean"/>
+            </type>
+        </element>
+        <element id="Extension.extension:proctorInformation">
+            <path value="Extension.extension"/>
+            <sliceName value="proctorInformation"/>
+            <short value="Information about the person(s) who proctored the test"/>
+            <definition value="Information about the person(s) who proctored the test"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+        </element>
+        <element id="Extension.extension:proctorInformation.url">
+            <path value="Extension.extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="proctorInformation"/>
+        </element>
+        <element id="Extension.extension:proctorInformation.value[x]">
+            <path value="Extension.extension.value[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
