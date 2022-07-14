@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="217"/>
-        <lastUpdated value="2022-07-14T05:59:55.646+00:00"/>
-        <source value="#dP9e1TH0XVYXznLZ"/>
+        <versionId value="218"/>
+        <lastUpdated value="2022-07-14T17:52:43.132+00:00"/>
+        <source value="#04PeDxPh3pvkwiZC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -364,8 +364,8 @@
             <title value="Home Page"/>
             <generation value="markdown"/>
             <page>
-                <nameUrl value="note_to_balloters.html"/>
-                <title value="Note to Balloters"/>
+                <nameUrl value="notice_to_ballot_commenters.html"/>
+                <title value="Notice to Ballot Commenters"/>
                 <generation value="markdown"/>
             </page>
             <page>
