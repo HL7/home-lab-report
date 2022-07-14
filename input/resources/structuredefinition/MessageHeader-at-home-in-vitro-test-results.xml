@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-at-home-in-vitro-test-results"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-05-03T05:50:53.082+00:00"/>
-        <source value="#0aF2nYrQwQ8fUq0h"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-07-14T05:03:50.533+00:00"/>
+        <source value="#e5GFErZ7iEq3saBa"/>
     </meta>
     <url value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
     <name value="MessageHeaderAtHomeInVitroTestResults"/>
@@ -13,6 +13,10 @@
     <status value="active"/>
     <description value="This MessageHeader represents the At-Home In-Vitro Test Results being sent from an application server to a health authority."/>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="hl7v2home"/>
+        <name value="HL7 V2 At-Home Test Guide"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="MessageHeader"/>
@@ -38,14 +42,94 @@
         <element id="MessageHeader.destination">
             <path value="MessageHeader.destination"/>
             <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="MSH.6.1, MSH.6.2, MSH.6.6"/>
+            </mapping>
+        </element>
+        <element id="MessageHeader.destination.id">
+            <path value="MessageHeader.destination.id"/>
+            <short value="Receiving system OID"/>
+            <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="MSH.5.2"/>
+            </mapping>
+        </element>
+        <element id="MessageHeader.destination.name">
+            <path value="MessageHeader.destination.name"/>
+            <short value="Receiving system namespace (name of destination application)"/>
+            <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="MSH.5.1"/>
+            </mapping>
+        </element>
+        <element id="MessageHeader.destination.receiver">
+            <path value="MessageHeader.destination.receiver"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            </type>
+            <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="MSH.6.1, MSH.6.2, MSH.6.3"/>
+                <comment value="Located in US Core Organization"/>
+            </mapping>
         </element>
         <element id="MessageHeader.sender">
             <path value="MessageHeader.sender"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+            </type>
             <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="MSH.4.1, MSH.4.2, MSH.4.3"/>
+                <comment value="Located in US Core Organization"/>
+            </mapping>
         </element>
         <element id="MessageHeader.source">
             <path value="MessageHeader.source"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.source.id">
+            <path value="MessageHeader.source.id"/>
+            <short value="Sending system OID"/>
+            <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="MSH.3.2"/>
+            </mapping>
+        </element>
+        <element id="MessageHeader.source.name">
+            <path value="MessageHeader.source.name"/>
+            <short value="Sending system namespace (name of app)"/>
+            <min value="0"/>
+            <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="MSH.3.1"/>
+            </mapping>
+        </element>
+        <element id="MessageHeader.source.software">
+            <path value="MessageHeader.source.software"/>
+            <short value="Software product name"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="SFT.3"/>
+            </mapping>
+        </element>
+        <element id="MessageHeader.source.version">
+            <path value="MessageHeader.source.version"/>
+            <short value="Software certified version or release number"/>
+            <mustSupport value="true"/>
+            <mapping>
+                <identity value="hl7v2home"/>
+                <map value="SFT.2"/>
+            </mapping>
         </element>
         <element id="MessageHeader.focus">
             <path value="MessageHeader.focus"/>

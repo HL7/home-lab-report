@@ -5,12 +5,12 @@ Within the intial V2 message, many of the segments contain "hard coded" informat
 
 #### COVID-19 At-Home In-Vitro Test Report to V2 and FHIR Profile Elements Mapping Table
 ~~[NIH National Institute of Biomedical Imaging and Bioengineering Hosted COVID-19 At-Home In-Vitro Test Report to V2 and FHIR Mapping Table](https://nibibdrupal8stg.prod.acquia-sites.com/node/123961)~~
-[Temporary Google Docs Connectathon working mapping file](https://docs.google.com/spreadsheets/d/1d8kBi4tAFFR-lzyGtLIFQl9rjMv4bRTN/edit#gid=762662633)
+[In-Vitro At-Home Test V2 FHIR Mapping.xlsx](https://docs.google.com/spreadsheets/d/1Vx7WesZzihNiAsHCVPQtSiEJLBQZr8Iy/edit?usp=sharing&ouid=112434457756659409284&rtpof=true&sd=true)
 
 ### V2 Example Messages
 The following child pages represent the 2 types of home tests in the intial project. The two scenarios are described below.
 
-#### At-Home In-Vitro Test Over the Counter Purchase
+#### [At-Home In-Vitro Test Over the Counter Purchase](at-home_in-vitro_test_over_the_counter_purchase_v2_example.html)
 Patient buys and performs testing, result is obtained via an App that then does the reporting; this may result in limited data fidelity (no verification): a) that the person tested = patient, b) of how the specimen was collected, c) if the test procedure was followed, d) if the interpretation of the result and subsequent reporting is accurate, unless the app preforms the interpretation, e) data about the patient is accurate)
 
 **The following segments are constrained:**
@@ -26,7 +26,7 @@ Patient buys and performs testing, result is obtained via an App that then does 
 * Cue Health Inc’s Cue COVID-19 Test for Home and Over The Counter (OTC) Use – OBX-17.1 = 
 * Example message is for Ellume’s  COVID-19 Home Test sent by OneAbbott: InterPartner~CentralizedELR~OneAbbott~AIMSPlatform~Test~Test~2021012816241013~STOP~TestMessageSA.OTC_AL_FINAL
 
-#### At-Home In-Vitro Test with Prescription
+#### [At-Home In-Vitro Test with Prescription](at-home_in-vitro_test_with_prescription_v2_example.html)
 Patient is prescribed the test, obtains the kit, sample collection and test performance is unsupervised, result is obtained via app that then does the reporting; this may result in limited data fidelity (no verification): a) that the person tested = patient, b) of how the specimen was collected, c) if the test procedure was followed, d) if the interpretation of the result and subsequent reporting is accurate; however, data about the patient should be accurate – since it is coming from the provider’s health record.
 
 **The following segments are constrained:**

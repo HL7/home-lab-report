@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="212"/>
-        <lastUpdated value="2022-07-13T01:26:37.846+00:00"/>
-        <source value="#0rR0wox6ytk9c8Er"/>
+        <versionId value="216"/>
+        <lastUpdated value="2022-07-14T05:49:26.144+00:00"/>
+        <source value="#h0yk50JtO6MY7gg7"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -352,6 +352,12 @@
             <description value="Information about whether or not the test was proctored and who the proctor was."/>
             <exampleBoolean value="false"/>
             <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Practitioner/practitioner-us-core-proctor"/></reference>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

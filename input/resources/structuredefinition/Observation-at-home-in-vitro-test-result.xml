@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-at-home-in-vitro-test-result"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-06-16T07:53:20.361+00:00"/>
-        <source value="#SQQsflDNPcwBKrcQ"/>
+        <versionId value="11"/>
+        <lastUpdated value="2022-07-14T03:34:08.366+00:00"/>
+        <source value="#eY0h8K6I7v2TkeJr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
     <version value="1.0.0"/>
@@ -53,14 +53,14 @@
         </element>
         <element id="Observation.performer">
             <path value="Observation.performer"/>
-            <short value="If the performer is not the patient being tested, specify the person performing the test. If the test is being proctored, specify the proctor here."/>
+            <short value="If the performer is not the patient being tested, specify the person performing the test."/>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
             <label value="At-Home Test Result Value"/>
             <short value="At-Home Test Result Value"/>
-            <min value="1"/>
+            <min value="0"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
@@ -92,7 +92,22 @@
         </element>
         <element id="Observation.component">
             <path value="Observation.component"/>
-            <max value="0"/>
+            <short value="Multiplex Assay tests that serve as a single test to diagnose infection caused by multiple viruses (e.g. CDC Flu SC2 Multiplex Assay for SARS-CoV-2, influenza A, and/or influenza B viruses) should be recorded using multiple Observation.component elements."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component.code">
+            <path value="Observation.component.code"/>
+            <short value="At Home Tests"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Observation.component.value[x]">
+            <path value="Observation.component.value[x]"/>
+            <short value="At-Home Test Result Value"/>
+            <min value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

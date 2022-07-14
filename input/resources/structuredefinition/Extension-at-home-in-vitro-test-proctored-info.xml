@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-at-home-in-vitro-test-proctored-info"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-07-13T03:42:56.973+00:00"/>
-        <source value="#KFGbfWEm9nUnobZk"/>
+        <versionId value="7"/>
+        <lastUpdated value="2022-07-14T03:14:53.729+00:00"/>
+        <source value="#WFjBMKckDM5NheYw"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
     <version value="5.0.1"/>
@@ -61,6 +61,7 @@
                 <code value="uri"/>
             </type>
             <fixedUri value="proctoredTest"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.extension:proctoredTest.value[x]">
             <path value="Extension.extension.value[x]"/>
@@ -69,6 +70,7 @@
             <type>
                 <code value="boolean"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.extension:proctorInformation">
             <path value="Extension.extension"/>
@@ -80,6 +82,7 @@
             <type>
                 <code value="Extension"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.extension:proctorInformation.url">
             <path value="Extension.extension.url"/>
@@ -89,6 +92,7 @@
                 <code value="uri"/>
             </type>
             <fixedUri value="proctorInformation"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Extension.extension:proctorInformation.value[x]">
             <path value="Extension.extension.value[x]"/>
@@ -96,8 +100,22 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
             </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedUri value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
+        </element>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="0"/>
+            <max value="0"/>
         </element>
     </differential>
 </StructureDefinition>
