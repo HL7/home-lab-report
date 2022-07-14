@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-at-home-in-vitro-test-proctored-info"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-07-14T03:14:53.729+00:00"/>
-        <source value="#WFjBMKckDM5NheYw"/>
+        <versionId value="8"/>
+        <lastUpdated value="2022-07-14T21:26:32.788+00:00"/>
+        <source value="#MZnUtMqvK71GmQr5"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
     <version value="5.0.1"/>
@@ -46,7 +46,7 @@
             <sliceName value="proctoredTest"/>
             <short value="Whether or not the at-home in-vitro test was proctored"/>
             <definition value="Whether or not the at-home in-vitro test was proctored"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -101,7 +101,6 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
             </type>
             <mustSupport value="true"/>

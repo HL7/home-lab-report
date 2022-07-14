@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="218"/>
-        <lastUpdated value="2022-07-14T17:52:43.132+00:00"/>
-        <source value="#04PeDxPh3pvkwiZC"/>
+        <versionId value="219"/>
+        <lastUpdated value="2022-07-14T18:09:16.954+00:00"/>
+        <source value="#wvSkMIYLkkKtVsJu"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -62,7 +62,7 @@
     <dependsOn id="hl7fhiruscore">
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.0"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="5.0.0"/>
+        <version value="5.0.1"/>
     </dependsOn>
     <dependsOn id="usnlmvsac">
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
