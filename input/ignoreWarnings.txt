@@ -1,1 +1,3 @@
 == Suppressed Messages ==
+# Examples have optional slices that are not defined in the profile - not matching is expected behaviour
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test
