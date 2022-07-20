@@ -9,10 +9,21 @@
 			"sequence": "",
 			"status": "ci-build",
 			"current": true
+		},
+		{
+			"version": "1.0.0-ballot",
+			"date": "2022-08-12",
+			"desc": "Ballot for STU Release 1",
+			"path": "http://hl7.org/fhir/us/home-lab-report/2022Sept",
+			"changes": "http://hl7.org/fhir/us/ecrhistory.html",
+			"status": "ballot",
+			"fhirversion": "4.0.1",
+			"sequence": "STU 2",
+			"current": true
 		}
 	],
 	"package-id": "hl7.fhir.us.home-lab-report",
-	"title": "At-Home Point of Care Test Report",
+	"title": "At-Home In-Vitro Test Report",
 	"canonical": "http://hl7.org/fhir/us/home-lab-report",
 	"category": "Orders and Observations"
 }
