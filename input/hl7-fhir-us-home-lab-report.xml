@@ -403,7 +403,7 @@
         </page>
         <parameter>
             <code value="path-expansion-params"/>
-            <value value="expansion-parameters-ecr.xml"/>
+            <value value="expansion-parameters-at-home.xml"/>
         </parameter>
         <parameter>
             <code value="copyrightyear"/>
