@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="219"/>
-        <lastUpdated value="2022-07-14T18:09:16.954+00:00"/>
-        <source value="#wvSkMIYLkkKtVsJu"/>
+        <versionId value="227"/>
+        <lastUpdated value="2022-07-21T00:58:49.068+00:00"/>
+        <source value="#VOjTwP7I4pNswMJT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -356,8 +356,10 @@
         <resource>
             <reference>
                 <reference value="Practitioner/practitioner-us-core-proctor"/></reference>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+            <name value="US Core Practitioner - Proctor"/>
+            <description value="US Core Practitioner: Test Proctor example"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="participant-examples"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
@@ -399,6 +401,10 @@
                 </page>
             </page>
         </page>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="expansion-parameters-ecr.xml"/>
+        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
