@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet
-    xmlns="http://hl7.org/fhir">
-    <id value="ValueSet-at-home-in-vitro-test-types-covid"/>
-    <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-07-13T01:01:58.374+00:00"/>
-        <source value="#s9Tw8m7q1IGKcccG"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
-    <version value="1"/>
-    <name value="ValueSetAtHomeInVitroTestTypesCovid"/>
-    <title value="ValueSet - At-Home In-Vitro Test Types - COVID-19"/>
-    <status value="draft"/>
-    <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home tests"/>
-    <purpose value="The intent of this value set is to provide a subset of LOINC lab covid 19 for the types of tests used in the home"/>
-    <compose>
-        <inactive value="false"/>
-        <include>
-            <system value="http://loinc.org"/>
-            <concept>
-                <code value="96119-3"/>
-                <display value="SARS-CoV-2 (COVID-19) Ag [Presence] in Upper respiratory specimen by Immunoassay"/>
-            </concept>
-            <concept>
-                <code value="94558-4"/>
-                <display value="SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"/>
-            </concept>
-            <concept>
-                <code value="95209-3"/>
-                <display value="SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"/>
-            </concept>
-            <concept>
-                <code value="95409-9"/>
-                <display value="SARS-CoV-2 (COVID-19) N gene [Presence] in Nose by NAA with probe detection"/>
-            </concept>
-        </include>
-    </compose>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-at-home-in-vitro-test-types-covid" />
+  <meta>
+    <versionId value="4" />
+    <lastUpdated value="2022-07-13T01:01:58.374+00:00" />
+    <source value="#s9Tw8m7q1IGKcccG" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-types-covid" />
+  <version value="1" />
+  <name value="ValueSetAtHomeInVitroTestTypesCovid" />
+  <title value="ValueSet - At-Home In-Vitro Test Types - COVID-19" />
+  <status value="draft" />
+  <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home tests" />
+  <purpose value="The intent of this value set is to provide a subset of LOINC lab covid 19 for the types of tests used in the home" />
+  <copyright
+    value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc" />
+  <compose>
+    <inactive value="false" />
+    <include>
+      <system value="http://loinc.org" />
+      <concept>
+        <code value="96119-3" />
+        <display value="SARS-CoV-2 (COVID-19) Ag [Presence] in Upper respiratory specimen by Immunoassay" />
+      </concept>
+      <concept>
+        <code value="94558-4" />
+        <display value="SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay" />
+      </concept>
+      <concept>
+        <code value="95209-3" />
+        <display value="SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay" />
+      </concept>
+      <concept>
+        <code value="95409-9" />
+        <display value="SARS-CoV-2 (COVID-19) N gene [Presence] in Nose by NAA with probe detection" />
+      </concept>
+    </include>
+  </compose>
 </ValueSet>
