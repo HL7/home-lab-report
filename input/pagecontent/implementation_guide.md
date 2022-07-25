@@ -1,4 +1,4 @@
-### Implmentation Guide Overview
+### Implementation Guide Overview
 
 This At-Home In-Vitro Test Implementation Guide creates a common framework (e.g. FHIR resources, FHIR value sets, etc.) that will be leveraged by multiple condition-specific At-Home In-Vitro Test use cases. The framework artifacts included in this guide are intended to be use case independent
 
