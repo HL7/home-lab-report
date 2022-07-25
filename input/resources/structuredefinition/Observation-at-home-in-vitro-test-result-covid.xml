@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-at-home-in-vitro-test-result-covid"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2022-04-26T06:00:28.886+00:00"/>
-        <source value="#QPDg4T43o1XQbXZW"/>
+        <versionId value="10"/>
+        <lastUpdated value="2022-07-25T23:50:15.007+00:00"/>
+        <source value="#u5tdF3vYiNrbCTn9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
-    <version value="1.0.0"/>
+    <version value="1.0.0-ballot1"/>
     <name value="ObservationAtHomeInVitroTestResultCovid"/>
     <title value="Observation - At-Home In-Vitro Test Result - COVID-19"/>
     <status value="active"/>
@@ -75,7 +75,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test-covid"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
             </type>
             <mustSupport value="true"/>
         </element>
