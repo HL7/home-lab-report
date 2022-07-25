@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="227"/>
-        <lastUpdated value="2022-07-21T00:58:49.068+00:00"/>
-        <source value="#VOjTwP7I4pNswMJT"/>
+        <versionId value="234"/>
+        <lastUpdated value="2022-07-25T23:02:14.079+00:00"/>
+        <source value="#xsBib6JqLuglTswL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
-    <version value="1.0.0-ballot1"/>
+    <version value="0.1.0"/>
     <name value="AtHomeInVitroTestReport"/>
     <title value="At-Home In-Vitro Test Report"/>
     <status value="draft"/>
@@ -121,19 +121,9 @@
                 <display value="Device - Home Lab Test"/>
             </reference>
             <name value="Device - At-Home In-Vitro Test"/>
-            <description value="This profile constrains the Device resource to At-Home In-Vitro Tests."/>
+            <description value="This profile constrains the Device resource for At-Home In-Vitro Tests."/>
             <exampleBoolean value="false"/>
             <groupingId value="framework-at-home-test-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/Device-at-home-in-vitro-test-covid"/>
-                <display value="Device - Home Lab Test - COVID-19"/>
-            </reference>
-            <name value="Device - At-Home In-Vitro Test - COVID-19"/>
-            <description value="This profile constrains the Device - At-Home In-Vitro Test profile to COVID-19 At-Home In-Vitro Tests."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="covid-specifc-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -141,7 +131,7 @@
             <name value="Device - QuickVue SARS Antigen Test"/>
             <description value="Device - QuickVue SARS Antigen Test example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test-covid"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
             <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
@@ -401,10 +391,6 @@
                 </page>
             </page>
         </page>
-        <parameter>
-            <code value="path-expansion-params"/>
-            <value value="expansion-parameters-at-home.xml"/>
-        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>

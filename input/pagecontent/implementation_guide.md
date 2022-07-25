@@ -1,14 +1,10 @@
 ### Implementation Guide Overview
 
-This At-Home In-Vitro Test Implementation Guide creates a common framework (e.g. FHIR resources, FHIR value sets, etc.) that will be leveraged by multiple condition-specific At-Home In-Vitro Test use cases. The framework artifacts included in this guide are intended to be use case independent
-
-This implementation guide has considered and included examples for the COVID-19 At-Home use case.
-
-Generic FHIR profiles with V2 mappings and implementation guidance for sharing ANY sampling (specimen) test that can now, or in the future, be performed at home
+This At-Home In-Vitro Test Implementation Guide creates a common framework (e.g. FHIR resources, FHIR value sets, etc.) that will be leveraged by multiple condition-specific At-Home In-Vitro Test use cases. The framework artifacts included in this guide are intended to be use case independent.
 
 ### Framework Profiles
 
-Rather than creating multiple condition-specific profiles for each type of At-Home In-Vitro Test type that only differ by value set binding, this IG contains a set of [framework profiles](artifacts.html#profiles-at-home-in-vitro-test-report-framework) which conform to US Core Profiles (where available) with At-Home In-Vitro specific constraints and/or extensions. Some of the framework profiles are intended to be used as-is and some are intended to be used as a base with further constraints, mainly bindings to condition-specific value sets. Each profile contains information about which type they are and which elements are expected to be further constrained for a specific use case.
+Rather than creating multiple condition-specific profiles that only differ by value set binding for each type of At-Home In-Vitro Test type, this IG contains a set of [framework profiles](artifacts.html#profiles-at-home-in-vitro-test-report-framework) which conform to US Core Profiles (where available) with At-Home In-Vitro specific constraints and/or extensions. Some of the framework profiles are intended to be used as-is and some are intended to be used as a base with further constraints, mainly bindings to condition-specific value sets. Each profile contains information about which type they are and which elements are expected to be further constrained for a specific use case.
 
 There is also a set of [example profiles that represent the COVID-19 use case](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report) which can act as guidance for implementation of different use cases. These example profiles have been instantiated in the [example instacnces](artifacts.html#examples-covid-19-at-home-in-vitro-test-report) included in the guide.
 
@@ -40,8 +36,7 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
       <td>
         <p>This profile constrains the Device resource to At-Home Sample Tests.</p>
       </td>
-      <td>todo</td>
-      <td>todo</td>
+      <td colspan="2">Use as is for all use cases</td>
     </tr>
     <tr>
       <td style="column-width:30%">
@@ -100,8 +95,6 @@ There is also a set of [example profiles that represent the COVID-19 use case](a
   </tbody>
 </table>
 
-  
-**TODO** - Potential for adding link to VSAC, or other external link, that can be updated with new value sets
 
 ### Underlying Specifications
 
@@ -164,7 +157,7 @@ The table below identifies the specific FHIR Resources and their purposes that a
   </tr>
   
   <tr>
-    <td><a href="{{site.data.fhir.path}}messageheader.html">MessageHeader???</a></td>
+    <td><a href="{{site.data.fhir.path}}messageheader.html">MessageHeader</a></td>
 	<td>Used to specify metadata for routing.</td>
   </tr>
   <tr>

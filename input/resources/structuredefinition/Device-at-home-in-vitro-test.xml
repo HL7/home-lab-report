@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Device-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2022-06-16T18:47:59.486+00:00"/>
-        <source value="#bSrtfwXUcyNqJrWg"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-07-25T22:59:18.836+00:00"/>
+        <source value="#psJVE9MFswc2BWv9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
     <version value="4.0.0"/>
@@ -13,7 +13,7 @@
     <title value="Device - At-Home In-Vitro Test"/>
     <status value="active"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="This profile constrains the Device resource to At-Home In-Vitro Tests."/>
+    <description value="This profile constrains the Device resource for At-Home In-Vitro Tests."/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="livd"/>
