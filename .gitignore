@@ -5,3 +5,11 @@
 /validation-lantana-server.xml
 /validation.xml
 /validator_cli.jar
+/input-cache
+/org.hl7.fhir.publisher.jar
+/output
+/template
+/temp/qa
+/temp/pages
+/publisher.bat
+/publisher.sh

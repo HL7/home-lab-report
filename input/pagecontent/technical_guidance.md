@@ -12,7 +12,7 @@ Multiplex Assay tests that serve as a single test to diagnose infection caused b
 Please see [US Core Quick start](https://www.hl7.org/fhir/us/core/StructureDefinition-us-core-observation-lab.html#quick-start) for an overview of search and read operations for this profile.
 
 ### SMART App Launch
-Please see [SMART App Launch](http://build.fhir.org/ig/HL7/smart-app-launch/) for guidance around SMART apps including IDs.
+Please see [SMART App Launch](http://www.hl7.org/fhir/smart-app-launch/) for guidance around SMART apps including IDs.
 This flow is not the same as an App that integrates with an EHR - so the sequence diagram is likely simpler.
 
 #### App ID
