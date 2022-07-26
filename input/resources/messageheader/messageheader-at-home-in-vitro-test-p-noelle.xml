@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="messageheader-at-home-in-vitro-test-p-noelle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-29T05:38:44.863+00:00"/>
-        <source value="#FTAQtfFon8QbArxA"/>
+        <versionId value="4"/>
+        <lastUpdated value="2022-07-26T23:24:18.396+00:00"/>
+        <source value="#a8oaIuPPP0m1bzuu"/>
         <profile value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
     </meta>
     <eventCoding>
@@ -13,6 +13,19 @@
         <code value="at-home-in-vitro-test-result-report"/>
     </eventCoding>
     <source>
+        <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-source-software-info">
+            <extension url="vendorOrganization">
+                <valueReference>
+                    <reference value="Organization/us-core-organization-quidel-corporation"/>
+                </valueReference>
+            </extension>
+            <extension url="softwareBinaryID">
+                <valueString value="Binary ID unknown"/>
+            </extension>
+            <extension url="softwareInstallDate">
+                <valueDate value="2022-06-01"/>
+            </extension>
+        </extension>
         <name value="ACME Application Server"/>
         <software value="ACME Application Software"/>
         <version value="1.2.3.4.5"/>

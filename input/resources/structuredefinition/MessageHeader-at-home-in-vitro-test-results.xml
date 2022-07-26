@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-at-home-in-vitro-test-results"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-07-26T01:52:03.376+00:00"/>
-        <source value="#MysIsCQ7YMtUyehI"/>
+        <versionId value="18"/>
+        <lastUpdated value="2022-07-26T23:19:27.550+00:00"/>
+        <source value="#Pgck9j2VzOUHKlFT"/>
     </meta>
     <url value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
     <name value="MessageHeaderAtHomeInVitroTestResults"/>
@@ -119,7 +119,8 @@
         <element id="MessageHeader.source.extension:sourceSoftwareVendorInfo">
             <path value="MessageHeader.source.extension"/>
             <sliceName value="sourceSoftwareVendorInfo"/>
-            <short value="Source software vendor organization"/>
+            <short value="Source software information (vendor organization, binary id, intstall date)"/>
+            <definition value="Source software information (vendor organization, binary id, intstall date)"/>
             <min value="0"/>
             <type>
                 <code value="Extension"/>
