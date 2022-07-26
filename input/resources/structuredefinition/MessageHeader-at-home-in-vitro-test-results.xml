@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-at-home-in-vitro-test-results"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-07-14T05:03:50.533+00:00"/>
-        <source value="#e5GFErZ7iEq3saBa"/>
+        <versionId value="15"/>
+        <lastUpdated value="2022-07-26T01:52:03.376+00:00"/>
+        <source value="#MysIsCQ7YMtUyehI"/>
     </meta>
     <url value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
     <name value="MessageHeaderAtHomeInVitroTestResults"/>
@@ -104,6 +104,29 @@
                 <map value="MSH.3.2"/>
             </mapping>
         </element>
+        <element id="MessageHeader.source.extension">
+            <path value="MessageHeader.source.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="0"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MessageHeader.source.extension:sourceSoftwareVendorInfo">
+            <path value="MessageHeader.source.extension"/>
+            <sliceName value="sourceSoftwareVendorInfo"/>
+            <short value="Source software vendor organization"/>
+            <min value="0"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-source-software-info"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="MessageHeader.source.name">
             <path value="MessageHeader.source.name"/>
             <short value="Sending system namespace (name of app)"/>
@@ -116,7 +139,7 @@
         </element>
         <element id="MessageHeader.source.software">
             <path value="MessageHeader.source.software"/>
-            <short value="Software product name"/>
+            <short value="Software product name including OS (e.g. Android, iOS)"/>
             <mapping>
                 <identity value="hl7v2home"/>
                 <map value="SFT.3"/>

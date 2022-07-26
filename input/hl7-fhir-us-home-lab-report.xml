@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="246"/>
-        <lastUpdated value="2022-07-25T23:53:09.382+00:00"/>
-        <source value="#T7E6vAn5JhZrutNk"/>
+        <versionId value="252"/>
+        <lastUpdated value="2022-07-26T02:00:21.124+00:00"/>
+        <source value="#1wbngaH7KIzz4JAg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -350,6 +350,16 @@
             <description value="US Core Practitioner: Test Proctor example"/>
             <exampleBoolean value="true"/>
             <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-at-home-in-vitro-test-source-software-info"/>
+                <display value="Extension - At-Home In-Vitro Test Source Software Information"/>
+            </reference>
+            <name value="Extension - At-Home In-Vitro Test Source Software Information"/>
+            <description value="Information about the source software."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>
