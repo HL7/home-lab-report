@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="253"/>
-        <lastUpdated value="2022-07-26T23:07:57.791+00:00"/>
-        <source value="#7dy9Le84v9HtbGJS"/>
+        <versionId value="254"/>
+        <lastUpdated value="2022-07-27T21:30:29.979+00:00"/>
+        <source value="#IcmpHpoyqEk3sCMF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="0.1.0"/>
@@ -401,6 +401,10 @@
                 </page>
             </page>
         </page>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="expansion-parameters-at-home.xml"/>
+        </parameter>
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
