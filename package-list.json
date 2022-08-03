@@ -11,7 +11,7 @@
 			"current": true
 		},
 		{
-			"version": "1.0.0-ballot1",
+			"version": "1.0.0-ballot",
 			"date": "2022-08-12",
 			"desc": "Ballot for STU Release 1",
 			"path": "http://hl7.org/fhir/us/home-lab-report/2022Sept",
