@@ -10,7 +10,7 @@ Within the intial V2 message, many of the segments contain "hard coded" informat
 The following child pages represent the 2 types of home tests in the intial project. The two scenarios are described below.
 
 #### [At-Home In-Vitro Test Over the Counter Purchase](at-home_in-vitro_test_over_the_counter_purchase_v2_example.html)
-Patient buys and performs testing, result is obtained via an App that then does the reporting; this may result in limited data fidelity (no verification): a) that the person tested = patient, b) of how the specimen was collected, c) if the test procedure was followed, d) if the interpretation of the result and subsequent reporting is accurate, unless the app preforms the interpretation, e) data about the patient is accurate)
+Patient buys and performs testing, result is obtained via an App that then does the reporting; this may result in limited data fidelity (no verification): a) that the person tested = patient, b) of how the specimen was collected, c) if the test procedure was followed, d) if the interpretation of the result and subsequent reporting is accurate, unless the app performs the interpretation, e) data about the patient is accurate.
 
 **The following segments are constrained:**
 * Ordering Provider First Name (ORC-12.3/OBR-16.3) = “SA.OverTheCounter”

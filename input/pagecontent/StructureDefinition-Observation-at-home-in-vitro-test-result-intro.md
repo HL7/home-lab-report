@@ -4,5 +4,5 @@ The following elements are expected to be constrained to use case specific value
 * Observation.code - value set containing the use case specific test types
 * Observation.value - value set containing the use case specific test results
 * For Multiplex Assay tests that serve as a single test to diagnose infection caused by multiple viruses (e.g. CDC Flu SC2 Multiplex Assay for SARS-CoV-2, influenza A, and/or influenza B viruses):
-** Observation.component.code - value set containing the use case specific test types
-** Observation.component.value -  value set containing the use case specific test results
+    * Observation.component.code - value set containing the use case specific test types
+    * Observation.component.value -  value set containing the use case specific test results

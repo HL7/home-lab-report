@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-at-home-in-vitro-test-result"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2022-07-14T03:34:08.366+00:00"/>
-        <source value="#eY0h8K6I7v2TkeJr"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-01-03T05:37:55.012+00:00"/>
+        <source value="#zBohAJA92PE2IEhj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
     <version value="1.0.0"/>
@@ -28,6 +28,13 @@
             <path value="Observation.id"/>
             <min value="1"/>
             <mustSupport value="true"/>
+        </element>
+        <element id="Observation.extension">
+            <path value="Observation.extension"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
+            </type>
         </element>
         <element id="Observation.status">
             <path value="Observation.status"/>

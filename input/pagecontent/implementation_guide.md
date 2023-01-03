@@ -34,7 +34,7 @@ There is a set of [example profiles that represent the COVID-19 use case](artifa
         <a href="StructureDefinition-Device-at-home-in-vitro-test.html" title="StructureDefinition/Device-at-home-in-vitro-test">Device - At-Home In-Vitro Test</a>
       </td>
       <td>
-        <p>This profile constrains the Device resource to At-Home Sample Tests.</p>
+        <p>This profile constrains the Device resource for At-Home Sample Tests.</p>
       </td>
       <td colspan="2">Use as is for all use cases</td>
     </tr>
