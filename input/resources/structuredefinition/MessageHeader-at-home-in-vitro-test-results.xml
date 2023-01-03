@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-at-home-in-vitro-test-results"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2022-07-26T23:19:27.550+00:00"/>
-        <source value="#Pgck9j2VzOUHKlFT"/>
+        <versionId value="19"/>
+        <lastUpdated value="2023-01-03T05:24:07.051+00:00"/>
+        <source value="#CAXAct0XKlAxwriN"/>
     </meta>
     <url value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
     <name value="MessageHeaderAtHomeInVitroTestResults"/>
@@ -158,6 +158,7 @@
         <element id="MessageHeader.focus">
             <path value="MessageHeader.focus"/>
             <short value="The focus of this message header is a DiagnosticReport."/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
