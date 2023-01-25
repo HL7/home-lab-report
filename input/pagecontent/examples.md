@@ -14,4 +14,4 @@ As stated in the [Introduction](index.html#introduction), public health agencies
 Within the V2 message, many of the segments contain "hard coded" information. Some examples of this are ordering information and app IDs. Even if the COVID-19 At-Home In-Vitro Test is an ordered test (as opposed to an OTC test) neither the app nor the assay test at the start of the test implementation will have knowledge of ordering information. This FHIR IG aligns, where appropriate, with known and documented FHIR to V2 mappings. In some cases, where the V2 message is hardcoded or constrained to a specific value, this FHIR specification is not further constrained beyond what is present in US Core, but the elements and attibutes are available for use and may be noted in comments.
 
 #### COVID-19 At-Home In-Vitro Test Report to V2 and FHIR Profile Elements Mapping Table
-[In-Vitro At-Home Test V2 FHIR Mapping.xlsx](https://docs.google.com/spreadsheets/d/1Vx7WesZzihNiAsHCVPQtSiEJLBQZr8Iy/edit?usp=sharing&ouid=112434457756659409284&rtpof=true&sd=true)
+[In-Vitro At-Home Test V2 FHIR Mapping.xlsx](In-Vitro At-Home Test V2 FHIR Mapping.xlsx)
