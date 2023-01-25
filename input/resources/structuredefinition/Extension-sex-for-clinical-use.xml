@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-sex-for-clinical-use"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2023-01-25T00:57:40.932+00:00"/>
-        <source value="#CnbqktcUMx5eJl7k"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-25T11:12:13.390+00:00"/>
+        <source value="#2DSI0vBDVJD4NJXs"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-sex-for-clinical-use"/>
     <version value="1.0.0"/>
@@ -21,7 +21,6 @@
             <code value="US"/>
         </coding>
     </jurisdiction>
-    <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
     <fhirVersion value="4.0.1"/>
     <kind value="complex-type"/>
     <abstract value="false"/>

@@ -5,6 +5,7 @@
 	"version": "current",
 	"desc": "",
 	"path": "https://build.fhir.org/ig/home-lab-report",
-	"status": "draft",
-	"sequence": ""
+	"status": "trial-use",
+	"sequence": "",
+	"milestone": true
 }

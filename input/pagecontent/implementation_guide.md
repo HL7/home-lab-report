@@ -117,58 +117,74 @@ This implementation guide is based on R4 version of the HL7 FHIR Standard.
 
 ### FHIR Resources Used
 
-The table below identifies the specific FHIR Resources and their purposes that are used in this IG.
+The table below identifies the specific FHIR resources and profiles used in this IG. In most cases, the resources and profiles have been further constrained to meet the needs of the use case described in this IG.
 
 <table>
   <thead>
     <tr>
-      <th>FHIR Resource</th>
+      <th>FHIR Resource/Profile</th>
       <th>Purpose</th>
     </tr>
   </thead>
-	<tr>
-    <td><a href="{{site.data.fhir.path}}bundle.html">Bundle</a></td>
-	<td>Used to group resources for submitting results.</td>
-  </tr>
-	<tr>
-    <td><a href="{{site.data.fhir.path}}device.html">Device</a></td>
-	<td>Used to represent At-Home In-Vitro tests.</td>
-  </tr>
-	<tr>
-    <td><a href="{{site.data.fhir.path}}diagnosticreport.html">DiagnosticReport</a></td>
-	<td>Used to organize the results of an At-Home In-Vitro test.</td>
-  </tr>
-	<tr>
-    <td><a href="{{site.data.fhir.path}}observation.html">Observation</a></td>
-	<td>Used to represent the results of an At-Home In-Vitro test, presence of related symptoms, symptom onset time.</td>
-  </tr>
-	<tr>
-    <td><a href="{{site.data.fhir.path}}specimen.html">Specimen</a></td>
-	<td>Used to represent type of specimen used in the At-Home In-Vitro test.</td>
-  </tr>
-	<tr>
-    <td><a href="{{site.data.fhir.path}}patient.html">Patient</a></td>
-	<td>Used to represent the patient taking the At-Home In-Vitro test.</td>
+  <tr>
+    <td>
+      <a href="{{site.data.fhir.path}}bundle.html">Bundle</a>
+    </td>
+    <td>Used to group resources for submitting results.</td>
   </tr>
   <tr>
-    <td><a href="{{site.data.fhir.path}}valueset.html">ValueSet</a></td>
-	<td>Used to group codes for various uses such as use case specific test types, test results, specimen types etc.</td>
-  </tr>
-  
-  <tr>
-    <td><a href="{{site.data.fhir.path}}messageheader.html">MessageHeader</a></td>
-	<td>Used to specify metadata for routing.</td>
+    <td>
+      <a href="{{site.data.fhir.path}}device.html">Device</a>
+    </td>
+    <td>Used to represent At-Home In-Vitro tests.</td>
   </tr>
   <tr>
-    <td><a href="{{site.data.fhir.path}}organization.html">Organization</a></td>
-	<td>Representing test manufacturers.</td>
+    <td>
+      <a href="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab">US Core DiagnosticReport for Laboratory Results Reporting</a>
+    </td>
+    <td>Used to organize the results of an At-Home In-Vitro test.</td>
   </tr>
   <tr>
-    <td><a href="{{site.data.fhir.path}}location.html">Location</a></td>
-	<td>Used to represent locations in workflows.</td>
+    <td>
+      <a href="{{site.data.fhir.path}}messageheader.html">MessageHeader</a>
+    </td>
+    <td>Used to specify metadata for routing.</td>
+  </tr>
+
+  <tr>
+    <td>
+      <a href="{{site.data.fhir.path}}observation.html">Observation</a>
+    </td>
+    <td>Used to represent the results of an At-Home In-Vitro test, presence of related symptoms, symptom onset time.</td>
   </tr>
   <tr>
-    <td><a href="{{site.data.fhir.path}}endpoint.html">Endpoint</a></td>
-	<td>Used to represent routing information.</td>
+    <td>
+      <a href="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization">US Core Organization</a>
+    </td>
+    <td>Representing test manufacturers.</td>
   </tr>
-  </table>
+  <tr>
+    <td>
+      <a href="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient">US Core Patient</a>
+    </td>
+    <td>Used to represent the patient taking the At-Home In-Vitro test.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="{{site.data.fhir.path}}specimen.html">Specimen</a>
+    </td>
+    <td>Used to represent type of specimen used in the At-Home In-Vitro test.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location">US Core Location</a>
+    </td>
+    <td>Used to represent locations in workflows.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="{{site.data.fhir.path}}endpoint.html">Endpoint</a>
+    </td>
+    <td>Used to represent routing information.</td>
+  </tr>
+</table>

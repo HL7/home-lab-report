@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-01-25T02:02:28.410+00:00"/>
-        <source value="#GdYtyB8y8qoV1n10"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-01-25T10:05:56.334+00:00"/>
+        <source value="#yPBs6ZhyfHcNc4eU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
     <version value="1.0.0"/>
     <name value="BundleAtHomeInVitroTest"/>
     <title value="Bundle - At-Home In-Vitro Test"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <date value="2022-04-01"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
@@ -60,14 +60,14 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:sliceMessageHeader">
+        <element id="Bundle.entry:messageHeader">
             <path value="Bundle.entry"/>
-            <sliceName value="sliceMessageHeader"/>
+            <sliceName value="messageHeader"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:sliceMessageHeader.resource">
+        <element id="Bundle.entry:messageHeader.resource">
             <path value="Bundle.entry.resource"/>
             <short value="MessageHeader - At-Home In-Vitro Test Results"/>
             <min value="1"/>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="Extension-at-home-in-vitro-test-proctored-info"/>
+    <id value="Extension-at-home-in-vitro-test-supporting-info"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-01-25T11:11:45.306+00:00"/>
-        <source value="#MAUJr9aU9HY1VM6t"/>
+        <versionId value="3"/>
+        <lastUpdated value="2023-01-25T11:12:02.434+00:00"/>
+        <source value="#PTCwGFl194OIWrTd"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
     <version value="1.0.0"/>
-    <name value="ExtensionAtHomeInVitroTestProctoredInfo"/>
-    <title value="Extension - At-Home In-Vitro Test Proctored Info"/>
+    <name value="ExtensionAtHomeInVitroTestSupportingInfo"/>
+    <title value="Extension - At-Home In-Vitro Test Supporting Info"/>
     <status value="active"/>
-    <date value="2022-06-21"/>
+    <date value="2023-01-04"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="Information about whether or not the test was proctored and who the proctor was."/>
+    <description value="Additional information supporting the diagnostic report. Modeled after the DiagnosticReport.supportingInfo backbone element added to DiagnosticReport in FHIR R5."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -26,7 +26,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Observation"/>
+        <expression value="DiagnosticReport"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -34,16 +34,16 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Extension - At-Home In-Vitro Test Proctored Information"/>
-            <definition value="Information about whether or not the test was proctored and who the proctor was."/>
+            <short value="Extension - At-Home In-Vitro Test Supporting Information"/>
+            <definition value="Additional information supporting the diagnostic report."/>
             <min value="0"/>
             <max value="1"/>
         </element>
-        <element id="Extension.extension:proctoredTest">
+        <element id="Extension.extension:type">
             <path value="Extension.extension"/>
-            <sliceName value="proctoredTest"/>
-            <short value="Whether or not the at-home in-vitro test was proctored"/>
-            <definition value="Whether or not the at-home in-vitro test was proctored"/>
+            <sliceName value="type"/>
+            <short value="Supporting information role code"/>
+            <definition value="The code value for the role of the supporting information in the diagnostic report."/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -51,30 +51,30 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctoredTest.url">
+        <element id="Extension.extension:type.url">
             <path value="Extension.extension.url"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="proctoredTest"/>
+            <fixedUri value="type"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctoredTest.value[x]">
+        <element id="Extension.extension:type.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="boolean"/>
+                <code value="CodeableConcept"/>
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctoredBy">
+        <element id="Extension.extension:reference">
             <path value="Extension.extension"/>
-            <sliceName value="proctoredBy"/>
-            <short value="Information about the person(s) who proctored the test"/>
-            <definition value="Information about the person(s) who proctored the test"/>
+            <sliceName value="reference"/>
+            <short value="Supporting information reference"/>
+            <definition value="The reference for the supporting information in the diagnostic report."/>
             <min value="0"/>
             <max value="*"/>
             <type>
@@ -82,26 +82,25 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctoredBy.url">
+        <element id="Extension.extension:reference.url">
             <path value="Extension.extension.url"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="proctorInformation"/>
+            <fixedUri value="reference"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctoredBy.value[x]">
+        <element id="Extension.extension:reference.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
             </type>
             <mustSupport value="true"/>
         </element>
@@ -109,7 +108,7 @@
             <path value="Extension.url"/>
             <min value="1"/>
             <max value="1"/>
-            <fixedUri value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
+            <fixedUri value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
         </element>
         <element id="Extension.value[x]">
             <path value="Extension.value[x]"/>

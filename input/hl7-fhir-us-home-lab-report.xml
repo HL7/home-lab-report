@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="320"/>
-        <lastUpdated value="2023-01-25T08:00:55.845+00:00"/>
-        <source value="#m2CwDJt08lBCCCsV"/>
+        <versionId value="335"/>
+        <lastUpdated value="2023-01-25T10:50:54.052+00:00"/>
+        <source value="#qQzg8zgyIRnRbwIF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="1.0.0"/>
     <name value="AtHomeInVitroTestReport"/>
     <title value="At-Home In-Vitro Test Report"/>
-    <status value="draft"/>
+    <status value="active"/>
     <publisher value="Orders and Observations"/>
     <contact>
         <name value="HL7 International - Orders and Observations"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/orders/index.cfm"/>
         </telecom>
     </contact>
-    <description value="|Implementation Guide (IG) Characteristic  | 	Value |&#xA;|------------------------------------------------------|--------------------------------------------|&#xA;|**FHIR Version:** |	FHIR R4 |&#xA;|**IG Realm:** |	US |&#xA;|**IG Type:** |	STU Ballot |&#xA;|**Exchange Methods:** |	RESTfulAPI, Messages, Transactions,  Tasks |&#xA;|**IG Note:** |	This HL7 FHIR Guide utilizes and adopts guidance or profiles developed in the US Core FHIR&amp;reg; Implementation Guide. This FHIR IG has narrative pages describing the HL7 V2 Message for At-Home In-Vitro Test Reporting and provides some example messages. Presently public health departments usually only can handle and store HL7 V2|&#xA;{:.table-striped}&#xA;&#xA;|IG Dependencies	|&#xA;|----------------------------------|&#xA;| [HL7 FHIR US Core Version 5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/) |&#xA;{:.table-striped}&#xA;&#xA;&#xA;### Background&#xA;&#xA;Point-of-care (POC) and At-Home In-Vitro Tests offer increased accessibility to needed diagnostic solutions during a pandemic. Test results provide value to both the individual taking the tests and also to public health authorities responsible for coordinating a regional and national response. Digital platforms are being developed that allow individual test results, with permission of the individual, to be captured, organized, and transmitted to public health systems. Test manufacturers, working in partnership with these digital platforms, are seeking guidance on how to send test results. With multiple tests already entering the market, there is a need for a unified strategy on data flow of test results from the apps to downstream systems. A national data exchange standard should be supported that guides data exchange from test results residing on individual users’ digital test applications to public health authorities, at both the federal and regional levels.  &#xA;&#xA;### Introduction&#xA;&#xA;This implementation guide constrains the [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use for transmitting At-Home In-Vitro Test results to local, state, territorial and federal health agencies. It is an STU IG to be used in real world testing. It was developed in a collaborative project with the National Institutes of Health (NIH)/National Institute of Biomedical Imaging and Bioengineering (NIBIB), The Office of the National Coordinator for Health Information Technology (ONC), a vendor manufacturer of diagnostic healthcare products that makes one of the Over-the-Counter (OTC) In-vitro diagnostics (IVD) test kits available on the market or distributed in the US, and an App developer who is a leading provider of secure interoperability solutions. The intention of this guide is to assist developers in producing and sending standardized FHIR test result data perfomed at home. FHIR eases app development and US Core is in a rapid adoption curve. This guide points to already existing US Core Guidance and other guidance with respect to FHIR Parameters, FHIR operations and RESTful and SMART on FHIR information.&#xA;&#xA;It is also understood that, in general, public health agencies are at present primarily prepared to only receive V2 messages. The App developer is poised to transform this to V2 messages. In addition, as a parallel effort, a V2 &lt;-&gt; FHIR data mapping table has been developed [In-Vitro At-Home Test V2 FHIR Mapping.xlsx](https://docs.google.com/spreadsheets/d/1Vx7WesZzihNiAsHCVPQtSiEJLBQZr8Iy/edit?usp=sharing&amp;ouid=112434457756659409284&amp;rtpof=true&amp;sd=true).&#xA;&#xA;**Please note** : This guide is a framework for future work. It contains &quot;framework&quot; profiles that contain constraints common to all At-Home In-Vitro Test Reporting use cases. These framework profiles can be further constrained to a particular use case such as the COVID-19 At-Home In-Vitro Test Reporting use case. The COVID-19 use case profiles have been created and included in this guide.&#xA;&#xA;### Further Information&#xA;[RADx® MARS - Mobile Application Reporting through Standards](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars)&#xA;&#xA;[LOINC In Vitro Diagnostic (LIVD) Test Code Mapping for SARS-CoV-2 Tests](https://www.cdc.gov/csels/dls/sars-cov-2-livd-codes.html)&#xA;&#xA;[Test-Specific HL7v2 Field Values Tool](https://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&amp;pageName=ReportSectionhttps://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&amp;pageName=ReportSection3147535a75468ee60d16)&#xA;&#xA;### Acknowledgements/Primary Authors&#xA;* [NIBIB-Interagency Project Team](mailto:krishna.Juluru@pif.gov)&#xA;* [CareEvolution](https://careevolution.com)&#xA;* [Association of Public Health Laboratories](https://www.aphl.org/Pages/default.aspx)&#xA;* [Gay Dolin MSN RN (Namaste Informatics)](gdolin@NamasteInformatics.com)&#xA;* [Sarah Gaunt](sarah.gaunt@lantanaconsulting.com)"/>
+    <description value="|Implementation Guide (IG) Characteristic  | 	Value |&#xA;|------------------------------------------------------|--------------------------------------------|&#xA;|**FHIR Version:** |	FHIR R4 |&#xA;|**IG Realm:** |	US |&#xA;|**IG Type:** |	STU Ballot |&#xA;|**Exchange Methods:** |	RESTfulAPI, Messages, Transactions,  Tasks |&#xA;|**IG Note:** |	This HL7 FHIR Guide utilizes and adopts guidance or profiles developed in the US Core FHIR&amp;reg; Implementation Guide. This FHIR IG has narrative pages describing the HL7 V2 Message for At-Home In-Vitro Test Reporting and provides some example messages. Presently public health departments usually only can handle and store HL7 V2|&#xA;{:.table-striped}&#xA;&#xA;|IG Dependencies	|&#xA;|----------------------------------|&#xA;| [HL7 FHIR US Core Version 5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/) |&#xA;{:.table-striped}&#xA;&#xA;&#xA;### Background&#xA;&#xA;Point-of-care (POC) and At-Home In-Vitro Tests offer increased accessibility to needed diagnostic solutions during a pandemic. Test results provide value to both the individual taking the tests and also to public health authorities responsible for coordinating a regional and national response. Digital platforms are being developed that allow individual test results, with permission of the individual, to be captured, organized, and transmitted to public health systems. Test manufacturers, working in partnership with these digital platforms, are seeking guidance on how to send test results. With multiple tests already entering the market, there is a need for a unified strategy on data flow of test results from the apps to downstream systems. A national data exchange standard should be supported that guides data exchange from test results residing on individual users’ digital test applications to public health authorities, at both the federal and regional levels.  &#xA;&#xA;### Introduction&#xA;This implementation guide (IG) constrains the FHIR [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use in transmitting At-Home In-Vitro Test results to local, state, territorial and federal health agencies. The IG will be be used in real world testing. It was developed as part of a collaborative project with the NIH/NIBIB, ONC, a vendor manufacturer of diagnostic healthcare products that makes one of the FDA approved At-Home In-Vitro Test kits, and an app developer who is a leading provider of secure interoperability solutions. The intention of this guide is to assist developers in producing and sending standardized FHIR test result data from tests perfomed at home. FHIR eases app development and the FHIR US Core IG is in a rapid adoption curve. This guide points to already existing US Core Guidance and other guidance with respect to FHIR Parameters, FHIR operations, and RESTful and SMART on FHIR information.&#xA;&#xA;Due to Public Health Departments' familiarity with V2, a test implementation project related to this implementation guide will initially send COVID-19 At-Home In-Vitro Test Reports as V2 lab messages. Longer term the intent is to leverage FHIR for app creativity, growth, and interoperability. For as long as needed to comply with Public Health Department dependecies on V2, the apps will be designed to transform from FHIR to V2. In addition, as a parallel effort, a V2 &lt;-&gt; FHIR data mapping table has been developed [In-Vitro At-Home Test V2 FHIR Mapping.xlsx].&#xA;&#xA;**Please note** : This guide is a framework for future work. It contains &quot;framework&quot; profiles that contain constraints common to all At-Home In-Vitro Test Reporting use cases. These framework profiles can be further constrained to a particular use case such as the COVID-19 At-Home In-Vitro Test Reporting use case. The COVID-19 use case profiles have been created and included in this guide.&#xA;&#xA;### Further Information&#xA;[RADx® MARS - Mobile Application Reporting through Standards](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars)&#xA;&#xA;[LOINC In Vitro Diagnostic (LIVD) Test Code Mapping for SARS-CoV-2 Tests](https://www.cdc.gov/csels/dls/sars-cov-2-livd-codes.html)&#xA;&#xA;[Test-Specific HL7v2 Field Values Tool](https://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&amp;pageName=ReportSectionhttps://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&amp;pageName=ReportSection3147535a75468ee60d16)&#xA;&#xA;### Acknowledgements/Primary Authors&#xA;* [NIBIB-Interagency Project Team](mailto:krishna.Juluru@pif.gov)&#xA;* [CareEvolution](https://careevolution.com)&#xA;* [Association of Public Health Laboratories](https://www.aphl.org/Pages/default.aspx)&#xA;* [Gay Dolin MSN RN (Namaste Informatics)](mailto:gdolin@NamasteInformatics.com)&#xA;* [Sarah Gaunt](mailto:sarah.gaunt@lantanaconsulting.com)"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -352,6 +352,15 @@
             <description value="This CodeSystem is a copy copy of the not-yet-published 6.0.0-ballot version US Core Sex for Clinical Use value set and contains codes that represent the sex characterization appropriate for the associated clinical context."/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
+                <display value="Extension - At-Home In-Vitro Test Supporting Info"/>
+            </reference>
+            <name value="Extension - At-Home In-Vitro Test Supporting Info"/>
+            <description value="Additional information supporting the diagnostic report. Modeled after the DiagnosticReport.supportingInfo backbone element added to DiagnosticReport in FHIR R5."/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Home Page"/>
@@ -372,18 +381,23 @@
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="hl7_v2_fields_and_otc_example_message.html"/>
-                <title value="HL7 V2 Fields and OTC Example Message"/>
+                <nameUrl value="examples.html"/>
+                <title value="Examples"/>
                 <generation value="markdown"/>
                 <page>
-                    <nameUrl value="at-home_in-vitro_test_over_the_counter_purchase_v2_example.html"/>
-                    <title value="At-Home In-Vitro Test Over the Counter Purchase V2 Example"/>
+                    <nameUrl value="hl7_v2_fields_and_example_messages.html"/>
+                    <title value="HL7 V2 Fields and Example Messages"/>
                     <generation value="markdown"/>
-                </page>
-                <page>
-                    <nameUrl value="at-home_in-vitro_test_with_prescription_v2_example.html"/>
-                    <title value="At-Home In-Vitro Test with Prescription V2 Example"/>
-                    <generation value="markdown"/>
+                    <page>
+                        <nameUrl value="at-home_in-vitro_test_over_the_counter_purchase_v2_example.html"/>
+                        <title value="At-Home In-Vitro Test Over the Counter Purchase V2 Example"/>
+                        <generation value="markdown"/>
+                    </page>
+                    <page>
+                        <nameUrl value="at-home_in-vitro_test_with_prescription_v2_example.html"/>
+                        <title value="At-Home In-Vitro Test with Prescription V2 Example"/>
+                        <generation value="markdown"/>
+                    </page>
                 </page>
             </page>
             <page>

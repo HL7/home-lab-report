@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-at-home-in-vitro-results"/>
     <meta>
-        <versionId value="25"/>
-        <lastUpdated value="2023-01-25T05:07:32.314+00:00"/>
-        <source value="#TmNnYSPFJ9IqnJzc"/>
+        <versionId value="28"/>
+        <lastUpdated value="2023-01-25T11:02:55.670+00:00"/>
+        <source value="#IdoWyC7PUHKMTkUz"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
     <version value="1.0.0"/>
@@ -40,19 +40,17 @@
             <min value="0"/>
             <mustSupport value="true"/>
         </element>
-        <element id="DiagnosticReport.extension:supportingInformationPatientQuestionAnswer">
+        <element id="DiagnosticReport.extension:supportingInfoPatientQuestionAnswer">
             <path value="DiagnosticReport.extension"/>
-            <sliceName value="supportingInformationPatientQuestionAnswer"/>
+            <sliceName value="supportingInfoPatientQuestionAnswer"/>
             <short value="The supportingInformation Extension will house answers the patient supplied to questions asked by the At Home App"/>
-            <min value="0"/>
             <type>
                 <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo"/>
+                <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
             </type>
-            <mustSupport value="true"/>
         </element>
-        <element id="DiagnosticReport.extension:supportingInformationPatientQuestionAnswer.value[x]">
-            <path value="DiagnosticReport.extension.value[x]"/>
+        <element id="DiagnosticReport.extension:supportingInfoPatientQuestionAnswer.extension:reference.value[x]">
+            <path value="DiagnosticReport.extension.extension.value[x]"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>

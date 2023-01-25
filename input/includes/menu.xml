@@ -11,11 +11,12 @@
       <li><a href="workflow.html">Workflow</a></li>    </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">HL7 V2 Fields and OTC Example Message<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Examples<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="hl7_v2_fields_and_otc_example_message.html">HL7 V2 Fields and OTC Example Message</a></li>
+      <li><a href="examples.html">Examples</a></li>
+      <li><a href="hl7_v2_fields_and_example_messages.html">HL7 V2 Fields and Example Messages</a></li>
       <li><a href="at-home_in-vitro_test_over_the_counter_purchase_v2_example.html">At-Home In-Vitro Test Over the Counter Purchase V2 Example</a></li>
       <li><a href="at-home_in-vitro_test_with_prescription_v2_example.html">At-Home In-Vitro Test with Prescription V2 Example</a></li>    </ul>
   </li>
