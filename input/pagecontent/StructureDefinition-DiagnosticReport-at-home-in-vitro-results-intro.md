@@ -1,1 +1,5 @@
 This is a framework profile and can be the base of another profile that is further constrained to meet the requirements of a specific use case. See [DiagnosticReport - At-Home In-Vitro Test Results - COVID-19](StructureDefinition-DiagnosticReport-at-home-in-vitro-results-covid.html) for an example of such a profile.
+
+The following elements are expected to be constrained to use case specific value sets:
+* DiagnosticReport.code - value set containing the use case specific test types (consult [LIVD](https://www.cdc.gov/csels/dls/livd-codes.html) to obtain the values to be used for each particular use case)
+* DiagnosticReport.result - Reference to an [Observation - At-Home In-Vitro Test Result](StructureDefinition-Observation-at-home-in-vitro-test-result.html) constrained to the specific use case

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-at-home-in-vitro-test-result-covid"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2023-01-25T06:05:42.080+00:00"/>
-        <source value="#3z7sC5IoAB9XImt8"/>
+        <versionId value="18"/>
+        <lastUpdated value="2023-01-25T21:43:51.196+00:00"/>
+        <source value="#DJFfmPyFEqeW13l5"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
     <version value="1.0.0"/>
@@ -26,8 +26,7 @@
         </element>
         <element id="Observation.code">
             <path value="Observation.code"/>
-            <label value="Label"/>
-            <short value="Consult [LIVD](https://www.cdc.gov/csels/dls/livd-codes.html) to obtain the values to be used for each particular use case."/>
+            <short value="Consult LIVD: https://www.cdc.gov/csels/dls/livd-codes.html to obtain the values to be used for each particular use case."/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
@@ -70,7 +69,7 @@
         </element>
         <element id="Observation.device.id">
             <path value="Observation.device.id"/>
-            <short value="The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. The initial project will use the Quidel QuickVue UDI see: (https://accessgudid.nlm.nih.gov/devices/30014613339373) To find other at home device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
+            <short value="The referenced device SHALL contain a Device.udiCarrier.deviceIdentifier. To find at-home in-vitro test device UDIs, please see GUDID data base: https://accessgudid.nlm.nih.gov/help/search/basic-search"/>
             <min value="1"/>
             <mustSupport value="true"/>
         </element>

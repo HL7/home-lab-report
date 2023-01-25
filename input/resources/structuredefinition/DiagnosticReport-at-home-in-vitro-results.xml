@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-at-home-in-vitro-results"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2023-01-25T11:02:55.670+00:00"/>
-        <source value="#IdoWyC7PUHKMTkUz"/>
+        <versionId value="31"/>
+        <lastUpdated value="2023-01-25T21:44:22.066+00:00"/>
+        <source value="#5TB2FJ3xv6KB36Yu"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
     <version value="1.0.0"/>
@@ -71,6 +71,7 @@
         </element>
         <element id="DiagnosticReport.code">
             <path value="DiagnosticReport.code"/>
+            <short value="Consult LIVD: https://www.cdc.gov/csels/dls/livd-codes.html to obtain the values to be used for each particular use case."/>
             <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.subject">
