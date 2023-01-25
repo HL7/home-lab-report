@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2023-01-03T05:30:16.911+00:00"/>
-        <source value="#9fEwAEUXzATRB13b"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-01-25T06:03:44.871+00:00"/>
+        <source value="#zIBm91EFK9TatFmb"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
     <name value="SpecimenAtHomeInVitroTest"/>

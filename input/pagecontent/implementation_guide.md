@@ -6,7 +6,7 @@ This At-Home In-Vitro Test Implementation Guide creates a common framework (e.g.
 
 Rather than creating multiple condition-specific profiles that only differ by value set binding for each type of At-Home In-Vitro Test type, this IG contains a set of [framework profiles](artifacts.html#profiles-at-home-in-vitro-test-report-framework) which conform to US Core Profiles (where available) with At-Home In-Vitro specific constraints and/or extensions. Some of the framework profiles are intended to be used as-is and some are intended to be used as a base with further constraints, mainly bindings to condition-specific value sets. Each profile contains information about which type they are and which elements are expected to be further constrained for a specific use case.
 
-There is a set of [example profiles that represent the COVID-19 use case](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report) which should act as guidance for implementation of different use cases. These example profiles have been instantiated in the [example instances](artifacts.html#examples-covid-19-at-home-in-vitro-test-report) included in the guide.
+There is a set of [COVID-19 use case profiles](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report) which should act as guidance for implementation of different use cases. These profiles have been instantiated in the [example instances](artifacts.html#examples-covid-19-at-home-in-vitro-test-report) included in the guide.
 
  <table border="1">
   <thead>
@@ -43,7 +43,7 @@ There is a set of [example profiles that represent the COVID-19 use case](artifa
         <a href="StructureDefinition-DiagnosticReport-at-home-in-vitro-results.html" title="StructureDefinition/DiagnosticReport-at-home-in-vitro-results">DiagnosticReport - At-Home In-Vitro Results</a>
       </td>
       <td>
-        <p>This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home Sample Tests.</p>
+        <p>This profile constrains the US Core DiagnosticReport for Laboratory Results profile to At-Home Sample Tests.</p>
       </td>
       <td>DiagnosticReport.result</td>
       <td>Reference to an <a href="StructureDefinition-Observation-at-home-in-vitro-test-result.html" title="StructureDefinition/Observation-at-home-in-vitro-test-result">Observation - At-Home In-Vitro
@@ -79,7 +79,7 @@ There is a set of [example profiles that represent the COVID-19 use case](artifa
       <td>Bind to a value set containing the condition-specific test types</td>
     </tr>
     <tr>
-      <td>Observation.value</td>
+      <td>Observation.value[x]</td>
       <td>Bind to a value set containing the condition-specific test results</td>
     </tr>
     <tr>
@@ -113,7 +113,7 @@ This IG uses terminology, notations and design principles that are specific to t
 * [How to read resource & profile definitions]({{site.data.fhir.path}}formats.html)
 * [Base resource]({{site.data.fhir.path}}resource.html)
 
-This implementation guide supports the recently published [FHIR R4]({{site.data.fhir.path}}index.html) version of the FHIR standard to ensure alignment with the current direction of the FHIR standard. 
+This implementation guide is based on R4 version of the HL7 FHIR Standard.
 
 ### FHIR Resources Used
 

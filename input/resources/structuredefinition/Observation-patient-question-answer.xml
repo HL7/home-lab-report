@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-patient-question-answer"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-07-13T00:49:52.887+00:00"/>
-        <source value="#IoBeE4kYUYNXm3wn"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-01-25T07:29:07.109+00:00"/>
+        <source value="#Qegc3rH6SJS9xXny"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
     <version value="1.0.0"/>
@@ -28,8 +28,7 @@
             <path value="Observation.code"/>
             <short value="Questions asked of the patient by the app when recording or uploading their at-home in-vitro test results."/>
             <binding>
-                <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-patient-questions"/>
+                <strength value="required"/>
             </binding>
         </element>
         <element id="Observation.value[x]">

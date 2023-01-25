@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-organization-proctor"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-25T03:55:30.490+00:00"/>
+        <source value="#fuxJRPPq0m5kis1L"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+    </meta>
+    <active value="true"/>
+    <name value="Proctor Organization"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="+1(858)552-1111"/>
+    </telecom>
+</Organization>

@@ -3,20 +3,20 @@
     xmlns="http://hl7.org/fhir">
     <id value="messageheader-at-home-in-vitro-test-p-noelle"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-07-26T23:24:18.396+00:00"/>
-        <source value="#a8oaIuPPP0m1bzuu"/>
-        <profile value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-01-25T05:03:41.654+00:00"/>
+        <source value="#joYcTemilrhSBm8w"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
     </meta>
     <eventCoding>
-        <system value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-at-home-in-vitro-test"/>
-        <code value="at-home-in-vitro-test-result-report"/>
+        <system value="http://loinc.org"/>
+        <code value="96552-5"/>
     </eventCoding>
     <source>
         <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-source-software-info">
             <extension url="vendorOrganization">
                 <valueReference>
-                    <reference value="Organization/us-core-organization-quidel-corporation"/>
+                    <reference value="Organization/us-core-organization-acme-corporation"/>
                 </valueReference>
             </extension>
             <extension url="softwareBinaryID">

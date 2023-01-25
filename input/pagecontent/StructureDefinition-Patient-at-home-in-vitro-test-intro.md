@@ -1,0 +1,1 @@
+It is based on the **US Core Patient** profile with further constraints to for the addition of the Sex for Clinical Use extension (to be used for Patient Sex) and a must support constraint for the county (Patient.address.district) where the patient resides.

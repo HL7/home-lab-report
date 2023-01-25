@@ -1,6 +1,6 @@
 ### Overview
 
-|IG Characteristic  | 	Value |
+|Implementation Guide (IG) Characteristic  | 	Value |
 |------------------------------------------------------|--------------------------------------------|
 |**FHIR Version:** |	FHIR R4 |
 |**IG Realm:** |	US |
@@ -21,7 +21,7 @@ Point-of-care (POC) and At-Home In-Vitro Tests offer increased accessibility to 
 
 ### Introduction
 
-This implementation guide constrains the [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use for transmitting At-Home In-Vitro Test results to local, state, territorial and federal health agencies. It is an STU IG to be used in real world testing. It was developed in a collaborative project with the NIH/NIBIB, ONC, a vendor manufacturer of diagnostic healthcare products that makes one of the FDA approved At-Home In-Vitro Test kits and an App developer - who is a leading provider of secure interoperability solutions. The intention of this guide is to assist developers in producing and sending standardized FHIR test result data perfomed at home. FHIR eases app development and US Core is in a rapid adoption curve. This guide points to already existing US Core Guidance and other guidance with respect to FHIR Parameters, FHIR operations and RESTful and SMART on FHIR information.
+This implementation guide constrains the [US Core Diagnostic Report for Laboratory Results](http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab) and the  [US Core Laboratory Observation Profile](http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab) for use for transmitting At-Home In-Vitro Test results to local, state, territorial and federal health agencies. It is an STU IG to be used in real world testing. It was developed in a collaborative project with the National Institutes of Health (NIH)/National Institute of Biomedical Imaging and Bioengineering (NIBIB), The Office of the National Coordinator for Health Information Technology (ONC), a vendor manufacturer of diagnostic healthcare products that makes one of the Over-the-Counter (OTC) In-vitro diagnostics (IVD) test kits available on the market or distributed in the US, and an App developer who is a leading provider of secure interoperability solutions. The intention of this guide is to assist developers in producing and sending standardized FHIR test result data perfomed at home. FHIR eases app development and US Core is in a rapid adoption curve. This guide points to already existing US Core Guidance and other guidance with respect to FHIR Parameters, FHIR operations and RESTful and SMART on FHIR information.
 
 It is also understood that, in general, public health agencies are at present primarily prepared to only receive V2 messages. The App developer is poised to transform this to V2 messages. In addition, as a parallel effort, a V2 <-> FHIR data mapping table has been developed [In-Vitro At-Home Test V2 FHIR Mapping.xlsx](https://docs.google.com/spreadsheets/d/1Vx7WesZzihNiAsHCVPQtSiEJLBQZr8Iy/edit?usp=sharing&ouid=112434457756659409284&rtpof=true&sd=true).
 
@@ -33,6 +33,13 @@ It is also understood that, in general, public health agencies are at present pr
 [LOINC In Vitro Diagnostic (LIVD) Test Code Mapping for SARS-CoV-2 Tests](https://www.cdc.gov/csels/dls/sars-cov-2-livd-codes.html)
 
 [Test-Specific HL7v2 Field Values Tool](https://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&pageName=ReportSectionhttps://app.powerbigov.us/view?r=eyJrIjoiNjQyZjBkOGEtNjE0ZS00NjUyLTg3NjEtZTIxN2JmODE0ZGE1IiwidCI6IjE0Yjc3NTc4LTk3NzMtNDJkNS04NTA3LTI1MWNhMmRjMmIwNiJ9&pageName=ReportSection3147535a75468ee60d16)
+
+### Acknowledgements/Primary Authors
+* [NIBIB-Interagency Project Team](mailto:krishna.Juluru@pif.gov)
+* [CareEvolution](https://careevolution.com)
+* [Association of Public Health Laboratories](https://www.aphl.org/Pages/default.aspx)
+* [Gay Dolin MSN RN (Namaste Informatics)](gdolin@NamasteInformatics.com)
+* [Sarah Gaunt](sarah.gaunt@lantanaconsulting.com)
 
 
 
@@ -49,22 +56,6 @@ It is also understood that, in general, public health agencies are at present pr
 <tr>
 <td>HL7 International - Orders and Observations</td>
 <td><a href="http://www.hl7.org/Special/committees/orders/index.cfm" target="_new">http://www.hl7.org/Special/committees/orders/index.cfm</a></td>
-</tr>
-<tr>
-<td>NIBIB-Interagency Project Team</td>
-<td><a href="mailto:krishna.Juluru@pif.gov">krishna.Juluru@pif.gov</a></td>
-</tr>
-<tr>
-<td>Gay Dolin MSN RN (Namaste Informatics)</td>
-<td><a href="mailto:gdolin@NamasteInformatics.com">gdolin@NamasteInformatics.com</a></td>
-</tr>
-<tr>
-<td>CareEvolution</td>
-<td><a href="https://careevolution.com/" target="_new">https://careevolution.com/</a></td>
-</tr>
-<tr>
-<td>Association of Public Health Laboratories</td>
-<td><a href="https://www.aphl.org/Pages/default.aspx" target="_new">https://www.aphl.org/Pages/default.aspx</a></td>
 </tr>
 </tbody>
 </table>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2022-05-03T05:46:53.764+00:00"/>
-        <source value="#Y6z3OTPZ9KHvBvNl"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-01-25T02:02:28.410+00:00"/>
+        <source value="#GdYtyB8y8qoV1n10"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
     <version value="1.0.0"/>
@@ -60,20 +60,20 @@
             <min value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:sliceDiagnosticReport">
+        <element id="Bundle.entry:sliceMessageHeader">
             <path value="Bundle.entry"/>
-            <sliceName value="sliceDiagnosticReport"/>
+            <sliceName value="sliceMessageHeader"/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Bundle.entry:sliceDiagnosticReport.resource">
+        <element id="Bundle.entry:sliceMessageHeader.resource">
             <path value="Bundle.entry.resource"/>
-            <short value="DiagnosticReport - At-Home In-Vitro Results"/>
+            <short value="MessageHeader - At-Home In-Vitro Test Results"/>
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
+                <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
             </type>
             <mustSupport value="true"/>
         </element>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-at-home-in-vitro-test-result-covid-p-noelle"/>
+    <id value="observation-at-home-in-vitro-test-result-covid-p-noelle-2"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-01-25T04:01:01.565+00:00"/>
-        <source value="#whPtTjKWaru0AgH7"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-25T04:08:13.171+00:00"/>
+        <source value="#y2c3DZ4Z6xoDcAB1"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
     </meta>
     <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info">
@@ -14,7 +14,7 @@
         </extension>
         <extension url="proctorInformation">
             <valueReference>
-                <reference value="Practitioner/practitioner-us-core-proctor"/>
+                <reference value="Organization/us-core-organization-proctor"/>
             </valueReference>
         </extension>
     </extension>

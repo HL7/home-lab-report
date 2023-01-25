@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-at-home-in-vitro-test-covid"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2022-04-26T06:04:00.550+00:00"/>
-        <source value="#fzJwAAZXlGE6dI6X"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-01-25T06:03:04.569+00:00"/>
+        <source value="#u4IFPWQ2L0qnEq4j"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid"/>
     <name value="SpecimenAtHomeInVitroTestCovid"/>
@@ -26,14 +26,10 @@
         </element>
         <element id="Specimen.type">
             <path value="Specimen.type"/>
-            <short value="Type of tissue or material"/>
+            <short value="Type of tissue or material (consult [LIVD](https://www.cdc.gov/csels/dls/livd-codes.html) to obtain the values to be used for each particular use case)"/>
             <definition value="Type of tissue or material (blood, etc.)."/>
             <min value="1"/>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-specimen-types-covid"/>
-            </binding>
         </element>
         <element id="Specimen.type.coding">
             <path value="Specimen.type.coding"/>

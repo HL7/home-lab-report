@@ -1,0 +1,10 @@
+{
+	"package-id": "hl7.fhir.us.home-lab-report",
+	"title": "At-Home Point of Care Test Report",
+	"category": "Orders and Observations",
+	"version": "current",
+	"desc": "",
+	"path": "https://build.fhir.org/ig/home-lab-report",
+	"status": "draft",
+	"sequence": ""
+}

@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Device-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2022-07-25T22:59:18.836+00:00"/>
-        <source value="#psJVE9MFswc2BWv9"/>
+        <versionId value="25"/>
+        <lastUpdated value="2023-01-25T07:36:23.839+00:00"/>
+        <source value="#p7XU79L8udzeKq0P"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
-    <version value="4.0.0"/>
+    <version value="1.0.0"/>
     <name value="DeviceAtHomeInVitroTest"/>
     <title value="Device - At-Home In-Vitro Test"/>
     <status value="active"/>
@@ -36,13 +36,18 @@
         </element>
         <element id="Device.udiCarrier.deviceIdentifier">
             <path value="Device.udiCarrier.deviceIdentifier"/>
-            <short value="LIVD Spreadsheet | LOINC Mapping.Testkit Name ID"/>
+            <short value="LIVD Spreadsheet | LOINC Mapping.Testkit Name ID or LIVD Spreadsheet | LOINC Mapping.Testkit Equipment UID"/>
+            <definition value="Although most at home test kits will have a single UDI for the &quot;test kit&quot; (all in one package of reagents, test card/device, etc.) it is possible for at home kits have a resuable &quot;reader device&quot; which would need a distinct &quot;equipment id&quot;. In this case, the reader device would have an &quot;equipment UID&quot; that may be the same for multiple tests performed. For these cases record Equipment UID here, otherwise record Test Kit Name ID here."/>
             <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
             <mapping>
                 <identity value="livd"/>
                 <map value="LOINC Mapping.Testkit Name ID"/>
+            </mapping>
+            <mapping>
+                <identity value="livd"/>
+                <map value="LOINC Mapping.Equipment UID"/>
             </mapping>
         </element>
         <element id="Device.udiCarrier.issuer">
@@ -61,6 +66,10 @@
                 <identity value="livd"/>
                 <map value="LOINC Mapping.Manufacturer"/>
             </mapping>
+        </element>
+        <element id="Device.manufactureDate">
+            <path value="Device.manufactureDate"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Device.expirationDate">
             <path value="Device.expirationDate"/>
@@ -85,29 +94,33 @@
         </element>
         <element id="Device.deviceName">
             <path value="Device.deviceName"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="type"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Device.deviceName:modelName">
+            <path value="Device.deviceName"/>
+            <sliceName value="modelName"/>
             <short value="LIVD Spreadsheet | LOINC Mapping.Model"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
-            <mustSupport value="true"/>
             <mapping>
                 <identity value="livd"/>
                 <map value="LOINC Mapping.Model"/>
             </mapping>
         </element>
-        <element id="Device.deviceName.type">
-            <path value="Device.deviceName.type"/>
-            <fixedCode value="manufacturer-name"/>
+        <element id="Device.deviceName:modelName.name">
+            <path value="Device.deviceName.name"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Device.owner">
-            <path value="Device.owner"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-            </type>
-            <mustSupport value="true"/>
+        <element id="Device.deviceName:modelName.type">
+            <path value="Device.deviceName.type"/>
+            <fixedCode value="model-name"/>
         </element>
     </differential>
 </StructureDefinition>

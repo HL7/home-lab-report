@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Organization
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-organization-quidel-corporation"/>
+    <id value="us-core-organization-acme-corporation"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2022-03-24T05:33:56.426+00:00"/>
-        <source value="#fmPHXoko59FiYwfG"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-25T03:55:30.489+00:00"/>
+        <source value="#hFottMb9EDuarurm"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
     </meta>
     <active value="true"/>
-    <name value="Quidel Corporation"/>
+    <name value="Acme Corporation"/>
     <telecom>
         <system value="phone"/>
         <value value="+1(858)552-1100"/>

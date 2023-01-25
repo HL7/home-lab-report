@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="specimen-anterior-nares-swab-p-noelle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2022-04-26T05:52:06.045+00:00"/>
-        <source value="#zMz4tFlVYtNHiKsm"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-01-25T01:33:50.193+00:00"/>
+        <source value="#DSovhABs4xmUnQvH"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
     </meta>
     <identifier>
@@ -22,7 +22,7 @@
         <text value="Anterior nares swab (specimen)"/>
     </type>
     <subject>
-        <reference value="Patient/us-core-patient-patricia-noelle"/>
+        <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
         <display value="Patricia Noelle"/>
     </subject>
     <receivedTime value="2021-12-03T16:00:00Z"/>

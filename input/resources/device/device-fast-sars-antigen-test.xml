@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Device
+    xmlns="http://hl7.org/fhir">
+    <id value="device-fast-sars-antigen-test"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-25T03:57:02.086+00:00"/>
+        <source value="#MsxJYF7I8FJFvxJI"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
+    </meta>
+    <udiCarrier>
+        <deviceIdentifier value="30014613339374"/>
+        <issuer value="GS1"/>
+    </udiCarrier>
+    <status value="active"/>
+    <manufacturer value="ACME CORPORATION"/>
+    <expirationDate value="2022-11-20"/>
+    <lotNumber value="7654321E"/>
+    <serialNumber value="10987654d322"/>
+    <deviceName>
+        <name value="Fast SARS Antigen Test"/>
+        <type value="model-name"/>
+    </deviceName>
+    <modelNumber value="20387"/>
+    <partNumber value="20387"/>
+    <type>
+        <text value="Fast SARS Antigen Test"/>
+    </type>
+</Device>

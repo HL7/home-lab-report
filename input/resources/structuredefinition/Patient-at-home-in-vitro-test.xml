@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="Patient-at-home-in-vitro-test"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-25T01:08:56.701+00:00"/>
+        <source value="#qftCJPXSsn3IsGLq"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
+    <version value="1.0.0"/>
+    <name value="PatientAtHomeInVitroTest"/>
+    <title value="Patient - At Home In Vitro Test"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
+    <description value="This Patient profile represents an At-Home In-Vitro Test Patient."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+            <display value="United States of America"/>
+        </coding>
+        <text value="United States of America"/>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Patient"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Patient.address">
+            <path value="Patient.address"/>
+        </element>
+        <element id="Patient.address.district">
+            <path value="Patient.address.district"/>
+            <short value="County"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

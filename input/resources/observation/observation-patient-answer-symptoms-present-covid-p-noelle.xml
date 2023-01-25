@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="observation-patient-answer-symptoms-present-covid-p-noelle"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2022-07-13T00:41:20.284+00:00"/>
-        <source value="#Ijwr6JLVRqUCiFZ7"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-01-25T01:33:50.193+00:00"/>
+        <source value="#AfIU2kLhAtQfdVBC"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
     </meta>
     <status value="final"/>
@@ -26,7 +26,7 @@
         <text value="Whether the patient has symptoms related to condition of interest"/>
     </code>
     <subject>
-        <reference value="Patient/us-core-patient-patricia-noelle"/>
+        <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
         <display value="Patricia Noelle"/>
     </subject>
     <effectiveDateTime value="2021-03-24"/>

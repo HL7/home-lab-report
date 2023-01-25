@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="bundle-at-home-in-vitro-test-results-p-noelle"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-07-20T04:27:26.331+00:00"/>
-        <source value="#ctbhj9GsEhQXP8ev"/>
+        <versionId value="20"/>
+        <lastUpdated value="2023-01-25T05:09:29.813+00:00"/>
+        <source value="#ZW553u7eJpuAt67L"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
     </meta>
     <identifier>
@@ -26,8 +26,8 @@
                     <profile value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
                 </meta>
                 <eventCoding>
-                    <system value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-at-home-in-vitro-test"/>
-                    <code value="at-home-in-vitro-test-result-report"/>
+                    <system value="http://loinc.org"/>
+                    <code value="96552-5"/>
                 </eventCoding>
                 <source>
                     <name value="ACME Application Server"/>
@@ -48,6 +48,10 @@
                 </focus>
             </MessageHeader>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="MessageHeader/messageheader-at-home-in-vitro-test-p-noelle"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="https://fhir.org/fhir/DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle"/>
@@ -107,14 +111,14 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="Patient/us-core-patient-patricia-noelle"/>
+                    <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
                     <display value="Patricia Noelle"/>
                 </subject>
                 <effectiveDateTime value="2021-03-10T11:45:33+11:00"/>
                 <issued value="2021-03-10T11:45:33+11:00"/>
                 <performer>
-                    <reference value="Organization/us-core-organization-quidel-corporation"/>
-                    <display value="Quidel Corporation"/>
+                    <reference value="Organization/us-core-organization-acme-corporation"/>
+                    <display value="Acme Corporation"/>
                 </performer>
                 <result>
                     <reference value="Observation/observation-at-home-in-vitro-test-result-covid-p-noelle"/>
@@ -122,6 +126,10 @@
                 </result>
             </DiagnosticReport>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="https://fhir.org/fhir/Observation/observation-at-home-in-vitro-test-result-covid-p-noelle"/>
@@ -145,44 +153,60 @@
                             <p style="margin-bottom: 0px">Resource "observation-at-home-in-vitro-test-result-covid-p-noelle" Version "2" Updated "2022-04-26 05:32:30+0000" </p>
                             <p style="margin-bottom: 0px">Information Source: #21mXj5peLP3bWTAc!</p>
                             <p style="margin-bottom: 0px">Profile: 
+                                
                                 <a href="StructureDefinition-Observation-at-home-in-vitro-test-result-covid.html">Observation - At-Home In-Vitro Test Result - COVID-19</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final 
+                        
                         </p>
                         <p>
                             <b>category</b>: Laboratory 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ( 
+                                
                                 <a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#laboratory) 
+                            
                             </span>
                         </p>
                         <p>
                             <b>code</b>: SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ( 
-                                <a href="https://loinc.org/">LOINC</a>#95209-3) 
+                              
+                                <a href="http://loinc.org/95209-3">LOINC</a>#95209-3) 
+                            
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
-                            <a href="Patient-us-core-patient-patricia-noelle.html">Patient/us-core-patient-patricia-noelle: Patricia Noelle</a> " NOELLE" 
+                          
+                            <a href="Patient-patient-at-home-in-vitro-test-patricia-noelle.html">Patient/patient-at-home-in-vitro-test-patricia-noelle: Patricia Noelle</a> " NOELLE" 
+                        
                         </p>
                         <p>
                             <b>effective</b>: 2020-03-10 
+                        
                         </p>
                         <p>
                             <b>value</b>: Detected 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ( 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#260373001) 
+                            
                             </span>
                         </p>
                         <p>
                             <b>specimen</b>: 
+                            
                             <a href="Specimen-specimen-anterior-nares-swab-p-noelle.html">Specimen/specimen-anterior-nares-swab-p-noelle: UR Specimen ID: MLD45-Z4-1234</a>
                         </p>
                         <p>
                             <b>device</b>: 
-                            <a href="Device-device-quickvue-sars-antigen-test.html">Device/device-quickvue-sars-antigen-test: UDI Device ID: 30014613339373</a>
+                            
+                            <a href="Device-device-fast-sars-antigen-test.html">Device/device-fast-sars-antigen-test: UDI Device ID: 30014613339373</a>
                         </p>
                     </div>
                 </text>
@@ -204,7 +228,7 @@
                     <text value="SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"/>
                 </code>
                 <subject>
-                    <reference value="Patient/us-core-patient-patricia-noelle"/>
+                    <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
                     <display value="Patricia Noelle"/>
                 </subject>
                 <effectiveDateTime value="2020-03-10"/>
@@ -220,11 +244,15 @@
                     <display value="UR Specimen ID: MLD45-Z4-1234"/>
                 </specimen>
                 <device>
-                    <reference value="Device/device-quickvue-sars-antigen-test"/>
+                    <reference value="Device/device-fast-sars-antigen-test"/>
                     <display value="UDI Device ID: 30014613339373"/>
                 </device>
             </Observation>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/observation-at-home-in-vitro-test-result-covid-p-noelle"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="https://fhir.org/fhir/Observation/observation-patient-answer-symptom-onset-covid-p-noelle"/>
@@ -248,33 +276,45 @@
                             <p style="margin-bottom: 0px">Resource "observation-patient-answer-symptom-onset-covid-p-noelle" Version "2" Updated "2022-07-13 12:55:46+0000" </p>
                             <p style="margin-bottom: 0px">Information Source: #jGEhGIwGqzKppdD6!</p>
                             <p style="margin-bottom: 0px">Profile: 
+                                
                                 <a href="StructureDefinition-Observation-patient-question-answer.html">Observation - Patient Question Answer</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         </p>
                         <p>
                             <b>category</b>: Survey 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                
                                 <a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#survey)
+                            
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Date and time of Covid 19 symptom onset 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                                <a href="https://loinc.org/">LOINC</a>#65222-2 "Date and time of symptom onset")
+                              
+                                <a href="http://loinc.org/65222-2">LOINC</a>#65222-2 "Date and time of symptom onset")
+                            
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
-                            <a href="Patient-us-core-patient-patricia-noelle.html">Patient/us-core-patient-patricia-noelle: Patricia Noelle</a> " NOELLE"
+                          
+                            <a href="Patient-patient-at-home-in-vitro-test-patricia-noelle.html">Patient/patient-at-home-in-vitro-test-patricia-noelle: Patricia Noelle</a> " NOELLE"
+                        
                         </p>
                         <p>
                             <b>effective</b>: 2021-03-24
+                        
                         </p>
                         <p>
                             <b>value</b>: 2021-03-22
+                        
                         </p>
                     </div>
                 </text>
@@ -296,13 +336,17 @@
                     <text value="Date and time of Covid 19 symptom onset"/>
                 </code>
                 <subject>
-                    <reference value="Patient/us-core-patient-patricia-noelle"/>
+                    <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
                     <display value="Patricia Noelle"/>
                 </subject>
                 <effectiveDateTime value="2021-03-24"/>
                 <valueDateTime value="2021-03-22"/>
             </Observation>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/observation-patient-answer-symptom-onset-covid-p-noelle"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="https://fhir.org/fhir/Observation/observation-patient-answer-symptoms-present-covid-p-noelle"/>
@@ -326,35 +370,49 @@
                             <p style="margin-bottom: 0px">Resource "observation-patient-answer-symptoms-present-covid-p-noelle" Version "4" Updated "2022-07-13 12:41:20+0000" </p>
                             <p style="margin-bottom: 0px">Information Source: #Ijwr6JLVRqUCiFZ7!</p>
                             <p style="margin-bottom: 0px">Profile: 
+                                
                                 <a href="StructureDefinition-Observation-patient-question-answer.html">Observation - Patient Question Answer</a>
                             </p>
                         </div>
                         <p>
                             <b>status</b>: final
+                        
                         </p>
                         <p>
                             <b>category</b>: Survey 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                
                                 <a href="http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html">Observation Category Codes</a>#survey)
+                            
                             </span>
                         </p>
                         <p>
                             <b>code</b>: Whether the patient has symptoms related to condition of interest 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
-                                <a href="https://loinc.org/">LOINC</a>#95419-8)
+                              
+                                <a href="http://loinc.org/95419-8.html">LOINC</a>#95419-8)
+                            
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
-                            <a href="Patient-us-core-patient-patricia-noelle.html">Patient/us-core-patient-patricia-noelle: Patricia Noelle</a> " NOELLE"
+                          
+                            <a href="Patient-patient-at-home-in-vitro-test-patricia-noelle.html">Patient/patient-at-home-in-vitro-test-patricia-noelle: Patricia Noelle</a> " NOELLE"
+                        
                         </p>
                         <p>
                             <b>effective</b>: 2021-03-24
+                        
                         </p>
                         <p>
                             <b>value</b>: Yes 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#373066001)
+                            
                             </span>
                         </p>
                     </div>
@@ -377,7 +435,7 @@
                     <text value="Whether the patient has symptoms related to condition of interest"/>
                 </code>
                 <subject>
-                    <reference value="Patient/us-core-patient-patricia-noelle"/>
+                    <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
                     <display value="Patricia Noelle"/>
                 </subject>
                 <effectiveDateTime value="2021-03-24"/>
@@ -390,12 +448,16 @@
                 </valueCodeableConcept>
             </Observation>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Observation/observation-patient-answer-symptoms-present-covid-p-noelle"/>
+        </request>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Patient/us-core-patient-patricia-noelle"/>
+        <fullUrl value="https://fhir.org/fhir/Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
         <resource>
             <Patient>
-                <id value="us-core-patient-patricia-noelle"/>
+                <id value="patient-at-home-in-vitro-test-patricia-noelle"/>
                 <meta>
                     <versionId value="3"/>
                     <lastUpdated value="2022-05-04T18:50:10.889+00:00"/>
@@ -407,6 +469,7 @@
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patricia 
+                            
                             <b>NOELLE </b>
                         </div>
                         <table class="hapiPropertyTable">
@@ -473,12 +536,16 @@
                 </address>
             </Patient>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
+        </request>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Organization/us-core-organization-quidel-corporation"/>
+        <fullUrl value="https://fhir.org/fhir/Organization/us-core-organization-acme-corporation"/>
         <resource>
             <Organization>
-                <id value="us-core-organization-quidel-corporation"/>
+                <id value="us-core-organization-acme-corporation"/>
                 <meta>
                     <versionId value="2"/>
                     <lastUpdated value="2022-03-24T05:33:56.426+00:00"/>
@@ -493,32 +560,40 @@
                             <b>Generated Narrative</b>
                         </p>
                         <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                            <p style="margin-bottom: 0px">Resource "us-core-organization-quidel-corporation" Version "2" Updated "2022-03-24 05:33:56+0000" </p>
+                            <p style="margin-bottom: 0px">Resource "us-core-organization-acme-corporation" Version "2" Updated "2022-03-24 05:33:56+0000" </p>
                             <p style="margin-bottom: 0px">Information Source: #fmPHXoko59FiYwfG!</p>
                             <p style="margin-bottom: 0px">Profile: 
+                                
                                 <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>
                             </p>
                         </div>
                         <p>
                             <b>active</b>: true
+                        
                         </p>
                         <p>
-                            <b>name</b>: Quidel Corporation
+                            <b>name</b>: Acme Corporation
+                        
                         </p>
                         <p>
                             <b>telecom</b>: 
+                            
                             <a href="tel:+1(858)552-1100">+1(858)552-1100</a>
                         </p>
                     </div>
                 </text>
                 <active value="true"/>
-                <name value="Quidel Corporation"/>
+                <name value="Acme Corporation"/>
                 <telecom>
                     <system value="phone"/>
                     <value value="+1(858)552-1100"/>
                 </telecom>
             </Organization>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Organization/us-core-organization-acme-corporation"/>
+        </request>
     </entry>
     <entry>
         <fullUrl value="https://fhir.org/fhir/Specimen/specimen-anterior-nares-swab-p-noelle"/>
@@ -542,27 +617,36 @@
                             <p style="margin-bottom: 0px">Resource "specimen-anterior-nares-swab-p-noelle" Version "3" Updated "2022-04-26 05:52:06+0000" </p>
                             <p style="margin-bottom: 0px">Information Source: #zMz4tFlVYtNHiKsm!</p>
                             <p style="margin-bottom: 0px">Profile: 
+                                
                                 <a href="StructureDefinition-Specimen-at-home-in-vitro-test.html">Specimen - At-Home In-Vitro Test</a>
                             </p>
                         </div>
                         <p>
                             <b>identifier</b>: id: MLD45-Z4-1234 
+                        
                         </p>
                         <p>
                             <b>status</b>: available 
+                        
                         </p>
                         <p>
                             <b>type</b>: Anterior nares swab (specimen) 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ( 
+                                
                                 <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#697989009) 
+                            
                             </span>
                         </p>
                         <p>
                             <b>subject</b>: 
-                            <a href="Patient-us-core-patient-patricia-noelle.html">Patient/us-core-patient-patricia-noelle: Patricia Noelle</a> " NOELLE" 
+                          
+                            <a href="Patient-patient-at-home-in-vitro-test-patricia-noelle.html">Patient/patient-at-home-in-vitro-test-patricia-noelle: Patricia Noelle</a> " NOELLE" 
+                        
                         </p>
                         <p>
                             <b>receivedTime</b>: 2021-12-03 04:00:00+0000 
+                        
                         </p>
                         <h3>Collections</h3>
                         <table class="grid">
@@ -593,7 +677,7 @@
                     <text value="Anterior nares swab (specimen)"/>
                 </type>
                 <subject>
-                    <reference value="Patient/us-core-patient-patricia-noelle"/>
+                    <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
                     <display value="Patricia Noelle"/>
                 </subject>
                 <receivedTime value="2021-12-03T16:00:00Z"/>
@@ -602,12 +686,16 @@
                 </collection>
             </Specimen>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Specimen/specimen-anterior-nares-swab-p-noelle"/>
+        </request>
     </entry>
     <entry>
-        <fullUrl value="https://fhir.org/fhir/Device/device-quickvue-sars-antigen-test"/>
+        <fullUrl value="https://fhir.org/fhir/Device/device-fast-sars-antigen-test"/>
         <resource>
             <Device>
-                <id value="device-quickvue-sars-antigen-test"/>
+                <id value="device-fast-sars-antigen-test"/>
                 <meta>
                     <versionId value="3"/>
                     <lastUpdated value="2022-04-26T05:51:44.289+00:00"/>
@@ -622,9 +710,10 @@
                             <b>Generated Narrative</b>
                         </p>
                         <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-                            <p style="margin-bottom: 0px">Resource "device-quickvue-sars-antigen-test" Version "3" Updated "2022-04-26 05:51:44+0000" </p>
+                            <p style="margin-bottom: 0px">Resource "device-fast-sars-antigen-test" Version "3" Updated "2022-04-26 05:51:44+0000" </p>
                             <p style="margin-bottom: 0px">Information Source: #s31mdfHg3R2qDJas!</p>
                             <p style="margin-bottom: 0px">Profile: 
+                                
                                 <a href="StructureDefinition-Device-at-home-in-vitro-test.html">Device - At-Home In-Vitro Test</a>
                             </p>
                         </div>
@@ -649,18 +738,23 @@
                         </table>
                         <p>
                             <b>status</b>: active 
+                        
                         </p>
                         <p>
-                            <b>manufacturer</b>: QUIDEL CORPORATION 
+                            <b>manufacturer</b>: ACME CORPORATION 
+                        
                         </p>
                         <p>
                             <b>expirationDate</b>: 2022-11-20 
+                        
                         </p>
                         <p>
                             <b>lotNumber</b>: 7654321D 
+                        
                         </p>
                         <p>
                             <b>serialNumber</b>: 10987654d321 
+                        
                         </p>
                         <h3>DeviceNames</h3>
                         <table class="grid">
@@ -675,23 +769,28 @@
                             </tr>
                             <tr>
                                 <td>*</td>
-                                <td>QuickVue® SARS Antigen Test</td>
+                                <td>Fast SARS Antigen Test</td>
                                 <td>manufacturer-name</td>
                             </tr>
                         </table>
                         <p>
                             <b>modelNumber</b>: 20387 
+                        
                         </p>
                         <p>
                             <b>partNumber</b>: 20387 
+                        
                         </p>
                         <p>
-                            <b>type</b>: QuickVue® SARS Antigen Test 
+                            <b>type</b>: Fast SARS Antigen Test 
+                            
                             <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span>
                         </p>
                         <p>
                             <b>owner</b>: 
-                            <a href="Organization-us-core-organization-quidel-corporation.html">Organization/us-core-organization-quidel-corporation</a> "Quidel Corporation" 
+                            
+                            <a href="Organization-us-core-organization-acme-corporation.html">Organization/us-core-organization-acme-corporation</a> "Acme Corporation" 
+                        
                         </p>
                     </div>
                 </text>
@@ -700,23 +799,24 @@
                     <issuer value="GS1"/>
                 </udiCarrier>
                 <status value="active"/>
-                <manufacturer value="QUIDEL CORPORATION"/>
+                <manufacturer value="ACME CORPORATION"/>
                 <expirationDate value="2022-11-20"/>
                 <lotNumber value="7654321D"/>
                 <serialNumber value="10987654d321"/>
                 <deviceName>
-                    <name value="QuickVue® SARS Antigen Test"/>
-                    <type value="manufacturer-name"/>
+                    <name value="Fast SARS Antigen Test"/>
+                    <type value="model-name"/>
                 </deviceName>
                 <modelNumber value="20387"/>
                 <partNumber value="20387"/>
                 <type>
-                    <text value="QuickVue® SARS Antigen Test"/>
+                    <text value="Fast SARS Antigen Test"/>
                 </type>
-                <owner>
-                    <reference value="Organization/us-core-organization-quidel-corporation"/>
-                </owner>
             </Device>
         </resource>
+        <request>
+            <method value="PUT"/>
+            <url value="Device/device-fast-sars-antigen-test"/>
+        </request>
     </entry>
 </Bundle>

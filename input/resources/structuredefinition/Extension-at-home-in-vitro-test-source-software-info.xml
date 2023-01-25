@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-at-home-in-vitro-test-source-software-info"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-07-26T01:48:41.351+00:00"/>
-        <source value="#lT3AIAVD6zMmw9I5"/>
+        <versionId value="6"/>
+        <lastUpdated value="2023-01-25T00:30:01.649+00:00"/>
+        <source value="#xUOPBzeIjljEcn2e"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-source-software-info"/>
-    <version value="5.0.1"/>
+    <version value="1.0.0"/>
     <name value="ExtensionAtHomeInVitroTestSourceSoftwareInfo"/>
     <title value="Extension - At-Home In-Vitro Test Source Software Information"/>
     <status value="active"/>

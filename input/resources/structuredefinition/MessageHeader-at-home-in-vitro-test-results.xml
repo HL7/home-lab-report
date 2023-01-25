@@ -3,11 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="MessageHeader-at-home-in-vitro-test-results"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2023-01-03T05:24:07.051+00:00"/>
-        <source value="#CAXAct0XKlAxwriN"/>
+        <versionId value="22"/>
+        <lastUpdated value="2023-01-25T05:02:27.858+00:00"/>
+        <source value="#7tJC6niygR0ci3mh"/>
     </meta>
-    <url value="https://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+    <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"/>
+    <version value="1.0.0"/>
     <name value="MessageHeaderAtHomeInVitroTestResults"/>
     <title value="MessageHeader - At-Home In-Vitro Test Results"/>
     <status value="active"/>
@@ -29,13 +30,13 @@
         </element>
         <element id="MessageHeader.event[x]">
             <path value="MessageHeader.event[x]"/>
-            <short value="At-Home In-Vitro Test Results"/>
+            <short value="Result of most recent lab test for condition of interest"/>
             <type>
                 <code value="Coding"/>
             </type>
             <patternCoding>
-                <system value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-at-home-in-vitro-test"/>
-                <code value="at-home-in-vitro-test-result-report"/>
+                <system value="http://loinc.org"/>
+                <code value="96552-5"/>
             </patternCoding>
             <mustSupport value="true"/>
         </element>

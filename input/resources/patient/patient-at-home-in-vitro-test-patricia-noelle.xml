@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patient
     xmlns="http://hl7.org/fhir">
-    <id value="us-core-patient-patricia-noelle"/>
+    <id value="patient-at-home-in-vitro-test-patricia-noelle"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2022-07-20T04:29:20.566+00:00"/>
-        <source value="#Vt2osPSpvN7vor45"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-25T02:00:39.726+00:00"/>
+        <source value="#Lt6Nutkxhl4kvAwx"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -27,7 +26,7 @@
                             <span>7247 Main St </span>
                             <br/>
                             <span>Springfield </span>
-                            <span>OK </span>
+                            <span>IL </span>
                             <span>US </span>
                         </td>
                     </tr>
@@ -41,6 +40,22 @@
             </table>
         </div>
     </text>
+    <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-sex-for-clinical-use">
+        <extension url="value">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://hl7.org/fhir/us/home-lab-report/CodeSystem/codesystem-sex-for-clinical-use"/>
+                    <code value="female"/>
+                    <display value="Female sex for clinical use"/>
+                </coding>
+                <coding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="248152002"/>
+                    <display value="Female (finding)"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </extension>
     <identifier>
         <use value="usual"/>
         <type>
@@ -73,7 +88,8 @@
     <address>
         <line value="7247 Main St"/>
         <city value="Springfield"/>
-        <state value="OK"/>
+        <district value="Sangamon"/>
+        <state value="IL"/>
         <postalCode value="62707"/>
         <country value="US"/>
     </address>

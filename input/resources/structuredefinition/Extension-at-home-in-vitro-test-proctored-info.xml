@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-at-home-in-vitro-test-proctored-info"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2022-07-26T00:30:48.601+00:00"/>
-        <source value="#WJciESwZprm05ran"/>
+        <versionId value="13"/>
+        <lastUpdated value="2023-01-25T03:53:03.189+00:00"/>
+        <source value="#KAmStZ7yEHfoa4GM"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
-    <version value="5.0.1"/>
+    <version value="1.0.0"/>
     <name value="ExtensionAtHomeInVitroTestProctoredInfo"/>
-    <title value="Extension - At-Home In-Vitro Test Proctored Information"/>
+    <title value="Extension - At-Home In-Vitro Test Proctored Info"/>
     <status value="active"/>
     <date value="2022-06-21"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
@@ -71,9 +71,9 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctorInformation">
+        <element id="Extension.extension:proctoredBy">
             <path value="Extension.extension"/>
-            <sliceName value="proctorInformation"/>
+            <sliceName value="proctoredBy"/>
             <short value="Information about the person(s) who proctored the test"/>
             <definition value="Information about the person(s) who proctored the test"/>
             <min value="0"/>
@@ -83,7 +83,7 @@
             </type>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctorInformation.url">
+        <element id="Extension.extension:proctoredBy.url">
             <path value="Extension.extension.url"/>
             <min value="1"/>
             <max value="1"/>
@@ -93,14 +93,16 @@
             <fixedUri value="proctorInformation"/>
             <mustSupport value="true"/>
         </element>
-        <element id="Extension.extension:proctorInformation.value[x]">
+        <element id="Extension.extension:proctoredBy.value[x]">
             <path value="Extension.extension.value[x]"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             </type>
             <mustSupport value="true"/>
         </element>

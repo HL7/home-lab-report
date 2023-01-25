@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-at-home-in-vitro-test-result-covid"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2022-07-25T23:50:15.007+00:00"/>
-        <source value="#u5tdF3vYiNrbCTn9"/>
+        <versionId value="15"/>
+        <lastUpdated value="2023-01-25T06:05:42.080+00:00"/>
+        <source value="#3z7sC5IoAB9XImt8"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
-    <version value="1.0.0-ballot1"/>
+    <version value="1.0.0"/>
     <name value="ObservationAtHomeInVitroTestResultCovid"/>
     <title value="Observation - At-Home In-Vitro Test Result - COVID-19"/>
     <status value="active"/>
@@ -27,27 +27,16 @@
         <element id="Observation.code">
             <path value="Observation.code"/>
             <label value="Label"/>
-            <short value="Covid At Home Tests"/>
-            <binding>
-                <strength value="extensible"/>
-                <description value="This set of values contains COVID-19 LOINC concepts that are appropriate for at-home in-vitro tests"/>
-                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-types-covid"/>
-            </binding>
+            <short value="Consult [LIVD](https://www.cdc.gov/csels/dls/livd-codes.html) to obtain the values to be used for each particular use case."/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <label value="At Home Covid Test Result Values"/>
-            <short value="At Home Covid Test Result Values"/>
+            <short value="Consult [LIVD](https://www.cdc.gov/csels/dls/livd-codes.html) to obtain the values to be used for each particular use case."/>
             <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <description value="This set of values contains SNOMED CT concepts suitable for at-home in-vitro COVID-19 test results"/>
-                <valueSet value="http://hl7.org/fhir/us/home-lab-report/ValueSet/ValueSet-at-home-in-vitro-test-results-covid"/>
-            </binding>
         </element>
         <element id="Observation.specimen">
             <path value="Observation.specimen"/>

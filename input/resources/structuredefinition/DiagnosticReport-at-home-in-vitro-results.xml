@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-at-home-in-vitro-results"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2022-07-13T00:59:28.398+00:00"/>
-        <source value="#8GZaUlgt2oY0XTEy"/>
+        <versionId value="25"/>
+        <lastUpdated value="2023-01-25T05:07:32.314+00:00"/>
+        <source value="#TmNnYSPFJ9IqnJzc"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
     <version value="1.0.0"/>
@@ -75,17 +75,19 @@
             <path value="DiagnosticReport.code"/>
             <mustSupport value="true"/>
         </element>
+        <element id="DiagnosticReport.subject">
+            <path value="DiagnosticReport.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
+            </type>
+        </element>
         <element id="DiagnosticReport.effective[x]">
             <path value="DiagnosticReport.effective[x]"/>
             <type>
                 <code value="dateTime"/>
             </type>
-            <constraint>
-                <key value="aht-1"/>
-                <severity value="warning"/>
-                <human value="The effectiveTime SHALL be precise to at least the minute and SHALL include a time zone offset. For example YYYY-MM-DDTHH:mm+/-HH:NN"/>
-                <expression value="Observation.effectiveDateTime.exists() implies Observation.effectiveDateTime.toString().length() &gt;= 25"/>
-            </constraint>
+            <mustSupport value="true"/>
         </element>
         <element id="DiagnosticReport.result">
             <path value="DiagnosticReport.result"/>
