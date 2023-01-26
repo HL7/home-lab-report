@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-at-home-in-vitro-results-covid-p-noelle"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-01-25T03:59:39.707+00:00"/>
-        <source value="#agTSo0BbJQvl6idW"/>
+        <versionId value="9"/>
+        <lastUpdated value="2023-01-26T00:54:09.200+00:00"/>
+        <source value="#KH7RfT6KOmk5cGkN"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid"/>
     </meta>
     <text>
@@ -27,17 +27,39 @@
             </table>
         </div>
     </text>
-    <extension url="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo">
-        <valueReference>
-            <reference value="Observation/observation-patient-answer-symptoms-present-covid-p-noelle"/>
-            <display value="Whether the patient has symptoms related to condition of interest: Yes"/>
-        </valueReference>
+    <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info">
+        <extension url="type">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0936"/>
+                    <code value="QST"/>
+                    <display value="Question"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="reference">
+            <valueReference>
+                <reference value="Observation/observation-patient-answer-symptoms-present-covid-p-noelle"/>
+                <display value="Whether the patient has symptoms related to condition of interest: Yes"/>
+            </valueReference>
+        </extension>
     </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo">
-        <valueReference>
-            <reference value="Observation/observation-patient-answer-symptom-onset-covid-p-noelle"/>
-            <display value="Date and time of symptom onset: March 22, 2021"/>
-        </valueReference>
+    <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info">
+        <extension url="type">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0936"/>
+                    <code value="QST"/>
+                    <display value="Question"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <extension url="reference">
+            <valueReference>
+                <reference value="Observation/observation-patient-answer-symptom-onset-covid-p-noelle"/>
+                <display value="Date and time of symptom onset: March 22, 2021"/>
+            </valueReference>
+        </extension>
     </extension>
     <status value="final"/>
     <category>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-at-home-in-vitro-test-result-covid"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2023-01-25T21:43:51.196+00:00"/>
-        <source value="#DJFfmPyFEqeW13l5"/>
+        <versionId value="19"/>
+        <lastUpdated value="2023-01-25T21:57:02.192+00:00"/>
+        <source value="#FbPt2JLHP67JfdCy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
     <version value="1.0.0"/>
@@ -30,7 +30,7 @@
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <short value="Consult [LIVD](https://www.cdc.gov/csels/dls/livd-codes.html) to obtain the values to be used for each particular use case."/>
+            <short value="Consult LIVD: https://www.cdc.gov/csels/dls/livd-codes.html to obtain the values to be used for each particular use case."/>
             <min value="1"/>
             <type>
                 <code value="CodeableConcept"/>

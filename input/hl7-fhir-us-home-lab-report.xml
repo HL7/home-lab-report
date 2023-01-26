@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="342"/>
-        <lastUpdated value="2023-01-25T21:31:28.046+00:00"/>
-        <source value="#GKjJTjQKFfXWg5xI"/>
+        <versionId value="347"/>
+        <lastUpdated value="2023-01-26T02:39:04.300+00:00"/>
+        <source value="#ukBE5HxgTNZZRtch"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="1.0.0"/>
@@ -160,7 +160,17 @@
                 <display value="Extension - At-Home In-Vitro Test Source Software Information"/>
             </reference>
             <name value="Extension - At-Home In-Vitro Test Source Software Information"/>
-            <description value="Information about the source software."/>
+            <description value="Information about the source software. The source software is the message producing app that changes the format of, or produces the data."/>
+            <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
+                <display value="Extension - At-Home In-Vitro Test Supporting Info"/>
+            </reference>
+            <name value="Extension - At-Home In-Vitro Test Supporting Info"/>
+            <description value="Additional information supporting the diagnostic report. Modeled after the DiagnosticReport.supportingInfo backbone element added to DiagnosticReport in FHIR R5."/>
             <exampleBoolean value="false"/>
             <groupingId value="framework-at-home-test-profiles"/>
         </resource>
@@ -288,6 +298,7 @@
             <name value="Patient - At Home In Vitro Test"/>
             <description value="This Patient profile represents an At-Home In-Vitro Test Patient."/>
             <exampleBoolean value="false"/>
+            <groupingId value="framework-at-home-test-profiles"/>
         </resource>
         <resource>
             <reference>
@@ -345,12 +356,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
-                <display value="Extension - At-Home In-Vitro Test Supporting Info"/>
+                <reference value="MessageDefinition/MessageDefinition-at-home-in-vitro-test-results"/>
+                <display value="MessageDefinition - At-Home In-Vitro Test Results"/>
             </reference>
-            <name value="Extension - At-Home In-Vitro Test Supporting Info"/>
-            <description value="Additional information supporting the diagnostic report. Modeled after the DiagnosticReport.supportingInfo backbone element added to DiagnosticReport in FHIR R5."/>
-            <exampleBoolean value="false"/>
+            <name value="MessageDefinition - At-Home In-Vitro Test Results"/>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

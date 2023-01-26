@@ -6,8 +6,12 @@ This element does not match any known slice defined in the profile http://hl7.or
 US FHIR Usage rules require that all profiles on Device derive from the core US profile
 
 # There is no US Core Specimen profile in the version of US Core this IG is dependent on
-StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
-StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid').baseDefinition: US FHIR Usage rules require that all profiles on Specimen derive from the core US profile
 
 # This profile IS based on a US Core profile - the US Core Survey profile - which exists in the latest published version of US Core - looks like the IG Publisher is checking a non-published version of US Core because in the ballot version the US Core Survey profile has been "Superseded by US Core Observation Screening Assessment Profile in version 6.0.0" and obviously we can't use a non-published profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# External value set (VSAC) - new value set so not in VSAC FHIR package yet
+ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.55 not found by validator
+The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.55 on element Observation.code could not be resolved

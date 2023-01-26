@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Observation-patient-question-answer"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-01-25T19:11:08.989+00:00"/>
-        <source value="#l2WKAVJVdYXPOQt1"/>
+        <versionId value="11"/>
+        <lastUpdated value="2023-01-26T01:46:08.306+00:00"/>
+        <source value="#1YQOO3bhnSGvntPV"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
     <version value="1.0.0"/>
@@ -30,6 +30,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Clinical Focus Clinical FocusThis set of values contains concepts representing questions asked of the patient by the app when recording or uploading their at-home in-vitro test results."/>
+                <valueSet value="http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.55"/>
             </binding>
         </element>
         <element id="Observation.value[x]">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-at-home-in-vitro-test-supporting-info"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2023-01-25T11:12:02.434+00:00"/>
-        <source value="#PTCwGFl194OIWrTd"/>
+        <versionId value="7"/>
+        <lastUpdated value="2023-01-26T00:59:36.036+00:00"/>
+        <source value="#nYQuec6erMTfX1UY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
     <version value="1.0.0"/>
@@ -37,7 +37,7 @@
             <short value="Extension - At-Home In-Vitro Test Supporting Information"/>
             <definition value="Additional information supporting the diagnostic report."/>
             <min value="0"/>
-            <max value="1"/>
+            <max value="*"/>
         </element>
         <element id="Extension.extension:type">
             <path value="Extension.extension"/>
@@ -63,11 +63,18 @@
         </element>
         <element id="Extension.extension:type.value[x]">
             <path value="Extension.extension.value[x]"/>
+            <short value="Question"/>
             <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="CodeableConcept"/>
             </type>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0936"/>
+                    <code value="QST"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Extension.extension:reference">
@@ -98,9 +105,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
             </type>
             <mustSupport value="true"/>
         </element>

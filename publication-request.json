@@ -2,10 +2,9 @@
 	"package-id": "hl7.fhir.us.home-lab-report",
 	"title": "At-Home Point of Care Test Report",
 	"category": "Orders and Observations",
-	"version": "current",
-	"desc": "",
+	"version": "1.0.0",
 	"path": "https://build.fhir.org/ig/home-lab-report",
 	"status": "trial-use",
-	"sequence": "",
+	"sequence": "STU 1",
 	"milestone": true
 }

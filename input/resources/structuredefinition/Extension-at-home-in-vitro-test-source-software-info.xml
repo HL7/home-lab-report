@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Extension-at-home-in-vitro-test-source-software-info"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2023-01-25T11:11:52.987+00:00"/>
-        <source value="#zhfeSzPx8Wyg1j6l"/>
+        <versionId value="8"/>
+        <lastUpdated value="2023-01-26T01:57:43.892+00:00"/>
+        <source value="#XHZUGlzHcWU523Hy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-source-software-info"/>
     <version value="1.0.0"/>
@@ -14,7 +14,7 @@
     <status value="active"/>
     <date value="2022-06-21"/>
     <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
-    <description value="Information about the source software."/>
+    <description value="Information about the source software. The source software is the message producing app that changes the format of, or produces the data."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Patient-at-home-in-vitro-test"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-01-25T01:08:56.701+00:00"/>
-        <source value="#qftCJPXSsn3IsGLq"/>
+        <versionId value="5"/>
+        <lastUpdated value="2023-01-26T02:37:26.435+00:00"/>
+        <source value="#e27xeZuGsnu9FZJx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
     <version value="1.0.0"/>
@@ -30,6 +30,17 @@
     <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     <derivation value="constraint"/>
     <differential>
+        <element id="Patient.extension">
+            <path value="Patient.extension"/>
+            <sliceName value="sexForClinicalUse"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-sex-for-clinical-use"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
         <element id="Patient.address">
             <path value="Patient.address"/>
         </element>

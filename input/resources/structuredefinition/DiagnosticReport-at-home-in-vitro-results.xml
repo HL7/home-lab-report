@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-at-home-in-vitro-results"/>
     <meta>
-        <versionId value="31"/>
-        <lastUpdated value="2023-01-25T21:44:22.066+00:00"/>
-        <source value="#5TB2FJ3xv6KB36Yu"/>
+        <versionId value="33"/>
+        <lastUpdated value="2023-01-26T00:31:00.844+00:00"/>
+        <source value="#9VGXDM5V16928Mwj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results"/>
     <version value="1.0.0"/>
@@ -30,31 +30,9 @@
         </element>
         <element id="DiagnosticReport.extension">
             <path value="DiagnosticReport.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <min value="0"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="DiagnosticReport.extension:supportingInfoPatientQuestionAnswer">
-            <path value="DiagnosticReport.extension"/>
-            <sliceName value="supportingInfoPatientQuestionAnswer"/>
-            <short value="The supportingInformation Extension will house answers the patient supplied to questions asked by the At Home App"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"/>
-            </type>
-        </element>
-        <element id="DiagnosticReport.extension:supportingInfoPatientQuestionAnswer.extension:reference.value[x]">
-            <path value="DiagnosticReport.extension.extension.value[x]"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
             </type>
             <mustSupport value="true"/>
         </element>
