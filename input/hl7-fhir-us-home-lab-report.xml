@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="347"/>
-        <lastUpdated value="2023-01-26T02:39:04.300+00:00"/>
-        <source value="#ukBE5HxgTNZZRtch"/>
+        <versionId value="348"/>
+        <lastUpdated value="2023-01-26T02:50:15.517+00:00"/>
+        <source value="#Sy25fdpcw8I7SQI0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="1.0.0"/>
@@ -360,6 +360,7 @@
                 <display value="MessageDefinition - At-Home In-Vitro Test Results"/>
             </reference>
             <name value="MessageDefinition - At-Home In-Vitro Test Results"/>
+            <description value="MessageDefinition - At-Home In-Vitro Test Results"/>
             <exampleBoolean value="true"/>
         </resource>
         <page>
