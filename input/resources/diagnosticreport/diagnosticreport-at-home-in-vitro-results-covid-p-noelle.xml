@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="diagnosticreport-at-home-in-vitro-results-covid-p-noelle"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-01-26T00:54:09.200+00:00"/>
-        <source value="#KH7RfT6KOmk5cGkN"/>
+        <versionId value="10"/>
+        <lastUpdated value="2023-01-26T20:27:13.669+00:00"/>
+        <source value="#RJBW6bRk9vEpM4Wv"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid"/>
     </meta>
     <text>
@@ -82,10 +82,6 @@
     </subject>
     <effectiveDateTime value="2021-03-10T11:45:33+11:00"/>
     <issued value="2021-03-10T11:45:33+11:00"/>
-    <performer>
-        <reference value="Organization/us-core-organization-acme-corporation"/>
-        <display value="Acme Corporation"/>
-    </performer>
     <result>
         <reference value="Observation/observation-at-home-in-vitro-test-result-covid-p-noelle"/>
         <display value="SARS-CoV+SARS-CoV-2"/>

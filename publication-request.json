@@ -1,9 +1,11 @@
 {
 	"package-id": "hl7.fhir.us.home-lab-report",
-	"version": "1.0.0",
-	"desc": "This implementation guide (IG) is for use in transmitting At-Home In-Vitro Test results to local, state, territorial and federal health agencies.",
-	"path": "http://hl7.org/fhir/us/home-lab-report/ig/home-lab-report",
+	"title": "At-Home Point of Care Test Report",
+	"category": "Orders and Observations",
+	"version": "current",
+	"desc": "",
+	"path": "https://build.fhir.org/ig/home-lab-report",
 	"status": "trial-use",
-	"sequence": "STU 1",
+	"sequence": "",
 	"milestone": true
 }

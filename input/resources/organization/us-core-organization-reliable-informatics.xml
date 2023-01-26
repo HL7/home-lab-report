@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="us-core-organization-reliable-informatics"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-26T22:24:05.980+00:00"/>
+        <source value="#8G6IvAY0kJgwlm2V"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+    </meta>
+    <active value="true"/>
+    <name value="Reliable Informatics"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="+1(858)552-1111"/>
+    </telecom>
+</Organization>

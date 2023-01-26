@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Observation
     xmlns="http://hl7.org/fhir">
-    <id value="observation-patient-answer-symptoms-present-covid-p-noelle"/>
+    <id value="observation-patient-answer-first-test-s-trevor"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-01-26T21:31:27.755+00:00"/>
-        <source value="#II9jDGmPPdFQ1QtM"/>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-26T22:44:27.266+00:00"/>
+        <source value="#N2XwtOKvNJsa2Scu"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"/>
     </meta>
     <status value="final"/>
@@ -20,21 +20,21 @@
     <code>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="95419-8"/>
-            <display value="Whether the patient has symptoms related to condition of interest"/>
+            <code value="95417-2"/>
+            <display value="Whether this is the patient's first test for condition of interest"/>
         </coding>
-        <text value="Whether the patient has symptoms related to condition of interest"/>
+        <text value="Whether this is the patient's first test for condition of interest"/>
     </code>
     <subject>
-        <reference value="Patient/patient-at-home-in-vitro-test-patricia-noelle"/>
-        <display value="Patricia Noelle"/>
+        <reference value="Patient/patient-at-home-in-vitro-test-stacy-trevor"/>
+        <display value="Stacy Trevor"/>
     </subject>
-    <effectiveDateTime value="2021-03-24"/>
+    <effectiveDateTime value="2021-01-28T16:06:03-05:00"/>
     <valueCodeableConcept>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
-            <code value="Y"/>
-            <display value="Yes"/>
+            <code value="N"/>
+            <display value="No"/>
         </coding>
     </valueCodeableConcept>
 </Observation>

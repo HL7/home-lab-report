@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen
+    xmlns="http://hl7.org/fhir">
+    <id value="specimen-swab-internal-nose-s-trevor"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2023-01-26T22:49:23.006+00:00"/>
+        <source value="#HpMWcBBNgkCMCvwC"/>
+        <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
+    </meta>
+    <identifier>
+        <system value="http://reliable.org"/>
+        <value value="P21-0000105078OneReliableSol.STAG"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="445297001"/>
+            <display value="Swab of internal nose (specimen)"/>
+        </coding>
+        <text value="Swab of internal nose (specimen)"/>
+    </type>
+    <subject>
+        <reference value="Patient/patient-at-home-in-vitro-test-stacy-trevor"/>
+        <display value="Stacy Trevor"/>
+    </subject>
+    <receivedTime value="2021-01-28T16:06:03-05:00"/>
+    <collection>
+        <collectedDateTime value="2021-01-28T16:06:03-05:00"/>
+    </collection>
+</Specimen>

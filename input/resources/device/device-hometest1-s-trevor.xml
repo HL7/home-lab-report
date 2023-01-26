@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Device
     xmlns="http://hl7.org/fhir">
-    <id value="device-fast-sars-antigen-test"/>
+    <id value="device-hometest1-s-trevor"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2023-01-26T20:01:05.323+00:00"/>
-        <source value="#Hp8Mpdd6o2h3z2EU"/>
+        <versionId value="1"/>
+        <lastUpdated value="2023-01-26T22:14:40.524+00:00"/>
+        <source value="#Sxj8SUXVLoqUDfBx"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"/>
     </meta>
     <udiCarrier>
-        <deviceIdentifier value="30014613339374"/>
+        <deviceIdentifier value="Acme COVID-19 Home Test_Acme Limited_EUA"/>
         <issuer value="GS1"/>
     </udiCarrier>
     <status value="active"/>
     <manufacturer value="ACME CORPORATION"/>
     <expirationDate value="2022-11-20"/>
-    <lotNumber value="7654321E"/>
-    <serialNumber value="10987654d322"/>
+    <lotNumber value="7654321F"/>
+    <serialNumber value="10987654d323"/>
     <deviceName>
-        <name value="Fast SARS Antigen Test"/>
+        <name value="Acme COVID-19 Home Test_Acme Limited"/>
         <type value="model-name"/>
     </deviceName>
-    <modelNumber value="20387"/>
-    <partNumber value="20387"/>
+    <modelNumber value="20388"/>
+    <partNumber value="20388"/>
 </Device>

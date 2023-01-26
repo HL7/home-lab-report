@@ -15,3 +15,12 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report
 # External value set (VSAC) - new value set so not in VSAC FHIR package yet
 ValueSet http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.55 not found by validator
 The valueSet reference http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.55 on element Observation.code could not be resolved
+
+# External value set
+Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+
+#IG Publisher Warnings
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
