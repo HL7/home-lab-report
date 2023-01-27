@@ -841,47 +841,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://fhir.org/fhir/Organization/us-core-organization-acme-corporation" />
-    <resource>
-      <Organization>
-        <id value="us-core-organization-acme-corporation" />
-        <meta>
-          <versionId value="2" />
-          <lastUpdated value="2022-03-24T05:33:56.426+00:00" />
-          <source value="#fmPHXoko59FiYwfG" />
-          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization" />
-        </meta>
-        <text>
-          <status value="generated" />
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-              <b>Generated Narrative</b>
-            </p>
-            <div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%">
-              <p style="margin-bottom: 0px">Resource "us-core-organization-acme-corporation" Version "2" Updated "2022-03-24 05:33:56+0000" </p>
-              <p style="margin-bottom: 0px">Information Source: #fmPHXoko59FiYwfG!</p>
-              <p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>
-              </p>
-            </div>
-            <p>
-              <b>active</b>: true </p>
-            <p>
-              <b>name</b>: Acme Corporation </p>
-            <p>
-              <b>telecom</b>: <a href="tel:+1(858)552-1100">+1(858)552-1100</a>
-            </p>
-          </div>
-        </text>
-        <active value="true" />
-        <name value="Acme Corporation" />
-        <telecom>
-          <system value="phone" />
-          <value value="+1(858)552-1100" />
-        </telecom>
-      </Organization>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://fhir.org/fhir/Specimen/specimen-swab-internal-nose-s-trevor" />
     <resource>
       <Specimen xmlns="http://hl7.org/fhir">
