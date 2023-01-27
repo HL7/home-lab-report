@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="365"/>
-        <lastUpdated value="2023-01-27T00:10:10.982+00:00"/>
-        <source value="#jWjT8QXeLeutsLSh"/>
+        <versionId value="367"/>
+        <lastUpdated value="2023-01-27T01:32:58.731+00:00"/>
+        <source value="#BgQiSEIChngu3aP2"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="1.0.0"/>
@@ -73,7 +73,16 @@
             <reference>
                 <reference value="Bundle/bundle-at-home-in-vitro-test-results-p-noelle"/></reference>
             <name value="Bundle - At-Home In-Vitro Test Results - P Noelle"/>
-            <description value="Bundle - At-Home In-Vitro Test Results - P Noelle - example"/>
+            <description value="Bundle - At-Home In-Vitro Test Results - P Noelle example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/bundle-at-home-in-vitro-test-results-s-trevor"/></reference>
+            <name value="Bundle - At-Home In-Vitro Test Results - S Trevor"/>
+            <description value="Bundle - At-Home In-Vitro Test Results - S Trevor example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
             <groupingId value="covid-specific-at-home-test-examples"/>
@@ -240,15 +249,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Observation/observation-at-home-in-vitro-test-result-covid-s-trevor"/></reference>
-            <name value="Observation - At-Home In-Vitro Test Result COVID-19 - S Trevor"/>
-            <description value="Observation - At-Home In-Vitro Test Result COVID-19 - S Trevor"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
-            <groupingId value="covid-specific-at-home-test-examples"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/Observation-at-home-in-vitro-test-result"/>
                 <display value="Observation - Home Lab Test Result"/>
             </reference>
@@ -283,6 +283,15 @@
             <description value="Observation - At-Home In-Vitro Test Result - Covid: P Noelle (proctored by a Practitioner) example"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Observation/observation-at-home-in-vitro-test-result-covid-s-trevor"/></reference>
+            <name value="Observation - At-Home In-Vitro Test Result COVID-19 - S Trevor"/>
+            <description value="Observation - At-Home In-Vitro Test Result COVID-19 - S Trevor"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result-covid"/>
             <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
@@ -391,11 +400,13 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Patient/patient-at-home-in-vitro-test-stacy-trevor"/></reference>
-            <name value="Patient - At-Home In-Vitro Test - Stacy Trevor"/>
-            <description value="Patient - At-Home In-Vitro Test - Stacy Trevor example"/>
+                <reference value="Organization/us-core-organization-reliable-informatics"/>
+                <display value="Reliable Informatics"/>
+            </reference>
+            <name value="Organization - US Core - Reliable Informatics"/>
+            <description value="Organization - US Core - Reliable Informatics example"/>
             <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
             <groupingId value="participant-examples"/>
         </resource>
         <resource>
@@ -418,31 +429,20 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Patient/patient-at-home-in-vitro-test-stacy-trevor"/></reference>
+            <name value="Patient - At-Home In-Vitro Test - Stacy Trevor"/>
+            <description value="Patient - At-Home In-Vitro Test - Stacy Trevor example"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
+            <groupingId value="participant-examples"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Practitioner/practitioner-us-core-proctor"/></reference>
             <name value="Practitioner - US Core - Proctor"/>
             <description value="US Core Practitioner: Test Proctor example"/>
             <exampleBoolean value="true"/>
             <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/us-core-organization-reliable-informatics"/>
-                <display value="Reliable Informatics"/>
-            </reference>
-            <name value="Organization - US Core - Reliable Informatics"/>
-            <description value="Organization - US Core - Reliable Informatics example"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-            <groupingId value="participant-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Specimen/specimen-swab-internal-nose-s-trevor"/></reference>
-            <name value="Specimen - Swab Internal Nose - S Trevor"/>
-            <description value="Specimen - Swab Internal Nose - S Trevor"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
-            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
@@ -472,6 +472,15 @@
             <description value="This Specimen profile identifies and describes the specimen used in a COVID-19 At-Home In-Vitro Test."/>
             <exampleBoolean value="false"/>
             <groupingId value="covid-specifc-at-home-test-profiles"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Specimen/specimen-swab-internal-nose-s-trevor"/></reference>
+            <name value="Specimen - Swab Internal Nose - S Trevor"/>
+            <description value="Specimen - Swab Internal Nose - S Trevor"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test"/>
+            <groupingId value="covid-specific-at-home-test-examples"/>
         </resource>
         <resource>
             <reference>
