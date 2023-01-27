@@ -8,39 +8,7 @@
         <source value="#m0lIVlIgfqsr1jaz"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Stacy 
-                <b>TREVOR </b>
-            </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Identifier</td>
-                        <td>P21-0000105078</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>
-                            <span>11 Norman Drive </span>
-                            <br/>
-                            <span>Palatine </span>
-                            <span>IL </span>
-                            <span>US </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Date of birth</td>
-                        <td>
-                            <span>21 January 1988</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
+    
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
         <extension url="ombCategory">
             <valueCoding>
