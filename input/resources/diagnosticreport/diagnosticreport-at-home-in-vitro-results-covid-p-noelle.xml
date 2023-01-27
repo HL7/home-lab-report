@@ -8,25 +8,6 @@
         <source value="#RJBW6bRk9vEpM4Wv"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText"> SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Status</td>
-                        <td>FINAL</td>
-                    </tr>
-                    <tr>
-                        <td>Issued</td>
-                        <td> 10 March 2021 00:45:33 </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info">
         <extension url="type">
             <valueCodeableConcept>

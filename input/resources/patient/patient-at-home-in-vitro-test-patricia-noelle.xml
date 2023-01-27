@@ -8,40 +8,6 @@
         <source value="#8Lcr0qlYU9srAJpp"/>
         <profile value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Patricia 
-                
-                <b>NOELLE </b>
-            </div>
-            <table class="hapiPropertyTable">
-                <tbody>
-                    <tr>
-                        <td>Identifier</td>
-                        <td>900</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>
-                            <span>7247 Main St </span>
-                            <br/>
-                            <span>Springfield </span>
-                            <span>IL </span>
-                            <span>US </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Date of birth</td>
-                        <td>
-                            <span>17 October 1954</span>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <extension url="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-sex-for-clinical-use">
         <extension url="value">
             <valueCodeableConcept>
