@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7-fhir-us-home-lab-report"/>
     <meta>
-        <versionId value="364"/>
-        <lastUpdated value="2023-01-26T23:13:48.773+00:00"/>
-        <source value="#rLlwQQoFUH0Ovrhm"/>
+        <versionId value="365"/>
+        <lastUpdated value="2023-01-27T00:10:10.982+00:00"/>
+        <source value="#jWjT8QXeLeutsLSh"/>
     </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/ImplementationGuide/hl7-fhir-us-home-lab-report"/>
     <version value="1.0.0"/>
@@ -39,7 +39,7 @@
     <dependsOn id="usnlmvsac">
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac"/>
         <packageId value="us.nlm.vsac"/>
-        <version value="0.7.0"/>
+        <version value="0.9.0"/>
     </dependsOn>
     <definition>
         <grouping id="framework-at-home-test-profiles">
