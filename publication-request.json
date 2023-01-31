@@ -3,8 +3,9 @@
 	"title": "At-Home Point of Care Test Report",
 	"category": "Orders and Observations",
 	"version": "1.0.0",
-	"path": "https://build.fhir.org/ig/home-lab-report",
+	"path": "http://build.fhir.org/ig/home-lab-report",
 	"status": "trial-use",
-	"sequence": "",
-	"milestone": true
+	"sequence": "STU 1",
+	"milestone": true,
+	"desc": "FHIR STU Release 1" 
 }
