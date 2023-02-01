@@ -22,7 +22,6 @@
             <code value="US"/>
         </coding>
     </jurisdiction>
-    <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <property>
