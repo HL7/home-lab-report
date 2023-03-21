@@ -4,6 +4,6 @@
 	"path": "http://hl7.org/fhir/us/home-lab-report/STU1",
 	"status": "trial-use",
 	"sequence": "STU 1",
-	"milestone": true,
+	"mode": "milestone",
 	"desc": "FHIR STU Release 1" 
 }
