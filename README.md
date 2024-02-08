@@ -1,2 +1,2 @@
 # home-lab-report
-FHIR IG repository for the at-home test reporting implementation guide
+HL7 FHIR IG repository for the In-Vitro At-Home Test Report implementation guide
