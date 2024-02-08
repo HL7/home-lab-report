@@ -14,7 +14,6 @@
     <status value="draft"/>
     <experimental value="false"/>
     <date value="2023-01-10"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This CodeSystem is a copy copy of the not-yet-published 6.0.0-ballot version US Core Sex for Clinical Use value set and contains codes that represent the sex characterization appropriate for the associated clinical context."/>
     <jurisdiction>
         <coding>

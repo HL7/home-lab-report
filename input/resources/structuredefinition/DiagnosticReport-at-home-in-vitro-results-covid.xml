@@ -12,7 +12,6 @@
     <name value="DiagnosticReportAtHomeInVitroResultsCovid"/>
     <title value="DiagnosticReport - At-Home In-Vitro Results - COVID-19"/>
     <status value="active"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This profile further constrains the DiagnosticReport - At-Home In-Vitro Results profile to COVID-19 At-Home In-Vitro Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

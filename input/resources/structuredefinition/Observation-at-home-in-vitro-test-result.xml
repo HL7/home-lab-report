@@ -12,7 +12,6 @@
     <name value="ObservationAtHomeInVitroTestResult"/>
     <title value="Observation - At-Home In-Vitro Test Result"/>
     <status value="active"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This profile constrains the US Core Laboratory Result Observation to At-Home In-Vitro Sample Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

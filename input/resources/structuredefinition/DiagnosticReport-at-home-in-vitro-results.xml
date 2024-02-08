@@ -12,7 +12,6 @@
     <name value="DiagnosticReportAtHomeInVitroResult"/>
     <title value="DiagnosticReport - At-Home In-Vitro Results"/>
     <status value="active"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home In-Vitro Tests."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>

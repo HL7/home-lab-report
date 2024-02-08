@@ -13,7 +13,6 @@
     <title value="Extension - At-Home In-Vitro Test Proctored Info"/>
     <status value="active"/>
     <date value="2022-06-21"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="Information about whether or not the test was proctored and who the proctor was."/>
     <jurisdiction>
         <coding>

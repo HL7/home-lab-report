@@ -13,7 +13,6 @@
     <title value="Extension - At-Home In-Vitro Test Source Software Information"/>
     <status value="active"/>
     <date value="2022-06-21"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="Information about the source software. The source software is the message producing app that changes the format of, or produces the data."/>
     <jurisdiction>
         <coding>

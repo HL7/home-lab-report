@@ -13,7 +13,6 @@
     <title value="Extension - At-Home In-Vitro Test Supporting Info"/>
     <status value="active"/>
     <date value="2023-01-04"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="Additional information supporting the diagnostic report. Modeled after the DiagnosticReport.supportingInfo backbone element added to DiagnosticReport in FHIR R5."/>
     <jurisdiction>
         <coding>

@@ -12,7 +12,6 @@
     <name value="DeviceAtHomeInVitroTest"/>
     <title value="Device - At-Home In-Vitro Test"/>
     <status value="active"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This profile constrains the Device resource for At-Home In-Vitro Tests."/>
     <fhirVersion value="4.0.1"/>
     <mapping>

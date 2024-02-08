@@ -13,7 +13,6 @@
     <title value="Patient - At Home In Vitro Test"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This Patient profile represents an At-Home In-Vitro Test Patient."/>
     <jurisdiction>
         <coding>

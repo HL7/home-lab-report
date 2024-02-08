@@ -13,7 +13,6 @@
     <title value="Extension - Sex For Clinical Use"/>
     <status value="active"/>
     <date value="2022-10-07"/>
-    <publisher value="Orders &amp; Observations (http://www.hl7.org/Special/committees/orders/index.cfm)"/>
     <description value="This extension is a copy of the not-yet-published 6.0.0-ballot version US Core Sex for Clinical Use, which aligns with FHIR R5 [sexForClinicalUse extension](http://hl7.org/fhir/2022Sep/extension-patient-sexforclinicaluse.html) from which the following description is excerpted, &quot;Sex for Clinical Use is a categorization of sex derived from observable information such as an organ inventory, recent hormone lab tests, genetic testing, menstrual status, obstetric history, etc. This property is intended for use in clinical decision making and indicates that treatment or diagnostic tests should consider best practices associated with the relevant reference population  It describes the biological sex of an organism, which is most commonly determined based on anatomy and physiology or genetic (chromosome) analysis.  It also optionally communicates the date when the sex was determined.&quot; See the referenced extension for more information."/>
     <jurisdiction>
         <coding>
