@@ -9,12 +9,12 @@
     <name value="AtHomeInVitroTestReport" />
     <title value="At-Home In-Vitro Test Report" />
     <status value="active" />
-    <publisher value="Orders and Observations" />
+    <publisher value="HL7 International / Orders and Observations" />
     <contact>
-        <name value="HL7 International - Orders and Observations" />
+        <name value="HL7 International / Orders and Observations" />
         <telecom>
             <system value="url" />
-            <value value="http://www.hl7.org/Special/committees/orders/index.cfm" />
+            <value value="http://www.hl7.org/Special/committees/orders" />
         </telecom>
     </contact>
     <description
