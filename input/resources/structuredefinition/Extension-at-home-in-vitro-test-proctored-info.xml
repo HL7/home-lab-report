@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Extension-at-home-in-vitro-test-proctored-info"/>
-    <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2023-01-25T11:11:45.306+00:00"/>
-        <source value="#MAUJr9aU9HY1VM6t"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"/>
     <version value="1.0.0"/>
     <name value="ExtensionAtHomeInVitroTestProctoredInfo"/>

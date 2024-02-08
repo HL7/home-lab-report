@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="DiagnosticReport-at-home-in-vitro-results-covid"/>
-    <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2023-01-25T21:45:29.782+00:00"/>
-        <source value="#67DAwS5E9kFMXAFH"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid"/>
     <version value="1.0.0"/>
     <name value="DiagnosticReportAtHomeInVitroResultsCovid"/>

@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Patient-at-home-in-vitro-test"/>
-    <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2023-01-26T02:37:26.435+00:00"/>
-        <source value="#e27xeZuGsnu9FZJx"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Patient-at-home-in-vitro-test"/>
     <version value="1.0.0"/>
     <name value="PatientAtHomeInVitroTest"/>

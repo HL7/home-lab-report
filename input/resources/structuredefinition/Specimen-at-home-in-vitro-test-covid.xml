@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Specimen-at-home-in-vitro-test-covid"/>
-    <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2023-01-25T06:03:04.569+00:00"/>
-        <source value="#u4IFPWQ2L0qnEq4j"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid"/>
     <name value="SpecimenAtHomeInVitroTestCovid"/>
     <title value="Specimen - At-Home In-Vitro Test - COVID-19"/>

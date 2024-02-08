@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Bundle-at-home-in-vitro-test"/>
-    <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2023-01-25T10:05:56.334+00:00"/>
-        <source value="#yPBs6ZhyfHcNc4eU"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test"/>
     <version value="1.0.0"/>
     <name value="BundleAtHomeInVitroTest"/>

@@ -2,11 +2,6 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="Observation-at-home-in-vitro-test-result"/>
-    <meta>
-        <versionId value="22"/>
-        <lastUpdated value="2023-01-25T21:43:08.585+00:00"/>
-        <source value="#7qpIkSi9h32mvgrx"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-at-home-in-vitro-test-result"/>
     <version value="1.0.0"/>
     <name value="ObservationAtHomeInVitroTestResult"/>
