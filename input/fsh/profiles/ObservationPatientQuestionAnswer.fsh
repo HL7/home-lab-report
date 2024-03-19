@@ -1,5 +1,5 @@
 Profile: ObservationPatientQuestionAnswer
-Parent: USCoreObservationSurveyProfile
+Parent: USCoreObservationScreeningAssessmentProfile
 Id: Observation-patient-question-answer
 Title: "Observation - Patient Question Answer"
 Description: "This profile constrains the FHIR Observation Resource to represent an answer given to a question asked of the patient by the app when recording or uploading their test results."

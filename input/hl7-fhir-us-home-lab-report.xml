@@ -30,9 +30,9 @@
     <packageId value="hl7.fhir.us.home-lab-report" />
     <fhirVersion value="4.0.1" />
     <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.0.1" />
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0" />
         <packageId value="hl7.fhir.us.core" />
-        <version value="6.0.1" />
+        <version value="6.1.0" />
     </dependsOn>
     <dependsOn id="usnlmvsac">
         <uri value="http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac" />

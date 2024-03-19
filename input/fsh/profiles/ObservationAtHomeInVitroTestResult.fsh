@@ -22,7 +22,7 @@ Description: "This profile constrains the US Core Laboratory Result Observation 
 * value[x] ^short = "At-Home Test Result Value"
 * value[x] ^min = 0
 * specimen 1.. MS
-* specimen only Reference(SpecimenAtHomeInVitroTest)
+//* specimen only Reference(SpecimenAtHomeInVitroTest)
 * specimen ^short = "The Specimen SHALL be from at-home sample."
 * specimen ^definition = "The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"
 * specimen ^comment = "The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"

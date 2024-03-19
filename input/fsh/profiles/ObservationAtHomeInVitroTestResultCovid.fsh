@@ -8,7 +8,7 @@ Description: "This profile constrains the Observation - At-Home In-Vitro Test Re
 * value[x] only CodeableConcept
 * value[x] ^short = "Consult LIVD: https://www.cdc.gov/csels/dls/livd-codes.html to obtain the values to be used for each particular use case."
 * specimen 1.. MS
-* specimen only Reference(SpecimenAtHomeInVitroTestCovid)
+//* specimen only Reference(SpecimenAtHomeInVitroTestCovid)
 * specimen ^short = "The Specimen SHALL be from at-home COVID-19 sample."
 * specimen ^definition = "The referenced specimen should contain a Specimen.identifier and a Specimen.identifier.assigner"
 * device 1.. MS
