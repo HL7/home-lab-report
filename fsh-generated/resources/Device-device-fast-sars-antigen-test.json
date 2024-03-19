@@ -1,0 +1,31 @@
+{
+  "resourceType": "Device",
+  "id": "device-fast-sars-antigen-test",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-01-26T20:01:05.323+00:00",
+    "source": "#Hp8Mpdd6o2h3z2EU",
+    "profile": [
+      "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"
+    ]
+  },
+  "deviceName": [
+    {
+      "type": "model-name",
+      "name": "Fast SARS Antigen Test"
+    }
+  ],
+  "udiCarrier": [
+    {
+      "deviceIdentifier": "30014613339374",
+      "issuer": "GS1"
+    }
+  ],
+  "status": "active",
+  "manufacturer": "ACME CORPORATION",
+  "expirationDate": "2022-11-20",
+  "lotNumber": "7654321E",
+  "serialNumber": "10987654d322",
+  "modelNumber": "20387",
+  "partNumber": "20387"
+}

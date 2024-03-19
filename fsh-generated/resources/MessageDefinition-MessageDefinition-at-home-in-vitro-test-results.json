@@ -1,0 +1,27 @@
+{
+  "resourceType": "MessageDefinition",
+  "id": "MessageDefinition-at-home-in-vitro-test-results",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2023-01-26T02:39:04.248+00:00",
+    "source": "#gyQ9CMM5XqWAi9lu"
+  },
+  "url": "http://hl7.org/fhir/us/home-lab-report/MessageDefinition/MessageDefinition-at-home-in-vitro-test-results",
+  "name": "MessageDefinitionAtHomeInVitroTestResults",
+  "title": "MessageDefinition - At-Home In-Vitro Test Results",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-01-07",
+  "eventCoding": {
+    "code": "96552-5",
+    "system": "http://loinc.org"
+  },
+  "focus": [
+    {
+      "code": "Bundle",
+      "profile": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Bundle-at-home-in-vitro-test",
+      "min": 1,
+      "max": "1"
+    }
+  ]
+}

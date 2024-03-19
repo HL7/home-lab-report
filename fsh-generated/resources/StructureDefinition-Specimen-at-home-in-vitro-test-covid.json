@@ -1,0 +1,47 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Specimen-at-home-in-vitro-test-covid",
+  "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test-covid",
+  "name": "SpecimenAtHomeInVitroTestCovid",
+  "title": "Specimen - At-Home In-Vitro Test - COVID-19",
+  "status": "active",
+  "description": "This Specimen profile identifies and describes the specimen used in a COVID-19 At-Home In-Vitro Test.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Specimen-at-home-in-vitro-test",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen",
+        "path": "Specimen",
+        "short": "The specimen used in a COVID-19 at-home lab test.",
+        "definition": "The specimen used in a COVID-19 at-home lab test."
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "short": "Type of tissue or material (consult [LIVD](https://www.cdc.gov/csels/dls/livd-codes.html) to obtain the values to be used for each particular use case)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "diagnosticreport-at-home-in-vitro-results-covid-s-trevor",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-01-26T22:33:19.818+00:00",
+    "source": "#Ge55aDZCqn1xIV3N",
+    "profile": [
+      "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "LAB",
+          "display": "Laboratory"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "QST",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
+                "display": "Question"
+              }
+            ]
+          }
+        },
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "Observation/observation-patient-answer-first-test-s-trevor",
+            "display": "Whether this is the patient's first test for the condition of interest: No"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "QST",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
+                "display": "Question"
+              }
+            ]
+          }
+        },
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "Observation/observation-patient-answer-employed-healthcare-s-trevor",
+            "display": "Whether patient is employed in a healthcare setting: No"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "QST",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
+                "display": "Question"
+              }
+            ]
+          }
+        },
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "Observation/observation-patient-answer-symptoms-present-covid-s-trevor",
+            "display": "Whether patient has symptoms related to condition of interest: Yes"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "QST",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
+                "display": "Question"
+              }
+            ]
+          }
+        },
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "Observation/observation-patient-answer-hospitalized-s-trevor",
+            "display": "Whether patient was hospitalized because of this condition: No"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "QST",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
+                "display": "Question"
+              }
+            ]
+          }
+        },
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "Observation/observation-patient-answer-congregate-s-trevor",
+            "display": "Whether patient resides in a congregate care setting: Yes"
+          }
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info",
+      "extension": [
+        {
+          "url": "type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "QST",
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0936",
+                "display": "Question"
+              }
+            ]
+          }
+        },
+        {
+          "url": "reference",
+          "valueReference": {
+            "reference": "Observation/observation-patient-answer-pregnancy-s-trevor",
+            "display": "Pregnancy status: Not pregnant"
+          }
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "95209-3",
+        "system": "http://loinc.org",
+        "display": "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-at-home-in-vitro-test-stacy-trevor",
+    "display": "Stacy Trevor"
+  },
+  "effectiveDateTime": "2021-01-28T11:45:33+11:00",
+  "issued": "2021-01-28T16:06:21-05:00",
+  "result": [
+    {
+      "reference": "Observation/observation-at-home-in-vitro-test-result-covid-s-trevor",
+      "display": "SARS-CoV+SARS-CoV-2"
+    }
+  ]
+}

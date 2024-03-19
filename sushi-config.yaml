@@ -1,0 +1,20 @@
+canonical: http://hl7.org/fhir/us/home-lab-report
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: hl7-fhir-us-home-lab-report
+name: AtHomeInVitroTestReport
+status: active
+version: 1.1.0
+dependencies:
+  hl7.fhir.us.core:
+    version: 5.0.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#5.0.1
+    id: hl7fhiruscore
+  us.nlm.vsac:
+    version: 0.17.0
+    uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
+    id: usnlmvsac
+parameters:
+  show-inherited-invariants: false
+  path-expansion-params: 'Parameters-expansion-parameters-at-home.json'  #path is relative to [base]/fsh-generated/resources

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Device",
+  "id": "device-hometest1-s-trevor",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2023-01-26T22:14:40.524+00:00",
+    "source": "#Sxj8SUXVLoqUDfBx",
+    "profile": [
+      "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Device-at-home-in-vitro-test"
+    ]
+  },
+  "deviceName": [
+    {
+      "type": "model-name",
+      "name": "Acme COVID-19 Home Test_Acme Limited"
+    }
+  ],
+  "udiCarrier": [
+    {
+      "deviceIdentifier": "Acme COVID-19 Home Test_Acme Limited_EUA",
+      "issuer": "GS1"
+    }
+  ],
+  "status": "active",
+  "manufacturer": "ACME CORPORATION",
+  "expirationDate": "2022-11-20",
+  "lotNumber": "7654321F",
+  "serialNumber": "10987654d323",
+  "modelNumber": "20388",
+  "partNumber": "20388"
+}

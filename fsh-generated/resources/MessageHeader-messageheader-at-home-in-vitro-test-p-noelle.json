@@ -1,0 +1,52 @@
+{
+  "resourceType": "MessageHeader",
+  "id": "messageheader-at-home-in-vitro-test-p-noelle",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2023-01-26T22:23:23.051+00:00",
+    "source": "#Hg6v98WBE27BXwor",
+    "profile": [
+      "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/MessageHeader-at-home-in-vitro-test-results"
+    ]
+  },
+  "eventCoding": {
+    "code": "96552-5",
+    "system": "http://loinc.org"
+  },
+  "source": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "vendorOrganization",
+            "valueReference": {
+              "reference": "Organization/us-core-organization-acme-corporation"
+            }
+          },
+          {
+            "url": "softwareBinaryID",
+            "valueString": "Binary ID unknown"
+          },
+          {
+            "url": "softwareInstallDate",
+            "valueDate": "2022-06-01"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-source-software-info"
+      }
+    ],
+    "name": "ACME Application Server",
+    "software": "ACME Application Software",
+    "version": "1.2.3.4.5",
+    "contact": {
+      "system": "phone",
+      "value": "+1 (555) 987 6543"
+    },
+    "endpoint": "http://at-home-in-vitro-test.org/fhir/endpoint/1"
+  },
+  "focus": [
+    {
+      "reference": "DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle"
+    }
+  ]
+}

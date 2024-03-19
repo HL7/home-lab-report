@@ -1,0 +1,41 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-patient-answer-symptom-onset-covid-p-noelle",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2023-01-25T01:33:50.194+00:00",
+    "source": "#tpyQnb6Mr6AbH4V8",
+    "profile": [
+      "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "survey",
+          "display": "Survey"
+        }
+      ],
+      "text": "Survey"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "65222-2",
+        "system": "http://loinc.org",
+        "display": "Date and time of symptom onset"
+      }
+    ],
+    "text": "Date and time of Covid 19 symptom onset"
+  },
+  "subject": {
+    "reference": "Patient/patient-at-home-in-vitro-test-patricia-noelle",
+    "display": "Patricia Noelle"
+  },
+  "effectiveDateTime": "2021-03-24",
+  "valueDateTime": "2021-03-22"
+}

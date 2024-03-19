@@ -1,0 +1,20 @@
+{
+  "resourceType": "Organization",
+  "id": "us-core-organization-proctor",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2023-01-25T03:55:30.490+00:00",
+    "source": "#fuxJRPPq0m5kis1L",
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "active": true,
+  "name": "Proctor Organization",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+1(858)552-1111"
+    }
+  ]
+}
