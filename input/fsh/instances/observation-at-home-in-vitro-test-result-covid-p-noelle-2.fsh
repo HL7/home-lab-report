@@ -8,7 +8,7 @@ Usage: #example
 * meta.source = "#y2c3DZ4Z6xoDcAB1"
 * extension.extension[0].url = "proctoredTest"
 * extension.extension[=].valueBoolean = true
-* extension.extension[+].url = "proctorInformation"
+* extension.extension[+].url = "proctoredBy"
 * extension.extension[=].valueReference.reference = "Organization/us-core-organization-proctor"
 * extension.url = "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"
 * status = #final
