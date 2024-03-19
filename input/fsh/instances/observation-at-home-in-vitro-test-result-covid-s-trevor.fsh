@@ -9,8 +9,8 @@ Usage: #example
 * status = #final
 * category = $observation-category#laboratory "Laboratory"
 * category.text = "Laboratory"
-* code = $loinc#95209-3 "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"
-* code.text = "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"
+* code = $loinc#95209-3 "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory system specimen by Rapid immunoassay"
+* code.text = "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory system specimen by Rapid immunoassay"
 * subject.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"
 * subject.display = "Stacy Trevor"
 * effectiveDateTime = "2021-01-28T16:06:21-05:00"

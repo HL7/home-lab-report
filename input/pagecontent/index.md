@@ -11,7 +11,7 @@
 
 |IG Dependencies	|
 |----------------------------------|
-| [HL7 FHIR US Core Version 5.0.1](http://hl7.org/fhir/us/core/STU5.0.1/) |
+| [HL7 FHIR US Core Version 6.1.0](http://hl7.org/fhir/us/core/STU6.1/) |
 {:.table-striped}
 
 

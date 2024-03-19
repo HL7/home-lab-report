@@ -44,7 +44,7 @@ Usage: #example
 * extension[=].url = "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-supporting-info"
 * status = #final
 * category = $v2-0074#LAB "Laboratory"
-* code = $loinc#95209-3 "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory specimen by Rapid immunoassay"
+* code = $loinc#95209-3 "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory system specimen by Rapid immunoassay"
 * subject.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"
 * subject.display = "Stacy Trevor"
 * effectiveDateTime = "2021-01-28T11:45:33+11:00"
