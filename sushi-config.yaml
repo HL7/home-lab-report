@@ -1,11 +1,19 @@
 canonical: http://hl7.org/fhir/us/home-lab-report
+title: "At-Home In-Vitro Test Report"
+releaselabel: STU 1.1
 fhirVersion: 4.0.1
-FSHOnly: true
+FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: hl7-fhir-us-home-lab-report
+id: hl7.fhir.us.home-lab-report
 name: AtHomeInVitroTestReport
 status: active
 version: 1.1.0
+
+publisher:
+  name: HL7 International / Orders and Observations
+  url: http://www.hl7.org/Special/committees/orders
+  email: ord@lists.HL7.org
+
 dependencies:
   hl7.fhir.us.core:
     version: 6.1.0
@@ -15,6 +23,114 @@ dependencies:
     version: 0.17.0
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
     id: usnlmvsac
+  #hl7.fhir.uv.extensions:
+  #  version: 5.1.0-snapshot1
+  #  uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions#5.1.0-snapshot1
+  #  id: hl7fhiruvextensions
+
 parameters:
   show-inherited-invariants: false
   path-expansion-params: 'Parameters-expansion-parameters-at-home.json'  #path is relative to [base]/fsh-generated/resources
+  apply-wg: true
+  
+
+pages:
+  index.md:
+    title: Home Page
+  technical_guidance.md:
+   title: Technical Guidance
+  implementation_guide.md:
+    title: Implementation Guide
+  workflow.md:
+    title: Workflow
+  relationship_to_hl7_v2.md:
+    title: Relationship to HL7 V2
+  hl7_v2_fields_and_example_messages.md:
+    title: HL7 V2 Fields and Example Messages
+  at-home_in-vitro_test_over_the_counter_purchase_v2_example.md:
+    title: At-Home In-Vitro Test Over the Counter Purchase V2 Example
+  at-home_in-vitro_test_with_prescription_v2_example.md:
+    title: At-Home In-Vitro Test with Prescription V2 Example
+  downloads.md:
+    title: Downloads
+            
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Guidance:
+    Technical Guidance: technical_guidance.html
+    Implementation Guide: implementation_guide.html
+    Workflow: workflow.html
+  Relationship to HL7 V2:
+    Relationship to HL7 V2: relationship_to_hl7_v2.html
+    HL7 V2 Fields and Example Messages: hl7_v2_fields_and_example_messages.html
+    At-Home In-Vitro Test Over the Counter Purchase V2 Example: at-home_in-vitro_test_over_the_counter_purchase_v2_example.html
+    At-Home In-Vitro Test with Prescription V2 Example: at-home_in-vitro_test_with_prescription_v2_example.html
+  Downloads: downloads.html
+  Artifact Index: artifacts.html
+
+groups:
+  framework-at-home-test-profiles:
+    name: "Profiles: At-Home In-Vitro Test Report Framework"
+    description: "Framework profiles that describe the minimum requirements for At-Home In-Vitro Test Report profiles. These profiles can be further constrained (e.g. [Profiles: COVID-19 At-Home In-Vitro Test Report](artifacts.html#profiles-covid-19-at-home-in-vitro-test-report)) to describe further condition-specific requirements."
+    resources:
+    - StructureDefinition/Bundle-at-home-in-vitro-test
+    - StructureDefinition/Device-at-home-in-vitro-test
+    - StructureDefinition/DiagnosticReport-at-home-in-vitro-results
+    - StructureDefinition/Extension-at-home-in-vitro-test-proctored-info
+    - StructureDefinition/Extension-at-home-in-vitro-test-source-software-info
+    - StructureDefinition/Extension-at-home-in-vitro-test-supporting-info
+    - MessageDefinition/MessageDefinition-at-home-in-vitro-test-results
+    - StructureDefinition/MessageHeader-at-home-in-vitro-test-results
+    - StructureDefinition/Observation-at-home-in-vitro-test-result
+    - StructureDefinition/Observation-patient-question-answer
+    - StructureDefinition/Patient-at-home-in-vitro-test
+    - StructureDefinition/Specimen-at-home-in-vitro-test
+  covid-specifc-at-home-test-profiles:
+    name: "Profiles: COVID-19 At-Home In-Vitro Test Report"
+    description: Profiles that further constrain the framework profiles to be specific to COVID-19 At-Home In-Vitro Tests.
+    resources:
+    - StructureDefinition/Observation-at-home-in-vitro-test-result-covid
+    - StructureDefinition/Specimen-at-home-in-vitro-test-covid
+  covid-specific-at-home-test-examples:
+    name: "Examples: COVID-19 At-Home In-Vitro Test Report"
+    resources:
+    - Bundle/bundle-at-home-in-vitro-test-results-p-noelle
+    - Bundle/bundle-at-home-in-vitro-test-results-s-trevor
+    - Device/device-hometest1-s-trevor
+    - Device/device-fast-sars-antigen-test
+    - StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid
+    - DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle
+    - DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-s-trevor
+    - MessageHeader/messageheader-at-home-in-vitro-test-p-noelle
+    - MessageHeader/messageheader-at-home-in-vitro-test-s-trevor
+    - Observation/observation-at-home-in-vitro-test-result-covid-p-noelle-2
+    - Observation/observation-at-home-in-vitro-test-result-covid-p-noelle
+    - Observation/observation-at-home-in-vitro-test-result-covid-s-trevor
+    - Observation/observation-patient-answer-congregate-s-trevor
+    - Observation/observation-patient-answer-employed-healthcare-s-trevor
+    - Observation/observation-patient-answer-first-test-s-trevor
+    - Observation/observation-patient-answer-hospitalized-s-trevor
+    - Observation/observation-patient-answer-pregnancy-s-trevor
+    - Observation/observation-patient-answer-symptom-onset-covid-p-noelle
+    - Observation/observation-patient-answer-symptoms-present-covid-s-trevor
+    - Observation/observation-patient-answer-symptoms-present-covid-p-noelle
+    - Specimen/specimen-anterior-nares-swab-p-noelle
+    - Specimen/specimen-swab-internal-nose-s-trevor
+  participant-examples:
+    name: "Examples: Participant"
+    resources:
+    - Organization/us-core-organization-acme-corporation
+    - Organization/us-core-organization-proctor
+    - Organization/us-core-organization-reliable-informatics
+    - Patient/patient-at-home-in-vitro-test-patricia-noelle
+    - Patient/patient-at-home-in-vitro-test-stacy-trevor
+    - Practitioner/practitioner-us-core-proctor
+  other:
+    name: Other
+    resources:
+    - expansion-parameters-at-home
+
+copyrightYear: 2022+
+jurisdiction: urn:iso:std:iso:3166#US
+license: CC0-1.0

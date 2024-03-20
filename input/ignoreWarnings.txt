@@ -34,3 +34,36 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report
 INFORMATION: Observation/observation-at-home-in-vitro-test-result-covid-p-noelle-2: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 INFORMATION: Observation/observation-at-home-in-vitro-test-result-covid-p-noelle: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
 INFORMATION: Observation/observation-at-home-in-vitro-test-result-covid-s-trevor: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+
+# Best practice, but not required for this IG
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-p-noelle: Bundle.entry[2].resource/*Observation/observation-at-home-in-vitro-test-result-covid-p-noelle*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-p-noelle: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-p-noelle: Bundle.entry[3].resource/*Observation/observation-at-home-in-vitro-test-result-covid-p-noelle*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-p-noelle: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-p-noelle: Bundle.entry[4].resource/*Observation/observation-patient-answer-symptoms-present-covid-p-noelle*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-p-noelle: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[2].resource/*Observation/observation-at-home-in-vitro-test-result-covid-s-trevor*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[3].resource/*Observation/observation-patient-answer-symptoms-present-covid-s-trevor*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[4].resource/*Observation/observation-patient-answer-hospitalized-s-trevor*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[5].resource/*Observation/observation-patient-answer-congregate-s-trevor*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[6].resource/*Observation/observation-patient-answer-employed-healthcare-s-trevor*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[7].resource/*Observation/observation-patient-answer-first-test-s-trevor*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[8].resource/*Observation/observation-patient-answer-pregnancy-s-trevor*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/bundle-at-home-in-vitro-test-results-s-trevor: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-at-home-in-vitro-test-result-covid-p-noelle-2: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-at-home-in-vitro-test-result-covid-p-noelle: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-at-home-in-vitro-test-result-covid-s-trevor: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-congregate-s-trevor: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-employed-healthcare-s-trevor: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-first-test-s-trevor: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-hospitalized-s-trevor: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-pregnancy-s-trevor: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-symptom-onset-covid-p-noelle: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-symptoms-present-covid-p-noelle: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/observation-patient-answer-symptoms-present-covid-s-trevor: Observation: Best Practice Recommendation: In general, all observations should have a performer
