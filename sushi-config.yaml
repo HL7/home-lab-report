@@ -14,6 +14,10 @@ publisher:
   url: http://www.hl7.org/Special/committees/orders
   email: ord@lists.HL7.org
 
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: oo
+
 dependencies:
   hl7.fhir.us.core:
     version: 6.1.0
