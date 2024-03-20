@@ -17,5 +17,7 @@ Description: "This profile constrains the US Core Diagnostic Report for Laborato
 * effective[x] MS
 * result 1..1 MS
 * result only Reference(ObservationAtHomeInVitroTestResult)
+* result ^short = "Observation representing the result of the at-home in-vitro test."
+* result ^definition = "Observation representing the result of the at-home in-vitro test."
 * media ^short = "Images related to the test, such as a photo of the test result, images to support proctor interpretation of test results, etc."
 * media ^definition = "Images related to the test, such as a photo of the test result, images to support proctor interpretation of test results, etc."
