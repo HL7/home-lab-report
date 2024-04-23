@@ -1,5 +1,5 @@
 Profile: SpecimenAtHomeInVitroTest
-Parent: Specimen
+Parent: USCoreSpecimenProfile
 Id: Specimen-at-home-in-vitro-test
 Title: "Specimen - At-Home In-Vitro Test"
 Description: "This Specimen profile identifies and describes the specimen used in an At-Home In-Vitro Test."
@@ -20,8 +20,7 @@ Description: "This Specimen profile identifies and describes the specimen used i
 * type.text MS
 * type.text ^short = "The specimen text description."
 * type.text ^definition = "The specimen text description."
-* subject 1..1 MS
-* subject only Reference(USCorePatientProfile)
+* subject 1..1
 * subject ^short = "The subject is the person who took the at-home test."
 * subject ^definition = "The subject is the person who took the at-home test."
 * collection 1.. MS
