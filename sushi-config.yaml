@@ -27,6 +27,10 @@ dependencies:
     version: 0.17.0
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
     id: usnlmvsac
+  us.cdc.phinvads:
+    version: 0.12.0
+    uri: http://fhir.org/packages/us.cdc.phinvads/ImplementationGuide/us.cdc.phinvads
+    id: uscdcphinvads
   #hl7.fhir.uv.extensions:
   #  version: 5.1.0-snapshot1
   #  uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions#5.1.0-snapshot1

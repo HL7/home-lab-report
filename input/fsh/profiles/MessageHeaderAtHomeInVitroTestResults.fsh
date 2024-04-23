@@ -12,9 +12,9 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * event[x] ^short = "Result of most recent lab test for condition of interest"
 * destination MS
 * destination.id MS
-* destination.id ^short = "To be provided by receiving system"
+* destination.id ^short = "See Receiving System Specific Fields"
 * destination.name MS
-* destination.name ^short = "To be provided by receiving system"
+* destination.name ^short = "See Receiving System Specific Fields"
 * destination.endpoint MS
 * destination.receiver only Reference(USCoreOrganizationProfile)
 * destination.receiver MS
@@ -22,7 +22,7 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * sender MS
 * source MS
 * source.id MS
-* source.id ^short = "See 'Obtaining App Specific Identifiers' "
+* source.id ^short = "See 'Obtaining App Specific Identifiers'"
 * source.extension MS
 * source.extension ^slicing.discriminator.type = #value
 * source.extension ^slicing.discriminator.path = "url"
@@ -32,6 +32,7 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * source.extension[sourceSoftwareVendorInfo] ^short = "Source software information (vendor organization, binary id, install date)"
 * source.extension[sourceSoftwareVendorInfo] ^definition = "Source software information (vendor organization, binary id, install date)"
 * source.extension[sourceSoftwareVendorInfo] ^min = 0
+* source.extension ^short = "{YYYYMMDD}"
 * source.name MS
 * source.name ^short = "Sending system namespace (name of App, <20 char)"
 * source.name ^min = 0
