@@ -1,13 +1,11 @@
 Name                                                                 Type        File
 BundleAtHomeInVitroTest                                              Profile     profiles\BundleAtHomeInVitroTest.fsh
-CodeSystemSexForClinicalUse                                          CodeSystem  codesystems\CodeSystemSexForClinicalUse.fsh
 DeviceAtHomeInVitroTest                                              Profile     profiles\DeviceAtHomeInVitroTest.fsh
 DiagnosticReportAtHomeInVitroResult                                  Profile     profiles\DiagnosticReportAtHomeInVitroResult.fsh
 DiagnosticReportAtHomeInVitroResultsCovid                            Profile     profiles\DiagnosticReportAtHomeInVitroResultsCovid.fsh
 ExtensionAtHomeInVitroTestProctoredInfo                              Extension   extensions\ExtensionAtHomeInVitroTestProctoredInfo.fsh
 ExtensionAtHomeInVitroTestSourceSoftwareInfo                         Extension   extensions\ExtensionAtHomeInVitroTestSourceSoftwareInfo.fsh
 ExtensionAtHomeInVitroTestSupportingInfo                             Extension   extensions\ExtensionAtHomeInVitroTestSupportingInfo.fsh
-ExtensionSexForClinicalUse                                           Extension   extensions\ExtensionSexForClinicalUse.fsh
 Inline-Instance-for-bundle-at-home-in-vitro-test-results-p-noelle-1  Instance    instances\Inline-Instance-for-bundle-at-home-in-vitro-test-results-p-noelle-1.fsh
 Inline-Instance-for-bundle-at-home-in-vitro-test-results-p-noelle-2  Instance    instances\Inline-Instance-for-bundle-at-home-in-vitro-test-results-p-noelle-2.fsh
 Inline-Instance-for-bundle-at-home-in-vitro-test-results-p-noelle-3  Instance    instances\Inline-Instance-for-bundle-at-home-in-vitro-test-results-p-noelle-3.fsh
@@ -25,7 +23,6 @@ ObservationPatientQuestionAnswer                                     Profile    
 PatientAtHomeInVitroTest                                             Profile     profiles\PatientAtHomeInVitroTest.fsh
 SpecimenAtHomeInVitroTest                                            Profile     profiles\SpecimenAtHomeInVitroTest.fsh
 SpecimenAtHomeInVitroTestCovid                                       Profile     profiles\SpecimenAtHomeInVitroTestCovid.fsh
-ValueSetSexForClinicalUseCodes                                       ValueSet    valuesets\ValueSetSexForClinicalUseCodes.fsh
 bundle-at-home-in-vitro-test-results-p-noelle                        Instance    instances\bundle-at-home-in-vitro-test-results-p-noelle.fsh
 bundle-at-home-in-vitro-test-results-s-trevor                        Instance    instances\bundle-at-home-in-vitro-test-results-s-trevor.fsh
 device-fast-sars-antigen-test                                        Instance    instances\device-fast-sars-antigen-test.fsh
