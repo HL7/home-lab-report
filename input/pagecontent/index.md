@@ -27,7 +27,7 @@ Due to Public Health Departments' familiarity with V2, a test implementation pro
 **Please note** : This guide is a framework for future work. It contains "framework" profiles that contain constraints common to all At-Home In-Vitro Test Reporting use cases. These framework profiles can be further constrained to a particular use case such as the COVID-19 At-Home In-Vitro Test Reporting use case. The COVID-19 use case profiles have been created and included in this guide.
 
 ### Further Information
-[RADx® MARS - Mobile Application Reporting through Standards](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars)
+[RADx® MARS - Mobile Application Guidance](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars/mobile-application-guidance)
 
 [RADx® MARS - Mobile Application Reporting through Standards: HL7v2 Implementation Guide](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars/HL7v2-implementation-guide)
 
