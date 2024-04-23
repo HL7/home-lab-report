@@ -6,9 +6,6 @@ Usage: #example
 * meta.versionId = "4"
 * meta.lastUpdated = "2023-01-26T02:02:08.079+00:00"
 * meta.source = "#8Lcr0qlYU9srAJpp"
-* extension.extension.url = "value"
-* extension.extension.valueCodeableConcept = CodeSystemSexForClinicalUse#female "Female sex for clinical use"
-* extension.url = "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-sex-for-clinical-use"
 * identifier.use = #usual
 * identifier.type = $v2-0203#MR "Medical Record Number"
 * identifier.type.text = "Medical Record Number"

@@ -16,9 +16,6 @@ Usage: #example
 * extension[=].extension[+].url = "text"
 * extension[=].extension[=].valueString = "Unknown"
 * extension[=].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
-* extension[+].extension.url = "value"
-* extension[=].extension.valueCodeableConcept = CodeSystemSexForClinicalUse#female "Female sex for clinical use"
-* extension[=].url = "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-sex-for-clinical-use"
 * identifier.use = #usual
 * identifier.type = $v2-0203#MR "Medical Record Number"
 * identifier.type.text = "Medical Record Number"
