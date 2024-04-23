@@ -6,7 +6,10 @@
 
 Key components of the guide include:
 
-**Introduction to HL7v2:** An overview of HL7v2 messaging standards, including message types, segments, and message transport mechanisms.
-**[Implementation Guidance](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars/HL7v2-implementation-guide):**  Detailed instructions on how to configure HL7v2 interfaces for COVID-19 testing, including message formats, segment definitions, Patient-specific fields, Sender-specific fields, Test-specific fields, Receiver-specific fields and sample message templates.
-**Testing and Validation:** Recommendations for testing HL7v2 interfaces to ensure data accuracy, message integrity, and system interoperability.
-**Troubleshooting and Support:** Resources and troubleshooting tips for addressing common challenges and issues encountered during HL7v2 implementation.
+ * **Introduction to HL7v2:** An overview of HL7v2 messaging standards, including message types, segments, and message transport mechanisms.
+
+ * **[Implementation Guidance](https://www.nibib.nih.gov/covid-19/radx-tech-program/mars/HL7v2-implementation-guide):**  Detailed instructions on how to configure HL7v2 interfaces for COVID-19 testing, including message formats, segment definitions, Patient-specific fields, Sender-specific fields, Test-specific fields, Receiver-specific fields and sample message templates.
+
+ * **Testing and Validation:** Recommendations for testing HL7v2 interfaces to ensure data accuracy, message integrity, and system interoperability.
+
+ * **Troubleshooting and Support:** Resources and troubleshooting tips for addressing common challenges and issues encountered during HL7v2 implementation.
