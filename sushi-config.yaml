@@ -58,11 +58,14 @@ pages:
     title: At-Home In-Vitro Test with Prescription V2 Example
   downloads.md:
     title: Downloads
+  getting_started.md:
+    title: Getting Started
             
 menu:
   Home: index.html
   Table of Contents: toc.html
   Guidance:
+    Getting Started: getting_started.html
     Technical Guidance: technical_guidance.html
     Implementation Guide: implementation_guide.html
     Workflow: workflow.html

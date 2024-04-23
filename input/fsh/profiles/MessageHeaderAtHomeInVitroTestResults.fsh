@@ -12,9 +12,9 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * event[x] ^short = "Result of most recent lab test for condition of interest"
 * destination MS
 * destination.id MS
-* destination.id ^short = "Receiving system OID"
+* destination.id ^short = "To be provided by receiving system"
 * destination.name MS
-* destination.name ^short = "Receiving system namespace (name of destination application)"
+* destination.name ^short = "To be provided by receiving system"
 * destination.endpoint MS
 * destination.receiver only Reference(USCoreOrganizationProfile)
 * destination.receiver MS
@@ -22,18 +22,18 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * sender MS
 * source MS
 * source.id MS
-* source.id ^short = "Sending system OID"
+* source.id ^short = "See 'Obtaining App Specific Identifiers' "
 * source.extension MS
 * source.extension ^slicing.discriminator.type = #value
 * source.extension ^slicing.discriminator.path = "url"
 * source.extension ^slicing.rules = #open
 * source.extension ^min = 0
 * source.extension contains ExtensionAtHomeInVitroTestSourceSoftwareInfo named sourceSoftwareVendorInfo 0..* MS
-* source.extension[sourceSoftwareVendorInfo] ^short = "Source software information (vendor organization, binary id, intstall date)"
-* source.extension[sourceSoftwareVendorInfo] ^definition = "Source software information (vendor organization, binary id, intstall date)"
+* source.extension[sourceSoftwareVendorInfo] ^short = "Source software information (vendor organization, binary id, install date)"
+* source.extension[sourceSoftwareVendorInfo] ^definition = "Source software information (vendor organization, binary id, install date)"
 * source.extension[sourceSoftwareVendorInfo] ^min = 0
 * source.name MS
-* source.name ^short = "Sending system namespace (name of app)"
+* source.name ^short = "Sending system namespace (name of App, <20 char)"
 * source.name ^min = 0
 * source.software ^short = "Software product name including OS (e.g. Android, iOS)"
 * source.version MS
