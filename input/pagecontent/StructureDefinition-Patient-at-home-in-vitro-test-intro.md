@@ -1,1 +1,3 @@
-It is based on the **US Core Patient** profile with further constraints for the addition of the Sex for Clinical Use extension (to be used for Patient Sex) and a must support constraint for the county (Patient.address.district) where the patient resides.
+It is based on the **US Core Patient** profile with a further constraint for the county (Patient.address.district) where the patient resides.
+
+Patient.gender is the only required "sex" parameter. (Patient.gender is not "gender identity"). Patient.gender is asserted by the patient. As this profile is to be used with at-home test kits, there is no "clinical sex" information on result observations and the receiver would need to keep this in mind when determining the correct sex parameter for clinical use. It should be understood that Patient.gender is not necessarily appropriate to use for interpretation of result observations.
