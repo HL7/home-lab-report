@@ -7,7 +7,7 @@ Description: "This Patient profile represents an At-Home In-Vitro Test Patient."
 * ^experimental = false
 * ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * ^jurisdiction.text = "United States of America"
-* extension contains
-    ExtensionSexForClinicalUse named sexForClinicalUse 0..1 MS
+* birthDate 1..1 MS
 * address.district MS
 * address.district ^short = "County"
+* address.postalCode 1..1 MS
