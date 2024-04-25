@@ -10,6 +10,7 @@ Description: "This profile constrains the Device resource for At-Home In-Vitro T
 * udiCarrier.deviceIdentifier ^short = "LIVD Spreadsheet | LOINC Mapping.Testkit Name ID or LIVD Spreadsheet | LOINC Mapping.Testkit Equipment UID V2: OBX-17.1"
 * udiCarrier.deviceIdentifier ^definition = "At-Home Test Device identifier. Although most at home test kits will have a single UDI for the \"test kit\" (all in one package of reagents, test card/device, etc.) it is possible for at home kits have a resuable \"reader device\" which would need a distinct \"equipment id\". In this case, the reader device would have an \"equipment UID\" that may be the same for multiple tests performed. For these cases record Equipment UID here, otherwise record Test Kit Name ID here. V2: OBX-17.1"
 * udiCarrier.issuer 0..1 MS
+* udiCarrier.issuer ^short = "Organization that issues the UDI for this test. Not included in V2 IG."
 * manufacturer 0..1 MS
 * manufacturer ^short = "LIVD Spreadsheet | LOINC Mapping.Manufacturer"
 * manufactureDate MS
