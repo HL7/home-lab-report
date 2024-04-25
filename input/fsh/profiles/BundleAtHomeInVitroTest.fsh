@@ -11,6 +11,7 @@ Description: "This profile constrains the Bundle resource for At-Home In-Vitro T
 * type = #message (exactly)
 * type MS
 * timestamp 1..1 MS
+* timestamp ^short = "When the bundle was assembled. V2: MSH-7"
 * entry MS
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "$this.resource"

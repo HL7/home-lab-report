@@ -7,25 +7,22 @@ Description: "This profile constrains the US Core Laboratory Result Observation 
 * id 1.. MS
 * extension only ExtensionAtHomeInVitroTestProctoredInfo
 * status = #final (exactly)
-* code ^short = "Consult LIVD: https://www.cdc.gov/csels/dls/livd-codes.html to obtain the values to be used for each particular use case."
+* status ^short = "At-Home Test result status final. V2: OBR-25, OBX-11"
+* code ^short = "At-Home Test performed code. Consult LIVD: https://www.cdc.gov/csels/dls/livd-codes.html to obtain the values to be used for each particular use case. V2: OBX-3.1, OBX-3.2, OBX-3.3, OBX-3.7"
 * subject only Reference(PatientAtHomeInVitroTest)
 * effective[x] 1.. MS
 * effective[x] only dateTime
+* effective[x] ^short = "At-Home Test date of interpretation/result date. The effectiveTime SHALL be precise to at least the minute and SHALL include a time zone offset. NOTE: For multiplex tests, this field must match across all results. V2: OBX-7.1, OBX-19"
 * issued MS
-* issued ^short = "Test result date released"
-* issued ^definition = "Test result date released: This should be populated with the test result date released, which, in the at-home setting, will mostly be the same as the Observation.effective[x], however, it could be different when a proctor is involved and releases the result. It is mapped to HL7 V2 OBR 22 because it is the required field in the message."
+* issued ^short = "At-Home Test result date released - when test item is done (in the at-home setting will mostly be the same as the Observation.effective[x], could be different when a proctor is involved - when the proctor releases the result). V2: OBR-22.1"
 * performer MS
 * performer ^short = "If the performer is not the patient being tested, specify the person performing the test."
 * value[x] only CodeableConcept
 * value[x] MS
-* value[x] ^label = "At-Home Test Result Value"
-* value[x] ^short = "At-Home Test Result Value"
-* value[x] ^min = 0
+* value[x] ^short = "At-Home Test Result value. Consult LIVD: https://www.cdc.gov/csels/dls/livd-codes.html to obtain the values to be used for each particular use case. V2: OBX-5.1, OBX-5.2, OBX-5.3, OBX-5.7"
 * specimen 1.. MS
 //* specimen only Reference(SpecimenAtHomeInVitroTest)
-* specimen ^short = "The Specimen SHALL be from at-home sample."
-* specimen ^definition = "The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"
-* specimen ^comment = "The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner"
+* specimen ^short = "The Specimen SHALL be from at-home sample. The referenced specifimen should contain a Specimen.identifier and a Specimen.identifier.assigner."
 * device 1.. MS
 * device only Reference(DeviceAtHomeInVitroTest)
 * device ^label = "At home test device"

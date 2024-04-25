@@ -12,9 +12,9 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * event[x] ^short = "Result of most recent lab test for condition of interest"
 * destination MS
 * destination.id MS
-* destination.id ^short = "See Receiving System Specific Fields"
+* destination.id ^short = "Receiving system OID. See Receiving System Specific Fields. V2: MSH-5.2"
 * destination.name MS
-* destination.name ^short = "See Receiving System Specific Fields"
+* destination.name ^short = "Receiving system namespace (name of destination application). See Receiving System Specific Fields. V2: MSH-5.1"
 * destination.endpoint MS
 * destination.receiver only Reference(USCoreOrganizationProfile)
 * destination.receiver MS
@@ -22,7 +22,7 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * sender MS
 * source MS
 * source.id MS
-* source.id ^short = "See 'Obtaining App Specific Identifiers'"
+* source.id ^short = "Sending system OID. See 'Obtaining App Specific Identifiers'. V2: MSH-3.2"
 * source.extension MS
 * source.extension ^slicing.discriminator.type = #value
 * source.extension ^slicing.discriminator.path = "url"
@@ -30,15 +30,13 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * source.extension ^min = 0
 * source.extension contains ExtensionAtHomeInVitroTestSourceSoftwareInfo named sourceSoftwareVendorInfo 0..* MS
 * source.extension[sourceSoftwareVendorInfo] ^short = "Source software information (vendor organization, binary id, install date)"
-* source.extension[sourceSoftwareVendorInfo] ^definition = "Source software information (vendor organization, binary id, install date)"
 * source.extension[sourceSoftwareVendorInfo] ^min = 0
-* source.extension ^short = "{YYYYMMDD}"
 * source.name MS
-* source.name ^short = "Sending system namespace (name of App, <20 char)"
+* source.name ^short = "Sending system namespace (name of app). {<20 char}. V2: MSH-3.1"
 * source.name ^min = 0
-* source.software ^short = "Software product name including OS (e.g. Android, iOS)"
+* source.software ^short = "Software product name including OS (e.g. Android, iOS). V2: SFT-3"
 * source.version MS
-* source.version ^short = "Software certified version or release number"
+* source.version ^short = "Software certified version or release number. V2: SFT-2"
 * focus 1..1 MS
 * focus only Reference(DiagnosticReportAtHomeInVitroResult)
 * focus ^short = "The focus of this message header is a DiagnosticReport."
