@@ -13,7 +13,7 @@ Usage: #example
 * expirationDate = "2022-11-20"
 * lotNumber = "7654321E"
 * serialNumber = "10987654d322"
-* deviceName.name = "Fast SARS Antigen Test"
-* deviceName.type = #model-name
+* deviceName[modelName].name = "Fast SARS Antigen Test"
+* deviceName[modelName].type = #model-name
 * modelNumber = "20387"
 * partNumber = "20387"

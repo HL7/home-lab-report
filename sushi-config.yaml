@@ -24,7 +24,7 @@ dependencies:
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#6.1.0
     id: hl7fhiruscore
   us.nlm.vsac:
-    version: 0.17.0
+    version: 0.18.0
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
     id: usnlmvsac
   us.cdc.phinvads:
@@ -92,7 +92,6 @@ groups:
     - StructureDefinition/Extension-at-home-in-vitro-test-proctored-info
     - StructureDefinition/Extension-at-home-in-vitro-test-source-software-info
     - StructureDefinition/Extension-at-home-in-vitro-test-supporting-info
-    - MessageDefinition/MessageDefinition-at-home-in-vitro-test-results
     - StructureDefinition/MessageHeader-at-home-in-vitro-test-results
     - StructureDefinition/Observation-at-home-in-vitro-test-result
     - StructureDefinition/Observation-patient-question-answer
@@ -102,6 +101,7 @@ groups:
     name: "Profiles: COVID-19 At-Home In-Vitro Test Report"
     description: Profiles that further constrain the framework profiles to be specific to COVID-19 At-Home In-Vitro Tests.
     resources:
+    - StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid
     - StructureDefinition/Observation-at-home-in-vitro-test-result-covid
     - StructureDefinition/Specimen-at-home-in-vitro-test-covid
   covid-specific-at-home-test-examples:
@@ -111,7 +111,6 @@ groups:
     - Bundle/bundle-at-home-in-vitro-test-results-s-trevor
     - Device/device-hometest1-s-trevor
     - Device/device-fast-sars-antigen-test
-    - StructureDefinition/DiagnosticReport-at-home-in-vitro-results-covid
     - DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-p-noelle
     - DiagnosticReport/diagnosticreport-at-home-in-vitro-results-covid-s-trevor
     - MessageHeader/messageheader-at-home-in-vitro-test-p-noelle
@@ -142,6 +141,7 @@ groups:
     name: Other
     resources:
     - expansion-parameters-at-home
+    - MessageDefinition/MessageDefinition-at-home-in-vitro-test-results
 
 copyrightYear: 2022+
 jurisdiction: urn:iso:std:iso:3166#US

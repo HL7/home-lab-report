@@ -7,8 +7,8 @@ Usage: #example
 * meta.lastUpdated = "2023-01-26T22:14:40.519+00:00"
 * meta.source = "#zinBI6yFGAuJQfTe"
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
-* category.text = "Laboratory"
+* category[us-core] = $observation-category#laboratory "Laboratory"
+* category[us-core].text = "Laboratory"
 * code = $loinc#95209-3 "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory system specimen by Rapid immunoassay"
 * code.text = "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory system specimen by Rapid immunoassay"
 * subject.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"

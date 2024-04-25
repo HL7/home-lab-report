@@ -13,7 +13,7 @@ Usage: #example
 * expirationDate = "2022-11-20"
 * lotNumber = "7654321F"
 * serialNumber = "10987654d323"
-* deviceName.name = "Acme COVID-19 Home Test_Acme Limited"
-* deviceName.type = #model-name
+* deviceName[modelName].name = "Acme COVID-19 Home Test_Acme Limited"
+* deviceName[modelName].type = #model-name
 * modelNumber = "20388"
 * partNumber = "20388"

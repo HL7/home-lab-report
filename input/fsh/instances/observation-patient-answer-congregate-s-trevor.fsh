@@ -7,8 +7,8 @@ Usage: #example
 * meta.lastUpdated = "2023-01-26T22:14:40.525+00:00"
 * meta.source = "#gqS1fGnjiCaUi3OM"
 * status = #final
-* category = $observation-category#survey "Survey"
-* category.text = "Survey"
+* category[survey] = $observation-category#survey "Survey"
+* category[survey].text = "Survey"
 * code = $loinc#95421-4 "Whether patient resides in a congregate care setting"
 * code.text = "Whether patient resides in a congregate care setting"
 * subject.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"

@@ -6,14 +6,14 @@ Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2023-01-25T04:08:13.171+00:00"
 * meta.source = "#y2c3DZ4Z6xoDcAB1"
-* extension.extension[0].url = "proctoredTest"
-* extension.extension[=].valueBoolean = true
-* extension.extension[+].url = "proctoredBy"
-* extension.extension[=].valueReference.reference = "Organization/us-core-organization-proctor"
-* extension.url = "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"
+* extension[ExtensionAtHomeInVitroTestProctoredInfo].extension[proctoredTest].url = "proctoredTest"
+* extension[ExtensionAtHomeInVitroTestProctoredInfo].extension[proctoredTest].valueBoolean = true
+* extension[ExtensionAtHomeInVitroTestProctoredInfo].extension[proctoredBy].url = "proctoredBy"
+* extension[ExtensionAtHomeInVitroTestProctoredInfo].extension[proctoredBy].valueReference.reference = "Organization/us-core-organization-proctor"
+* extension[ExtensionAtHomeInVitroTestProctoredInfo].url = "http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Extension-at-home-in-vitro-test-proctored-info"
 * status = #final
-* category = $observation-category#laboratory "Laboratory"
-* category.text = "Laboratory"
+* category[us-core] = $observation-category#laboratory "Laboratory"
+* category[us-core].text = "Laboratory"
 * code = $loinc#95209-3 "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory system specimen by Rapid immunoassay"
 * code.text = "SARS-CoV+SARS-CoV-2 (COVID-19) Ag [Presence] in Respiratory system specimen by Rapid immunoassay"
 * subject.reference = "Patient/patient-at-home-in-vitro-test-patricia-noelle"
