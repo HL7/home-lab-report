@@ -31,9 +31,9 @@ This profile IS based on a US Core profile - the US Core Survey profile - which 
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/home-lab-report/StructureDefinition/Observation-patient-question-answer').baseDefinition: US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # Draft CodeSystem is referenced in base resource
-INFORMATION: Observation/observation-at-home-in-vitro-test-result-covid-p-noelle-2: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: Observation/observation-at-home-in-vitro-test-result-covid-p-noelle: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
-INFORMATION: Observation/observation-at-home-in-vitro-test-result-covid-s-trevor: Observation.category[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|0.1.0
+INFORMATION: StructureDefinition/Observation-at-home-in-vitro-test-result: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/Observation-at-home-in-vitro-test-result-covid: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+INFORMATION: StructureDefinition/Observation-patient-question-answer: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
 
 # Best practice, but not required for this IG
 WARNING: Bundle/bundle-at-home-in-vitro-test-results-p-noelle: Bundle.entry[2].resource/*Observation/observation-at-home-in-vitro-test-result-covid-p-noelle*/: Best Practice Recommendation: In general, all observations should have a performer
