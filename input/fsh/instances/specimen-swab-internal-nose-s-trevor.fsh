@@ -1,5 +1,5 @@
 Instance: specimen-swab-internal-nose-s-trevor
-InstanceOf: SpecimenAtHomeInVitroTest
+InstanceOf: SpecimenAtHomeInVitroTestCovid
 Title: "Specimen - Swab Internal Nose - S Trevor"
 Description: "Specimen - Swab Internal Nose - S Trevor"
 Usage: #example

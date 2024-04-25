@@ -1,5 +1,5 @@
 Instance: specimen-anterior-nares-swab-p-noelle
-InstanceOf: SpecimenAtHomeInVitroTest
+InstanceOf: SpecimenAtHomeInVitroTestCovid
 Title: "Specimen - Anterior Nares Swab - P Noelle"
 Description: "Specimen - Anterior Nares Swab: P Noelle example"
 Usage: #example
