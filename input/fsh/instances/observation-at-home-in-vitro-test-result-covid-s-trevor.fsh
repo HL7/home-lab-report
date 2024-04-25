@@ -14,6 +14,7 @@ Usage: #example
 * subject.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"
 * subject.display = "Stacy Trevor"
 * effectiveDateTime = "2021-01-28T16:06:21-05:00"
+* performer.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"
 * valueCodeableConcept = $sct#260373001 "Detected"
 * specimen.reference = "Specimen/specimen-swab-internal-nose-s-trevor"
 * specimen.display = "P21-0000105078OneReliableSol.STAG"

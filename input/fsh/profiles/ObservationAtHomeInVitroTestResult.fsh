@@ -16,7 +16,7 @@ Description: "This profile constrains the US Core Laboratory Result Observation 
 * issued MS
 * issued ^short = "At-Home Test result date released - when test item is done (in the at-home setting will mostly be the same as the Observation.effective[x], could be different when a proctor is involved - when the proctor releases the result). V2: OBR-22.1"
 * performer MS
-* performer only Reference(USCorePractitionerProfile or USCorePractitionerRoleProfile or USCoreOrganizationProfile or USCoreCareTeam or USCorePatientProfile or USCoreRelatedPersonProfile)
+* performer only Reference(USCorePractitionerProfile or USCorePractitionerRoleProfile or USCoreOrganizationProfile or USCoreCareTeam or PatientAtHomeInVitroTest or USCoreRelatedPersonProfile)
 * performer ^short = "If the performer is not the patient being tested, specify the person performing the test."
 * value[x] only CodeableConcept
 * value[x] MS

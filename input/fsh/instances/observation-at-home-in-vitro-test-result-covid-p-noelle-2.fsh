@@ -19,6 +19,7 @@ Usage: #example
 * subject.reference = "Patient/patient-at-home-in-vitro-test-patricia-noelle"
 * subject.display = "Patricia Noelle"
 * effectiveDateTime = "2020-03-10"
+* performer.reference = "Patient/patient-at-home-in-vitro-test-patricia-noelle"
 * valueCodeableConcept = $sct#260373001 "Detected"
 * specimen.reference = "Specimen/specimen-anterior-nares-swab-p-noelle"
 * specimen.display = "UR Specimen ID: MLD45-Z4-1234"
