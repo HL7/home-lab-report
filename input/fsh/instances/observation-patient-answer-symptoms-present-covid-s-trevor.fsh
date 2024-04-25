@@ -14,4 +14,5 @@ Usage: #example
 * subject.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"
 * subject.display = "Stacy Trevor"
 * effectiveDateTime = "2021-01-28T16:06:03-05:00"
+* performer.reference = "Patient/patient-at-home-in-vitro-test-stacy-trevor"
 * valueCodeableConcept = $v2-0532#Y "Yes"

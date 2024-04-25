@@ -14,4 +14,5 @@ Usage: #example
 * subject.reference = "Patient/patient-at-home-in-vitro-test-patricia-noelle"
 * subject.display = "Patricia Noelle"
 * effectiveDateTime = "2021-03-24"
+* performer.reference = "Patient/patient-at-home-in-vitro-test-patricia-noelle"
 * valueDateTime = "2021-03-22"
