@@ -3,10 +3,6 @@ Parent: Bundle
 Id: Bundle-at-home-in-vitro-test
 Title: "Bundle - At-Home In-Vitro Test"
 Description: "This profile constrains the Bundle resource for At-Home In-Vitro Tests."
-* ^version = "1.0.0"
-* ^experimental = false
-* ^date = "2022-04-01"
-* ^jurisdiction = urn:iso:std:iso:3166#US
 * identifier 1.. MS
 * type = #message (exactly)
 * type MS

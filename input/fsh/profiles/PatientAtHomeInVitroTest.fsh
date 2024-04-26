@@ -3,10 +3,6 @@ Parent: USCorePatientProfile
 Id: Patient-at-home-in-vitro-test
 Title: "Patient - At Home In Vitro Test"
 Description: "This Patient profile represents an At-Home In-Vitro Test Patient."
-* ^version = "1.0.0"
-* ^experimental = false
-* ^jurisdiction = urn:iso:std:iso:3166#US "United States of America"
-* ^jurisdiction.text = "United States of America"
 * extension[race] ^short = "US Core Race Extension. V2: PID-10.1, PID-10.2, PID-10.3, PID-10.7"
 * extension[ethnicity] ^short = "US Core Ethnicity Extension. V2: PID-22.1, PID-22-2, PID-22.3, PID-22.7"
 * identifier ^short = "An identifier for this patient: the value that is unique within the system. Unique ID assigned to patient by App provider. Must be 100 characters or less. V2: PID-3.1"

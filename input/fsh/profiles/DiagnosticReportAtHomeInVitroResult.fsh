@@ -3,7 +3,6 @@ Parent: USCoreDiagnosticReportProfileLaboratoryReporting
 Id: DiagnosticReport-at-home-in-vitro-results
 Title: "DiagnosticReport - At-Home In-Vitro Results"
 Description: "This profile constrains the US Core Diagnostic Report for Laboratory Results profile to At-Home In-Vitro Tests."
-* ^version = "1.0.0"
 * id MS
 * extension only ExtensionAtHomeInVitroTestSupportingInfo
 * extension MS

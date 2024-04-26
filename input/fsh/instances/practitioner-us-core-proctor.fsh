@@ -3,9 +3,6 @@ InstanceOf: USCorePractitionerProfile
 Title: "Practitioner - US Core - Proctor"
 Description: "US Core Practitioner: Test Proctor example"
 Usage: #example
-* meta.versionId = "1"
-* meta.lastUpdated = "2022-07-14T03:00:09.738+00:00"
-* meta.source = "#9JFfEuMX07R16jxX"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "9941339100"
 * name.family = "Henry"

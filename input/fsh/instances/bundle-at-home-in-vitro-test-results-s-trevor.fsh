@@ -31,3 +31,5 @@ Usage: #example
 * entry[=].resource = specimen-swab-internal-nose-s-trevor
 * entry[+].fullUrl = "https://fhir.org/fhir/Device/device-hometest1-s-trevor"
 * entry[=].resource = device-hometest1-s-trevor
+* entry[+].fullUrl = "https://fhir.org/fhir/Organization/us-core-organization-reliable-informatics"
+* entry[=].resource = us-core-organization-reliable-informatics

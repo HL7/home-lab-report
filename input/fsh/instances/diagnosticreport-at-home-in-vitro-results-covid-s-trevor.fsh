@@ -3,9 +3,6 @@ InstanceOf: DiagnosticReportAtHomeInVitroResultsCovid
 Title: "DiagnosticReport - At-Home In-Vitro Results - COVID-19 - S Trevor"
 Description: "DiagnosticReport - At-Home In-Vitro Results - COVID-19 - S Trevor example"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-01-26T22:33:19.818+00:00"
-* meta.source = "#Ge55aDZCqn1xIV3N"
 * extension[ExtensionAtHomeInVitroTestSupportingInfo].extension[type].url = "type"
 * extension[ExtensionAtHomeInVitroTestSupportingInfo].extension[type].valueCodeableConcept = $v2-0936#QST "Question"
 * extension[ExtensionAtHomeInVitroTestSupportingInfo].extension[reference].url = "reference"

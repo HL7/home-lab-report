@@ -3,9 +3,6 @@ InstanceOf: SpecimenAtHomeInVitroTestCovid
 Title: "Specimen - Anterior Nares Swab - P Noelle"
 Description: "Specimen - Anterior Nares Swab: P Noelle example"
 Usage: #example
-* meta.versionId = "6"
-* meta.lastUpdated = "2023-01-25T01:33:50.193+00:00"
-* meta.source = "#DSovhABs4xmUnQvH"
 * identifier.system = "http://lab.acme.org/specimens/2021"
 * identifier.value = "MLD45-Z4-1234"
 * status = #available

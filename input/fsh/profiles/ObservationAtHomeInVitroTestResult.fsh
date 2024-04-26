@@ -3,7 +3,6 @@ Parent: USCoreLaboratoryResultObservationProfile
 Id: Observation-at-home-in-vitro-test-result
 Title: "Observation - At-Home In-Vitro Test Result"
 Description: "This profile constrains the US Core Laboratory Result Observation to At-Home In-Vitro Sample Tests."
-* ^version = "1.0.0"
 * id 1.. MS
 * extension only ExtensionAtHomeInVitroTestProctoredInfo
 * status = #final (exactly)

@@ -3,9 +3,6 @@ InstanceOf: PatientAtHomeInVitroTest
 Title: "Patient - At-Home In-Vitro Test - Stacy Trevor"
 Description: "Patient - At-Home In-Vitro Test - Stacy Trevor example"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-01-26T22:49:49.626+00:00"
-* meta.source = "#m0lIVlIgfqsr1jaz"
 * extension[race].extension[ombCategory].url = "ombCategory"
 * extension[race].extension[ombCategory].valueCoding = urn:oid:2.16.840.1.113883.6.238#2054-5 "Black or African American"
 * extension[race].extension[text].url = "text"

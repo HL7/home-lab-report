@@ -3,9 +3,6 @@ InstanceOf: MessageHeaderAtHomeInVitroTestResults
 Title: "MessageHeaderMessageHeader - At-Home In-Vitro Results - COVID-19 - S Trevor"
 Description: "MessageHeaderMessageHeader - At-Home In-Vitro Results - COVID-19 - S Trevor example"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-01-26T22:41:41.871+00:00"
-* meta.source = "#7uPOAfaywEsWK4x3"
 * eventCoding = $loinc#96552-5
 * source.extension.extension[0].url = "vendorOrganization"
 * source.extension.extension[=].valueReference.reference = "Organization/us-core-organization-reliable-informatics"

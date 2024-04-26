@@ -3,9 +3,6 @@ InstanceOf: ObservationAtHomeInVitroTestResultCovid
 Title: "Observation - At-Home In-Vitro Test Result COVID-19 - P Noelle: Organization Proctor"
 Description: "Observation - At-Home In-Vitro Test Result - Covid: P Noelle (proctored by an Organization) example"
 Usage: #example
-* meta.versionId = "1"
-* meta.lastUpdated = "2023-01-25T04:08:13.171+00:00"
-* meta.source = "#y2c3DZ4Z6xoDcAB1"
 * extension[ExtensionAtHomeInVitroTestProctoredInfo].extension[proctoredTest].url = "proctoredTest"
 * extension[ExtensionAtHomeInVitroTestProctoredInfo].extension[proctoredTest].valueBoolean = true
 * extension[ExtensionAtHomeInVitroTestProctoredInfo].extension[proctoredBy].url = "proctoredBy"

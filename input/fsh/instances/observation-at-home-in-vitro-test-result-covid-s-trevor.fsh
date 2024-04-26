@@ -3,9 +3,6 @@ InstanceOf: ObservationAtHomeInVitroTestResultCovid
 Title: "Observation - At-Home In-Vitro Test Result COVID-19 - S Trevor"
 Description: "Observation - At-Home In-Vitro Test Result COVID-19 - S Trevor"
 Usage: #example
-* meta.versionId = "1"
-* meta.lastUpdated = "2023-01-26T22:14:40.519+00:00"
-* meta.source = "#zinBI6yFGAuJQfTe"
 * status = #final
 * category[us-core] = $observation-category#laboratory "Laboratory"
 * category[us-core].text = "Laboratory"

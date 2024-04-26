@@ -3,9 +3,6 @@ InstanceOf: DeviceAtHomeInVitroTest
 Title: "Device - Acme Home Test"
 Description: "Device - Acme Home Test example"
 Usage: #example
-* meta.versionId = "1"
-* meta.lastUpdated = "2023-01-26T22:14:40.524+00:00"
-* meta.source = "#Sxj8SUXVLoqUDfBx"
 * udiCarrier.deviceIdentifier = "Acme COVID-19 Home Test_Acme Limited_EUA"
 * udiCarrier.issuer = "GS1"
 * status = #active

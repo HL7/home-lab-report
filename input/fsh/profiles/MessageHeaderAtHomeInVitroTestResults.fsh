@@ -3,9 +3,6 @@ Parent: MessageHeader
 Id: MessageHeader-at-home-in-vitro-test-results
 Title: "MessageHeader - At-Home In-Vitro Test Results"
 Description: "This MessageHeader represents the At-Home In-Vitro Test Results being sent from an application server to a health authority."
-* ^version = "1.0.0"
-* ^status = #active
-* . ^short = "Represents the At-Home In-Vitro Test Results being sent from an application server to a health authority."
 * event[x] only Coding
 * event[x] = $loinc#96552-5
 * event[x] MS

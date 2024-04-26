@@ -3,8 +3,6 @@ Parent: Device
 Id: Device-at-home-in-vitro-test
 Title: "Device - At-Home In-Vitro Test"
 Description: "This profile constrains the Device resource for At-Home In-Vitro Tests."
-* ^version = "1.0.0"
-* ^status = #active
 * udiCarrier ..1 MS
 * udiCarrier.deviceIdentifier 1..1 MS
 * udiCarrier.deviceIdentifier ^short = "LIVD Spreadsheet | LOINC Mapping.Testkit Name ID or LIVD Spreadsheet | LOINC Mapping.Testkit Equipment UID V2: OBX-17.1"

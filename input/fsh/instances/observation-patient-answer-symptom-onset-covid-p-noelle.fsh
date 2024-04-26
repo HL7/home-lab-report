@@ -3,9 +3,6 @@ InstanceOf: ObservationPatientQuestionAnswer
 Title: "Observation - Patient Answer - Symptoms Onset COVID-19 P Noelle"
 Description: "Observation - Patient Answer - Symptom Onset COVID-19 P Noelle Example"
 Usage: #example
-* meta.versionId = "5"
-* meta.lastUpdated = "2023-01-25T01:33:50.194+00:00"
-* meta.source = "#tpyQnb6Mr6AbH4V8"
 * status = #final
 * category[survey] = $observation-category#survey "Survey"
 * category[survey].text = "Survey"

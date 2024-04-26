@@ -3,9 +3,6 @@ InstanceOf: PatientAtHomeInVitroTest
 Title: "Patient - At-Home In-Vitro Test - Patricia Noelle"
 Description: "Patient - At-Home In-Vitro Test - Patricia Noelle Example"
 Usage: #example
-* meta.versionId = "4"
-* meta.lastUpdated = "2023-01-26T02:02:08.079+00:00"
-* meta.source = "#8Lcr0qlYU9srAJpp"
 * identifier.use = #usual
 * identifier.type = $v2-0203#MR "Medical Record Number"
 * identifier.type.text = "Medical Record Number"

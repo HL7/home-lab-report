@@ -3,9 +3,6 @@ InstanceOf: DeviceAtHomeInVitroTest
 Title: "Device - Fast SARS Antigen Test"
 Description: "Device - Fast SARS Antigen Test example"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-01-26T20:01:05.323+00:00"
-* meta.source = "#Hp8Mpdd6o2h3z2EU"
 * udiCarrier.deviceIdentifier = "30014613339374"
 * udiCarrier.issuer = "GS1"
 * status = #active

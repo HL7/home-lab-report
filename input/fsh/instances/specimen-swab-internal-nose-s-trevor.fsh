@@ -3,9 +3,6 @@ InstanceOf: SpecimenAtHomeInVitroTestCovid
 Title: "Specimen - Swab Internal Nose - S Trevor"
 Description: "Specimen - Swab Internal Nose - S Trevor"
 Usage: #example
-* meta.versionId = "2"
-* meta.lastUpdated = "2023-01-26T22:49:23.006+00:00"
-* meta.source = "#HpMWcBBNgkCMCvwC"
 * identifier.system = "http://reliable.org"
 * identifier.value = "P21-0000105078OneReliableSol.STAG"
 * status = #available
