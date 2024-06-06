@@ -9,9 +9,9 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * event[x] ^short = "Result of most recent lab test for condition of interest"
 * destination MS
 * destination.id MS
-* destination.id ^short = "Receiving system OID. See Receiving System Specific Fields. V2: MSH-5.2"
+* destination.id ^short = "Receiving system OID. See 'Receiving System Specific Fields' (see Guidance->Getting Started for details). V2: MSH-5.2"
 * destination.name MS
-* destination.name ^short = "Receiving system namespace (name of destination application). See Receiving System Specific Fields. V2: MSH-5.1"
+* destination.name ^short = "Receiving system namespace (name of destination application). See Receiving System Specific Fields (see Guidance->Getting Started for details). V2: MSH-5.1"
 * destination.endpoint MS
 * destination.receiver only Reference(USCoreOrganizationProfile)
 * destination.receiver MS
@@ -19,7 +19,7 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * sender MS
 * source MS
 * source.id MS
-* source.id ^short = "Sending system OID. See 'Obtaining App Specific Identifiers'. V2: MSH-3.2"
+* source.id ^short = "Sending system OID. See 'Obtaining App Specific Identifiers' (see Guidance->Getting Started for details). V2: MSH-3.2"
 * source.extension MS
 * source.extension ^slicing.discriminator.type = #value
 * source.extension ^slicing.discriminator.path = "url"
@@ -29,7 +29,7 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * source.extension[sourceSoftwareVendorInfo] ^short = "Source software information (vendor organization, binary id, install date)"
 * source.extension[sourceSoftwareVendorInfo] ^min = 0
 * source.name MS
-* source.name ^short = "Sending system namespace (name of app). {<20 char}. V2: MSH-3.1"
+* source.name ^short = "Sending system namespace (name of app). If converting FHIR to V2, must be less than 20 characters. V2: MSH-3.1"
 * source.name ^min = 0
 * source.software ^short = "Software product name including OS (e.g. Android, iOS). V2: SFT-3"
 * source.version MS
