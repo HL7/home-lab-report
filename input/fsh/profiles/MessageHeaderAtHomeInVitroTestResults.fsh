@@ -8,11 +8,10 @@ Description: "This MessageHeader represents the At-Home In-Vitro Test Results be
 * event[x] MS
 * event[x] ^short = "Result of most recent lab test for condition of interest"
 * destination MS
-* destination.id MS
-* destination.id ^short = "Receiving system OID. See 'Receiving System Specific Fields' (see Guidance->Getting Started for details). V2: MSH-5.2"
 * destination.name MS
-* destination.name ^short = "Receiving system namespace (name of destination application). See Receiving System Specific Fields (see Guidance->Getting Started for details). V2: MSH-5.1"
+* destination.name ^short = "Receiving system OID. See 'Receiving System Specific Fields' (see Guidance->Getting Started for details). V2: MSH-5.2"
 * destination.endpoint MS
+* destination.endpoint ^short = "Receiving system namespace (name of destination application). See Receiving System Specific Fields (see Guidance->Getting Started for details). V2: MSH-5.1"
 * destination.receiver only Reference(USCoreOrganizationProfile)
 * destination.receiver MS
 * sender only Reference(USCoreOrganizationProfile)
