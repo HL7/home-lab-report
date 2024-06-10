@@ -54,12 +54,6 @@ pages:
     title: Workflow
   relationship_to_hl7_v2.md:
     title: Relationship to HL7 V2
-  hl7_v2_fields_and_example_messages.md:
-    title: HL7 V2 Fields and Example Messages
-  at-home_in-vitro_test_over_the_counter_purchase_v2_example.md:
-    title: At-Home In-Vitro Test Over the Counter Purchase V2 Example
-  at-home_in-vitro_test_with_prescription_v2_example.md:
-    title: At-Home In-Vitro Test with Prescription V2 Example
   downloads.md:
     title: Downloads
   getting_started.md:
@@ -73,11 +67,7 @@ menu:
     Technical Guidance: technical_guidance.html
     Implementation Guide: implementation_guide.html
     Workflow: workflow.html
-  Relationship to HL7 V2:
-    Relationship to HL7 V2: relationship_to_hl7_v2.html
-    HL7 V2 Fields and Example Messages: hl7_v2_fields_and_example_messages.html
-    At-Home In-Vitro Test Over the Counter Purchase V2 Example: at-home_in-vitro_test_over_the_counter_purchase_v2_example.html
-    At-Home In-Vitro Test with Prescription V2 Example: at-home_in-vitro_test_with_prescription_v2_example.html
+  Relationship to HL7 V2: relationship_to_hl7_v2.html
   Downloads: downloads.html
   Artifact Index: artifacts.html
 
@@ -132,6 +122,7 @@ groups:
     name: "Examples: Participant"
     resources:
     - Organization/us-core-organization-acme-corporation
+    - Organization/us-core-organization-aphl-aims-prd
     - Organization/us-core-organization-proctor
     - Organization/us-core-organization-reliable-informatics
     - Patient/patient-at-home-in-vitro-test-patricia-noelle

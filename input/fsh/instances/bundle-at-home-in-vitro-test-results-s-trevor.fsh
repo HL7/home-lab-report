@@ -33,3 +33,7 @@ Usage: #example
 * entry[=].resource = device-hometest1-s-trevor
 * entry[+].fullUrl = "https://fhir.org/fhir/Organization/us-core-organization-reliable-informatics"
 * entry[=].resource = us-core-organization-reliable-informatics
+* entry[+].fullUrl = "https://fhir.org/fhir/Organization/us-core-organization-aphl-aims-prd"
+* entry[=].resource = us-core-organization-aphl-aims-prd
+* entry[+].fullUrl = "https://fhir.org/fhir/Organization/us-core-organization-abbot"
+* entry[=].resource = us-core-organization-abbot
