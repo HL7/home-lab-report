@@ -16,11 +16,11 @@ Sender-specific fields help to uniquely identify the sending application and are
 
 | Sender-specific field | FHIR Element  |
 |-----------------------|---------------|
-| Sending system OID   | [MessageHeader-at-home-in-vitro-test-results.source.id](StructureDefinition-MessageHeader-at-home-in-vitro-test-results-definitions.html#diff_MessageHeader.source.id)|
+| Sending system OID   | [MessageHeader-at-home-in-vitro-test-results.source.endpoint](StructureDefinition-MessageHeader-at-home-in-vitro-test-results-definitions.html#diff_MessageHeader.source.endpoint)|
 | Sending facility name  | [MessageHeader-at-home-in-vitro-test-results.sender(US Core Organization.name)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.name) |
 | Sending facility ID  | [MessageHeader-at-home-in-vitro-test-results.sender(US Core Organization.identifier)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.identifier:CLIA) |
-| Patient ID Assigner  | [Patient-at-home-in-vitro-test.identifier](StructureDefinition-Patient-at-home-in-vitro-test-definitions.html#diff_Patient.identifier)  |
-| Specimen ID Assigner OID  | [Specimen-at-home-in-vitro-test.identifier](StructureDefinition-Specimen-at-home-in-vitro-test-definitions.html#diff_Specimen.identifier) |
+| Patient ID Assigner  | [Patient-at-home-in-vitro-test.identifier.system](StructureDefinition-Patient-at-home-in-vitro-test-definitions.html#diff_Patient.identifier.system)  |
+| Specimen ID Assigner OID  | [Specimen-at-home-in-vitro-test.identifier.system](StructureDefinition-Specimen-at-home-in-vitro-test-definitions.html#diff_Specimen.identifier.system) |
 {:.table-striped}
 
 The values of these fields will be provided by the [Association of Public Health Laboratories (APHL)](https://www.aphl.org/Pages/default.aspx) and will be unique to each application.
@@ -38,9 +38,9 @@ Test-specific fields are available in the CDC-published [LOINC In Vitro Diagnost
 
 #### Receiver-specific fields
 
-| Receiving System | [MessageHeader-at-home-in-vitro-test-results.destination.name](StructureDefinition-MessageHeader-at-home-in-vitro-test-results-definitions.html#diff_MessageHeader.destination.name) | [MessageHeader-at-home-in-vitro-test-results.destination.id](StructureDefinition-MessageHeader-at-home-in-vitro-test-results-definitions.html#diff_MessageHeader.destination.id) | [MessageHeader-at-home-in-vitro-test-results.destination.receiver(US Core Organization.identifier.value)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.identifier) | [MessageHeader-at-home-in-vitro-test-results.destination.receiver(US Core Organization.identifier.system)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.identifier) | [MessageHeader-at-home-in-vitro-test-results.destination.receiver(US Core Organization.identifier.type)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.identifier) |
+| Receiving System | [MessageHeader-at-home-in-vitro-test-results.destination.name](StructureDefinition-MessageHeader-at-home-in-vitro-test-results-definitions.html#diff_MessageHeader.destination.name) | [MessageHeader-at-home-in-vitro-test-results.destination.endpoint](StructureDefinition-MessageHeader-at-home-in-vitro-test-results-definitions.html#diff_MessageHeader.destination.endpoint) | [MessageHeader-at-home-in-vitro-test-results.destination.receiver(US Core Organization.identifier.value)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.identifier) | [MessageHeader-at-home-in-vitro-test-results.destination.receiver(US Core Organization.identifier.system)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.identifier) | [MessageHeader-at-home-in-vitro-test-results.destination.receiver(US Core Organization.identifier.type)](http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-organization-definitions.html#diff_Organization.identifier) |
 |---|---|---|---|---|---|---|
-| APHL AIMS Testing | AIMS.INTEGRATION.STG | 2.16.840.1.114222.4.3.15.2 | AIMS.PLATFORM  | 2.16.840.1.114222.4.1.217446 | ISO |
-| APHL AIMS Production | AIMS.INTEGRATION.PRD | 2.16.840.1.114222.4.3.15.1 | AIMS.PLATFORM | 2.16.840.1.114222.4.1.217446 | ISO |
-| ReportStream | CDC PRIME | 2.16.840.1.114222.4.1.237821 | AIMS.PLATFORM | 2.16.840.1.114222.4.1.237821 | ISO |
+| APHL AIMS Testing | AIMS.INTEGRATION.STG | urn:oid:2.16.840.1.114222.4.3.15.2 | AIMS.PLATFORM  | urn:oid:2.16.840.1.114222.4.1.217446 | ISO |
+| APHL AIMS Production | AIMS.INTEGRATION.PRD | urn:oid:2.16.840.1.114222.4.3.15.1 | AIMS.PLATFORM | urn:oid:2.16.840.1.114222.4.1.217446 | ISO |
+| ReportStream | CDC PRIME | urn:oid:2.16.840.1.114222.4.1.237821 | AIMS.PLATFORM | urn:oid:2.16.840.1.114222.4.1.237821 | ISO |
 {:.table-striped}

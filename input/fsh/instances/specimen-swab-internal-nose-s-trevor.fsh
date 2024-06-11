@@ -3,6 +3,7 @@ InstanceOf: SpecimenAtHomeInVitroTestCovid
 Title: "Specimen - Swab Internal Nose - S Trevor"
 Description: "Specimen - Swab Internal Nose - S Trevor"
 Usage: #example
+* identifier.type = $v2-0301#ISO "ISO Object Identifier"
 * identifier.system = "http://reliable.org"
 * identifier.value = "P21-0000105078OneReliableSol.STAG"
 * status = #available

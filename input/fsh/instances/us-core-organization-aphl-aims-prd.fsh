@@ -1,7 +1,7 @@
 Instance: us-core-organization-aphl-aims-prd
 InstanceOf: USCoreOrganizationProfile
-Title: "Organization - US Core - APHL AIMS Testing"
-Description: "US Core Organization: APHL AIMS Testing example"
+Title: "Organization - US Core - APHL AIMS Production"
+Description: "US Core Organization: APHL AIMS Production example"
 Usage: #example
 * active = true
 * name = "AIMS.PLATFORM"

@@ -27,3 +27,5 @@ Usage: #example
 * entry[=].resource = observation-patient-answer-symptom-onset-covid-p-noelle
 * entry[+].fullUrl = "https://fhir.org/fhir/Practitioner/practitioner-us-core-proctor"
 * entry[=].resource = practitioner-us-core-proctor
+* entry[+].fullUrl = "https://fhir.org/fhir/Organization/us-core-organization-aphl-aims-prd"
+* entry[=].resource = us-core-organization-aphl-aims-prd
