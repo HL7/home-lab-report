@@ -57,6 +57,8 @@ pages:
     title: Downloads
   getting_started.md:
     title: Getting Started
+  change_log.md:
+    title: Change Log
             
 menu:
   Home: index.html
